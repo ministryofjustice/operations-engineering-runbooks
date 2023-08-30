@@ -13,9 +13,9 @@ These processes are for any Ministry of Justice users (or suppliers) requiring a
 
 There are 3 categories of certificate we use at Ministry of Justice:
 
-* AWS Certificate Manager (ACM)/Let’s Encrypt - automated certificate management for modern cloud native software and infrastructure
-* Gandi.net - where automated certificate management is not possible
-* DigiCert - for legacy GSI domains only (this process is being deprecated)
+- AWS Certificate Manager (ACM)/Let’s Encrypt - automated certificate management for modern cloud native software and infrastructure
+- Gandi.net - where automated certificate management is not possible
+- DigiCert - for legacy GSI domains only (this process is being deprecated)
 
 Where at all practicable we should be looking to utilise automated certificate management. The MoJ Hosting Service is looking at strategies to move consumers to modern certificate management solutions.
 
@@ -50,10 +50,10 @@ This [file](https://docs.google.com/spreadsheets/d/1gAVhX8Ts-BuhZRNBEF-80UUjlnYy
 
 Before you begin, there are a few prerequisites:
 
-* A user account for [Gandi.net]
-* Access to the Certificates Google group `https://groups.google.com/a/digital.justice.gov.uk/g/certificates?hl=en-GB`
-* Access to the [Certificate Alerts Google group](mailto:certificate_alerts@digital.justice.gov.uk)
-* Access to Route53 in the MoJDSD AWS account
+- A user account for [Gandi.net]
+- Access to the Certificates Google group `https://groups.google.com/a/digital.justice.gov.uk/g/certificates?hl=en-GB`
+- Access to the [Certificate Alerts Google group](mailto:certificate_alerts@digital.justice.gov.uk)
+- Access to Route53 in the MoJDSD AWS account
 
 Please contact your [administrator](mailto:certificates@digital.justice.gov.uk) to set these up.
 
@@ -89,7 +89,7 @@ Please contact your [administrator](mailto:certificates@digital.justice.gov.uk) 
 
 11. Create the CNAME record in Route53. Gandi.net will automatically try to pick up this CNAME to confirm that we have ownership of the domain.
 
-**Note - Any preceding "_" or trailing "." characters in the CNAME values are extremely important for validation. Missing characters will mean that validation will not be successful.**
+**Note - Any preceding "\_" or trailing "." characters in the CNAME values are extremely important for validation. Missing characters will mean that validation will not be successful.**
 
 **If SSL certificate is a Multi address type, then multiple CNAME's will be provided and need to be added to AWS**
 

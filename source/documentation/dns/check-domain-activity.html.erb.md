@@ -23,13 +23,13 @@ We will be using 'prisons-service.com' as an example here.
 
 1. Navigate to [Route53](https://us-east-1.console.aws.amazon.com/route53/v2/home#Dashboard), select the 'Hosted Zones' page in the navigation pane and search for the domain to be decommisioned:
 
-    ![Search Hosted Zone](../../../images/check-domain-search-hosted-zone.png)
+   ![Search Hosted Zone](../../../images/check-domain-search-hosted-zone.png)
 
 2. On the right hand side of the results, you will notice the **Hosted Zone ID** - copy this value.
 
 ## Option 1: Running the Included Script in dns-iac
 
-Script Name: ```fetch-cloudwatch-metrics.py```
+Script Name: `fetch-cloudwatch-metrics.py`
 
 1. Before running the script, you must first export your AWS cedentials as environment variables. They can be found [here](https://moj.awsapps.com/start#/).
 
@@ -50,7 +50,7 @@ Now we have the Hosted Zone ID, we can check for DNS query activity on that part
 1. Navigate to [CloudWatch](https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#home:) on AWS.
 2. In the navigation pane, select **Metrics -> All Metrics** and then select the **Route53** tile:
 
-    ![Isolate the Domain in CloudWatch](../../../images/check-domain-isolate-domain-cloudwatch.png)
+   ![Isolate the Domain in CloudWatch](../../../images/check-domain-isolate-domain-cloudwatch.png)
 
 3. From here we can continue to the **Hosted Zone Metrics** page and paste the **Hosted Zone ID** we previously copied.
 4. Once the zone has been isolated, we just need to select the checkbox on the left to create our initial view of the data:

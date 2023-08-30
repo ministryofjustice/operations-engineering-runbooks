@@ -17,11 +17,11 @@ Delegation of a domain means transferring management and control of a domain to 
 
 ## Risks associated with domain delegation
 
-* Loss of control of a subdomain - We no longer manage the domain but are still responsible in the eyes of GDS. We need to ensure that controllers are aware of the security and our requirements for DNS.
+- Loss of control of a subdomain - We no longer manage the domain but are still responsible in the eyes of GDS. We need to ensure that controllers are aware of the security and our requirements for DNS.
 
-* Further delegation - It is possible for the owner of a delegated domain to further delegate a subdomain to another controller. If we delegate a domain there is a risk that we don't know about further delegations. To mitigate this risk we should make controllers aware of the implications of delegating domains and their [responsibilities](https://www.gov.uk/guidance/creating-and-managing-govuk-subdomains#managing-delegated-subdomains) as controllers.
+- Further delegation - It is possible for the owner of a delegated domain to further delegate a subdomain to another controller. If we delegate a domain there is a risk that we don't know about further delegations. To mitigate this risk we should make controllers aware of the implications of delegating domains and their [responsibilities](https://www.gov.uk/guidance/creating-and-managing-govuk-subdomains#managing-delegated-subdomains) as controllers.
 
-* Non-compliance with domain naming standards - As soon as we delegate management of a domain the new controller can create new subdomains that may not adhere to the [MoJ naming standards](https://technical-guidance.service.justice.gov.uk/documentation/standards/naming-domains.html#naming-domains) and [GDS naming standards](https://www.gov.uk/guidance/choose-your-govuk-domain-name?step-by-step-nav=5a9309a3-9a80-4faa-b24f-1797023e897f). Failure to comply with standards may result in delegation from GDS being taken away and MoJ no longer being able to manage it's own domains. We should ensure that domain controllers are made aware of the naming standards and their responsibilities.
+- Non-compliance with domain naming standards - As soon as we delegate management of a domain the new controller can create new subdomains that may not adhere to the [MoJ naming standards](https://technical-guidance.service.justice.gov.uk/documentation/standards/naming-domains.html#naming-domains) and [GDS naming standards](https://www.gov.uk/guidance/choose-your-govuk-domain-name?step-by-step-nav=5a9309a3-9a80-4faa-b24f-1797023e897f). Failure to comply with standards may result in delegation from GDS being taken away and MoJ no longer being able to manage it's own domains. We should ensure that domain controllers are made aware of the naming standards and their responsibilities.
 
 ## What does a domain delegation look like?
 
@@ -42,11 +42,11 @@ All requests for delegation should be made in writing to [domains@digital.justic
 
 ## What might we approve?
 
-* Delegations to other Teams within the Hosting Service i.e. Cloud Platform, Modernisation Platform, and Digital Studio Operations
+- Delegations to other Teams within the Hosting Service i.e. Cloud Platform, Modernisation Platform, and Digital Studio Operations
 
 ## What won't we approve?
 
-* Delegation to external 3rd party suppliers or services.
+- Delegation to external 3rd party suppliers or services.
 
 ## Right of Appeal
 

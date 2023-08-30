@@ -11,10 +11,10 @@ Drift within DNS-IAC is when manual changes are made to the DSD Route53 configur
 
 This difference can cause problems such as:
 
-* Reverting changes made in Route53
-* Making unwanted changes in Route53
-* Making it impossible to rollback in the case of a failed release
-* Making it impossible to make further changes without significant troubleshooting
+- Reverting changes made in Route53
+- Making unwanted changes in Route53
+- Making it impossible to rollback in the case of a failed release
+- Making it impossible to make further changes without significant troubleshooting
 
 This runbook provides a set of steps that should be followed to ensure there is no drift between DNS-IAC and Route53.
 

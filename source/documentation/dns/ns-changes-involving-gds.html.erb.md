@@ -19,9 +19,9 @@ There are two slightly different processes depending on where we manage our doma
 
 When scheduling cutovers with Service Teams you should ensure that teams are aware of a number of things:
 
-* Both GDS and BT have a 5 day SLA for change requests
-* When nameserver changes are made there could a 6 hour caching delay whilst the new nameservers take over management of DNS
-* Change involving BT **cannot** take place out of hours, and can only be implemeneted at two specific times of the day (09:07 and 15:07)
+- Both GDS and BT have a 5 day SLA for change requests
+- When nameserver changes are made there could a 6 hour caching delay whilst the new nameservers take over management of DNS
+- Change involving BT **cannot** take place out of hours, and can only be implemeneted at two specific times of the day (09:07 and 15:07)
 
 ## Replicate DNS records
 
