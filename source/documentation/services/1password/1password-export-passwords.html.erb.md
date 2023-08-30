@@ -15,10 +15,10 @@ The document only contains steps to export the Ministry of Justice organisation.
 
 ## Prerequisites
 
-* [1Password CLI installed and authenticated](https://developer.1password.com/docs/cli/get-started/)
-* Administrators permission on 1Password
-* Export permissions on all Vaults (this is explained at the bottom of this page)
-* The 1Password App installed locally
+- [1Password CLI installed and authenticated](https://developer.1password.com/docs/cli/get-started/)
+- Administrators permission on 1Password
+- Export permissions on all Vaults (this is explained at the bottom of this page)
+- The 1Password App installed locally
 
 1. Click the 3 dots at the top left of the 1Password App
 2. Press export -> Ministry of Justice
@@ -31,8 +31,8 @@ The document only contains steps to export the Ministry of Justice organisation.
 
 ## Prerequisites
 
-* [1Password CLI installed and authenticated](https://developer.1password.com/docs/cli/get-started/)
-* Administrators permission on 1Password
+- [1Password CLI installed and authenticated](https://developer.1password.com/docs/cli/get-started/)
+- Administrators permission on 1Password
 
 1. Run the following commands to add permissions
 
@@ -70,4 +70,4 @@ done
 
 # Links
 
-* [1Password Documentation](https://support.1password.com/export/)
+- [1Password Documentation](https://support.1password.com/export/)

@@ -11,8 +11,8 @@ This process can be used for password resets (or pretty much any account access 
 
 ## Pre-requisites
 
-* Access to [1Password Dashboard](https://ministryofjustice.1password.eu/home)
-* User's details
+- Access to [1Password Dashboard](https://ministryofjustice.1password.eu/home)
+- User's details
 
 ## User triggered recovery requests
 

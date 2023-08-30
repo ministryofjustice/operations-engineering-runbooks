@@ -11,9 +11,9 @@ review_in: 3 months
 
 1Password has the concepts of Group and Vault.
 
-* [Vault](https://support.1password.com/create-share-vaults/) - Shared repository for passwords.
+- [Vault](https://support.1password.com/create-share-vaults/) - Shared repository for passwords.
 
-* [Group](https://support.1password.com/custom-groups/) - Specific set of users with permissions to access a specific Vault.
+- [Group](https://support.1password.com/custom-groups/) - Specific set of users with permissions to access a specific Vault.
 
 Groups have a [default set of permissions](https://ministryofjustice.1password.eu/security/default-vault-acl) set by an orgainsation level policy.
 

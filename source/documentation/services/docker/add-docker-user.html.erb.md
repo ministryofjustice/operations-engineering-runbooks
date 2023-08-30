@@ -19,8 +19,8 @@ Users on Mac require a license to user Docker due to a change in Dockers model.
 
 You must have access to a Docker organization admin account either through:
 
-* A personal Docker account
-* The Operations Engineering Docker account (saved in LastPass)
+- A personal Docker account
+- The Operations Engineering Docker account (saved in LastPass)
 
 > **Note** - HMPPS also has a Docker for Business subscription. It is possible that a user may want to be added to a repo within that organisation. If that is the case please redirect the user to the #hmpps_dev slack channel.
 
