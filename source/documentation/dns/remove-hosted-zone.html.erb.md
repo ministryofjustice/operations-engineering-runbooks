@@ -15,9 +15,9 @@ This document walks through the steps needed to do this.
 
 The following requirements are needed:
 
-* Terraform
-* Authentication to the DSD AWS account (this contains the Route53 records)
-* It is recommended you have at least a basic knowledge of general Terraform and Route53.
+- Terraform
+- Authentication to the DSD AWS account (this contains the Route53 records)
+- It is recommended you have at least a basic knowledge of general Terraform and Route53.
 
 ## Steps required
 

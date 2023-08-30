@@ -15,12 +15,12 @@ The DNS IAC repository contains a [script](https://github.com/ministryofjustice/
 
 The script is run from the command prompt, the following requirements are needed:
 
-* Python3
-* boto3 Python3 lib
-* Jinja2 Python3 lib
-* Terraform
-* Authentication to the DSD AWS account (this contains the Route53 records)
-* It is recommended you have at least a basic knowledge of general Programming, Terraform and Route53.
+- Python3
+- boto3 Python3 lib
+- Jinja2 Python3 lib
+- Terraform
+- Authentication to the DSD AWS account (this contains the Route53 records)
+- It is recommended you have at least a basic knowledge of general Programming, Terraform and Route53.
 
 > A pip [requirements](https://github.com/ministryofjustice/dns-iac/blob/main/scripts/requirements.txt) file is present for quick installation.
 

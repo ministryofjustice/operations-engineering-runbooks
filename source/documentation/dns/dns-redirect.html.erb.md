@@ -13,10 +13,10 @@ This runbook provides details of approaches to redirecting domains. There are di
 
 There are a number of scenarios in which we may want to redirect a domain:
 
-* decommissioning of a service
-* replacement of a non-gov.uk domain with a gov.uk domain
-* migration of a service from one domain name to a new domain name
-* migration of a service to gov.uk
+- decommissioning of a service
+- replacement of a non-gov.uk domain with a gov.uk domain
+- migration of a service from one domain name to a new domain name
+- migration of a service to gov.uk
 
 ## CNAME redirection
 
@@ -32,8 +32,8 @@ Follow the [AWS documentation](https://repost.aws/knowledge-center/redirect-doma
 
 Few things to note when creating a redirect:
 
-* S3 buckets are created in the MoJDSD AWS account
-* This type of redirect won't work for HTTPS traffic. Instead see Redirection with AWS S3 (HTTPS traffic)
+- S3 buckets are created in the MoJDSD AWS account
+- This type of redirect won't work for HTTPS traffic. Instead see Redirection with AWS S3 (HTTPS traffic)
 
 ## Redirection with AWS S3 (HTTPS traffic)
 
@@ -43,7 +43,7 @@ Follow the [AWS documentation](https://repost.aws/knowledge-center/redirect-doma
 
 Few things to note when creating a redirect:
 
-* All AWS resources are created in the MoJDSD AWS account.
+- All AWS resources are created in the MoJDSD AWS account.
 
 ## Redirection to gov.uk
 

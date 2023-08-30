@@ -61,16 +61,16 @@ The Namespace server records TTL is reduced so that cached requests to the site 
 
 Open Route53, on the left hand side select `Registered Domains`, select the `Transfer In` (orange button), pick either the `Single` or `Multiple` option, paste the domain address into the `Add` box, click the `check` button, move along the screens until you can add the contact details. For the contact details select the option to use a person and enter the details from the table. Continue until you can click on the `submit request` button.
 
-|  |  |
-|--|--|
-| Name | Steve Marshall |
-| Email | <domains@digital.justice.gov.uk> |
-| Tel | +44 02033345664 |
-| Address | 102 Petty France |
-| City | London |
-| Post Code | SW1H 9AJ |
-|Country | UK |
-| Privacy protection | On |
+|                    |                                  |
+| ------------------ | -------------------------------- |
+| Name               | Steve Marshall                   |
+| Email              | <domains@digital.justice.gov.uk> |
+| Tel                | +44 02033345664                  |
+| Address            | 102 Petty France                 |
+| City               | London                           |
+| Post Code          | SW1H 9AJ                         |
+| Country            | UK                               |
+| Privacy protection | On                               |
 
 To see the progress of the transfer click on left hand menu `Domains` then `Requests`.
 
