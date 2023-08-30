@@ -109,7 +109,9 @@ We will review the list of Gandi.net certificates and identify any that require 
 
 4. Email the certificate to the requester along with details of the expiry date.
 
-**There is also a comprehensive [swimlane diagram of this process](https://drive.google.com/file/d/1x94rAx9L1Dnlw7dC9BMSudxlvFUywwBR/view?usp=sharing)**. To view it, you will need access to the [Shared Google Drive Folder](../internal/new-joiners.html#google-drive).
+**There is also a comprehensive [swimlane diagram of this process](https://drive.google.com/file/d/1x94rAx9L1Dnlw7dC9BMSudxlvFUywwBR/view?usp=sharing)**. To view it, you will need access to the
+
+[comment]: # (Fix this link - [Shared Google Drive Folder](../internal/new-joiners.html#google-drive).)
 
 ## Revoking Gandi.net certificates
 
