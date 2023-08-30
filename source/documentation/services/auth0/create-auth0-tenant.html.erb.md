@@ -38,5 +38,5 @@ Steps:
 
 ## Links
 
-* [Auth0](https://auth0.com/)
-* [Add SSO to a tool](https://operations-engineering.service.justice.gov.uk/documentation/runbooks/services/add-sso-to-a-tool.html)
+- [Auth0](https://auth0.com/)
+- [Add SSO to a tool](https://operations-engineering.service.justice.gov.uk/documentation/runbooks/services/add-sso-to-a-tool.html)
