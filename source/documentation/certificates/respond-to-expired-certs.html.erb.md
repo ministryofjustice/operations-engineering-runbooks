@@ -25,7 +25,7 @@ Certificate for [domain] is about to expire. Please renew it.
 
 ### Gandi
 
-If the certificate is managed by Gandi, you should follow the [Renew a Gandi certificate](../dns/manual-ssl-certificate-processes.html#renewing-an-expiring-certificate-via-gandi-net)
+If the certificate is managed by Gandi, you should follow the [Renew a Gandi certificate](../certificates/manual-ssl-certificate-processes.html#renewing-an-expiring-certificate-via-gandi-net)
 
 ### AWS Certificate Manager
 
