@@ -15,8 +15,8 @@ This GitHub Action workflow file for the [MoJ GH Org](https://github.com/ministr
 
 There are two ways to configure this process:
 
-* Add/remove a repository to the allow list within the script file so that it filters out the repository from this process.
-* Alter the inactive time that determines when a repository is ready to be archived.
+- Add/remove a repository to the allow list within the script file so that it filters out the repository from this process.
+- Alter the inactive time that determines when a repository is ready to be archived.
 
 ## Changing the archive inactivity time
 
