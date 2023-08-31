@@ -4,6 +4,7 @@ title: Adding a GitHub repository to MoJ SonarCloud
 last_reviewed_on: 2023-08-31
 review_in: 3 months
 ---
+
 # Adding a GitHub repository to MoJ SonarCloud
 
 ## SonarCloud
@@ -18,8 +19,8 @@ This runbook is for the Operations-Engineering team members on how to add a GitH
 
 ## Prerequisites
 
-* The repository being added **must** be a public repository
-* You are a GitHub MoJ Org Admin
+- The repository being added **must** be a public repository
+- You are a GitHub MoJ Org Admin
 
 ## Steps to add repository to the SonarCloud GitHub Integration
 
@@ -61,4 +62,4 @@ This runbook is for the Operations-Engineering team members on how to add a GitH
 
 ## Links
 
-* [SonarCloud](https://sonarcloud.io)
+- [SonarCloud](https://sonarcloud.io)

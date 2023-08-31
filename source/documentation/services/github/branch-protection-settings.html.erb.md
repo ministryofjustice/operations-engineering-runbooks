@@ -28,28 +28,28 @@ The minimum Branch Protection settings for a repository are listed on [github-re
 Below is some of the Branch Protection rules within GH that can be obtained from a GraphQL query. The comment on each line maps the the Branch Protection rule to the Branch Protection setting within the GH repository settings UI.
 
 '''
-  {
-    repository(name: "repo-name", owner: "ministryofjustice") {
-      branchProtectionRules(first: 100) {
-        edges {
-          node {
-            dismissesStaleReviews             # Dismiss stale pull request approvals when new commits are pushed
-            isAdminEnforced                   # Include administrators
-            pattern                           # Should be set to main
-            requiredApprovingReviewCount      # Require approvals > 0
-            requiredStatusCheckContexts       # Would apply to a .yml file I believe ie "terraform-plan"
-            requiresApprovingReviews          # Require a pull request before merging
-            requiresCodeOwnerReviews          # Require review from Code Owners
-            requiresCommitSignatures          # Require signed commits
-            requiresConversationResolution    # Require conversation resolution before merging
-            requiresLinearHistory             # Require linear history
-            requiresStrictStatusChecks        # Require branches to be up to date before merging
-            requiresStatusChecks              # Require status checks to pass before merging
-          }
-        }
-      }
-    }
-  }
+{
+repository(name: "repo-name", owner: "ministryofjustice") {
+branchProtectionRules(first: 100) {
+edges {
+node {
+dismissesStaleReviews # Dismiss stale pull request approvals when new commits are pushed
+isAdminEnforced # Include administrators
+pattern # Should be set to main
+requiredApprovingReviewCount # Require approvals > 0
+requiredStatusCheckContexts # Would apply to a .yml file I believe ie "terraform-plan"
+requiresApprovingReviews # Require a pull request before merging
+requiresCodeOwnerReviews # Require review from Code Owners
+requiresCommitSignatures # Require signed commits
+requiresConversationResolution # Require conversation resolution before merging
+requiresLinearHistory # Require linear history
+requiresStrictStatusChecks # Require branches to be up to date before merging
+requiresStatusChecks # Require status checks to pass before merging
+}
+}
+}
+}
+}
 '''
 
 ## How to implement a Branch Protection setting in Code

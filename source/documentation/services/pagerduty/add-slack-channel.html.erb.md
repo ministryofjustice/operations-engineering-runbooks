@@ -15,9 +15,9 @@ This is the process for adding an alert output to a Pagerduty service
 
 Before you begin, there are a few pre-requisites:
 
-* PagerDuty access
-* A PagerDuty Service
-* New user name and work email address
+- PagerDuty access
+- A PagerDuty Service
+- New user name and work email address
 
 ## Adding a channel
 

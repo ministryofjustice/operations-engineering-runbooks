@@ -33,9 +33,9 @@ from /usr/local/bundle/gems/faraday-0.9.0/lib/faraday/response.rb:9:in `block in
 
 To fix this, you need to raise an equivalent PR via a branch.
 
-* Start in an up to date working copy of the [GitHub collaborators] repository
+- Start in an up to date working copy of the [GitHub collaborators] repository
 
-* Get the fork details from the PR. Near the top of the page, you should see something like this:
+- Get the fork details from the PR. Near the top of the page, you should see something like this:
 
 ```
 thip wants to merge 1 commit into ministryofjustice:main from madetech:made-tech-ima-team
@@ -43,19 +43,19 @@ thip wants to merge 1 commit into ministryofjustice:main from madetech:made-tech
 
 Here, the GitHub login which owns the fork is `madetech`, and their branch of the repository is called `made-tech-ima-team`
 
-* Add a remote for the fork
+- Add a remote for the fork
 
 ```bash
 git remote add madetech git@github.com:madetech/github-collaborators
 ```
 
-* Create a new branch
+- Create a new branch
 
 ```bash
 git checkout -b madetech-changes
 ```
 
-* Get the changes from the fork
+- Get the changes from the fork
 
 ```bash
 git pull madetech made-tech-ima-team

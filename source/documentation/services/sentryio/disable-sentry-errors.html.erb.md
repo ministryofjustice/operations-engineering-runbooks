@@ -24,6 +24,6 @@ This page describes the steps on how to disable a project on Sentry and stop it 
 
 ## Relevant links
 
-* [JavaScript SDK sample rate](https://docs.sentry.io/platforms/javascript/configuration/sampling/)
-* [Python SDK sample rate](https://docs.sentry.io/platforms/python/configuration/sampling/)
-* [.NET SDK sample rate](https://docs.sentry.io/platforms/dotnet/configuration/sampling/)
+- [JavaScript SDK sample rate](https://docs.sentry.io/platforms/javascript/configuration/sampling/)
+- [Python SDK sample rate](https://docs.sentry.io/platforms/python/configuration/sampling/)
+- [.NET SDK sample rate](https://docs.sentry.io/platforms/dotnet/configuration/sampling/)

@@ -15,9 +15,9 @@ This document will serve as a guide on how to add Single Sign-On to a third part
 
 There are currently three methods of adding SSO at MoJ for Operations Engineering tooling:
 
-* Auth0 inbuilt SSO integration
-* Auth0 SAML middleman
-* Inbuilt third party tool integration
+- Auth0 inbuilt SSO integration
+- Auth0 SAML middleman
+- Inbuilt third party tool integration
 
 Details and any relevant instructions for the above methods are in the sections below.
 
@@ -44,8 +44,8 @@ Steps:
 1. Use [this guide](https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/enable-saml2-web-app-addon) to create a SAML WebApp on Auth0
 2. Navigate to the third party tools SSO section
 3. Use the Auth0 SAML WebApp to fill in the following details on the third party tools SSO section
-    * SAML Sign-in URL: "Identity Provider Login URL"
-    * Key x509 Certificate: "Identity Provider Certificate"
+   - SAML Sign-in URL: "Identity Provider Login URL"
+   - Key x509 Certificate: "Identity Provider Certificate"
 4. A TXT record may have to be added to the "digital.justice.gov.uk" domain on Route53 to validate it as an SSO target
 
 ## Inbuilt third party tool integration
@@ -60,11 +60,11 @@ Although fairly rare, sometimes a tool has it's own inbuilt integration for SSO 
 
 This section includes various gotchas that we have experienced when integrating SSO to the tooling we own, please be wary of them for future SSO work:
 
-* When turning on SSO for a tool that has previously been used with non-SSO accounts, some tools delete all non-SSO accounts, a migration plan for this must be put in place first.
-* The default assigned role/permission on third party tools can often be higher than want we want, this may need tweaking for new work.
-* Turning SSO allows users to consume tooling licenses/subscriptions/seats without going through us, for tools with limited available licenses, SSO may be better turned off.
+- When turning on SSO for a tool that has previously been used with non-SSO accounts, some tools delete all non-SSO accounts, a migration plan for this must be put in place first.
+- The default assigned role/permission on third party tools can often be higher than want we want, this may need tweaking for new work.
+- Turning SSO allows users to consume tooling licenses/subscriptions/seats without going through us, for tools with limited available licenses, SSO may be better turned off.
 
 ## Links
 
-* [Auth0](https://auth0.com/)
-* [Create an Auth0 Tenant](create-an-auth0-tenant.html)
+- [Auth0](https://auth0.com/)
+- [Create an Auth0 Tenant](create-an-auth0-tenant.html)

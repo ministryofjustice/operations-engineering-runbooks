@@ -17,8 +17,8 @@ Users with a "gov.uk" email address should be added to the Ministry of Justice G
 
 You must have access to a GitHub organization owner account either through:
 
-* A personal GitHub account
-* An Operations Engineering Service Account
+- A personal GitHub account
+- An Operations Engineering Service Account
 
 ## Adding a User to the MoJ GitHub Organization
 

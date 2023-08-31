@@ -47,41 +47,41 @@ Select an AWS service, pick which API calls can be used and select which AWS res
 
 ### Create a Role
 
-1. Select the new role button.
+1.  Select the new role button.
 
-2. Select the Web Identity option.
+2.  Select the Web Identity option.
 
-3. From the drop down menu select the `token.actions.githubusercontent.com` option for identity provider.
+3.  From the drop down menu select the `token.actions.githubusercontent.com` option for identity provider.
 
-4. From the drop down menu select the `sts.amazonaws.com` option for audience.
+4.  From the drop down menu select the `sts.amazonaws.com` option for audience.
 
-5. Select the policy created above or use an existing policy.
+5.  Select the policy created above or use an existing policy.
 
-6. Enter a role name and a role description.
+6.  Enter a role name and a role description.
 
-7. Click the create role button.
+7.  Click the create role button.
 
-8. Open the new role and copy the ARN string value ie *arn:aws:iam::account-id-number:role/the-role-name*
+8.  Open the new role and copy the ARN string value ie _arn:aws:iam::account-id-number:role/the-role-name_
 
-9. The Trust relationships tab should look like this:
+9.  The Trust relationships tab should look like this:
 
-      {
-          "Version": "2012-10-17",
-          "Statement": [
-              {
-                  "Effect": "Allow",
-                  "Principal": {
-                      "Federated": "arn:aws:iam::account-id-number:oidc-provider/token.actions.githubusercontent.com"
-                  },
-                  "Action": "sts:AssumeRoleWithWebIdentity",
-                  "Condition": {
-                      "StringEquals": {
-                          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
-                      }
-                  }
-              }
-          ]
-      }
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+    {
+    "Effect": "Allow",
+    "Principal": {
+    "Federated": "arn:aws:iam::account-id-number:oidc-provider/token.actions.githubusercontent.com"
+    },
+    "Action": "sts:AssumeRoleWithWebIdentity",
+    "Condition": {
+    "StringEquals": {
+    "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+    }
+    }
+    }
+    ]
+    }
 
 10. Add an extra condition check with the organisation name and repository name as its arguments as shown below, this extra setting restricts the OIDC token to this specific repository only, the star represents branches, thus it can be restricted further to a specific branch:
 
@@ -92,7 +92,7 @@ Select an AWS service, pick which API calls can be used and select which AWS res
 
 ## GH Repository Settings
 
-Add a new repository secret that contains the role ARN string ie *arn:aws:iam::account-id-number:role/the-role-name*
+Add a new repository secret that contains the role ARN string ie _arn:aws:iam::account-id-number:role/the-role-name_
 
 ## GH Repository Action
 
@@ -115,4 +115,4 @@ In the .yml file add this code:
 
 - The aws-region should match the region used by the AWS account.
 
-- The permission *id-token: write* is needed by GH for the token to be requested from GitHub's OIDC provider.
+- The permission _id-token: write_ is needed by GH for the token to be requested from GitHub's OIDC provider.
