@@ -67,4 +67,4 @@ This section includes various gotchas that we have experienced when integrating 
 ## Links
 
 - [Auth0](https://auth0.com/)
-- [Create an Auth0 Tenant](create-an-auth0-tenant.html)
+- [Create an Auth0 Tenant](../auth0/create-auth0-tenant.html)
