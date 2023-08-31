@@ -5,7 +5,7 @@ host: https://runbooks.operations-engineering.service.justice.gov.uk
 
 # Header-related options
 show_govuk_logo: false
-service_name: Operations Engineering User Guide
+service_name: Operations Engineering Runbooks
 service_link: /
 
 # Links to show on right-hand-side of header
