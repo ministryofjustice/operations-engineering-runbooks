@@ -13,10 +13,10 @@ These processes are for adding new users to the Ministry of Justice Enterprise 1
 
 Before you begin, there are a few pre-requisites:
 
-* Access to [1Password Dashboard](https://ministryofjustice.1password.eu/home)
-* New user name and work email address
-* Details of the shared Vault that the user needs adding to
-* Approval from Vault Owner to add new user (unless the Group they want to be added to has the approver set as Manager)
+- Access to [1Password Dashboard](https://ministryofjustice.1password.eu/home)
+- New user name and work email address
+- Details of the shared Vault that the user needs adding to
+- Approval from Vault Owner to add new user (unless the Group they want to be added to has the approver set as Manager)
 
 Note - Owner details are stored in the Vault Description field within 1Password
 
