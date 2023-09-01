@@ -56,7 +56,7 @@ Login using GitHub SSO but it wants full read and write access to private repo's
 
 Go to [Miro](https://miro.com/) and sign in using Google account. If it asks which project to join from a long list pick "Operations Engineering". If it asks you to make a team create a random name team, then on the left hand side bar is a plus option to pick a project. Alternatively use the link to the [board](https://miro.com/app/board/o9J_l-rEXm0=/)
 
-A google account will enable log-ins to some/most of these tools MOJ provision however some may require licences to use full suite of apps ( e.g  Miro for creating boards etc..).
+A google account will enable log-ins to some/most of these tools MOJ provision however some may require licences to use full suite of apps ( e.g Miro for creating boards etc..).
 
 ## 1Password
 
@@ -78,10 +78,10 @@ Access controlled by addition to [Ops Eng GitHub Team](https://github.com/orgs/m
 
 A team member will assign a new Google Group to your Google account:
 
-* Ops Eng Google Group
-* Certificates Google Group
-* Certificate Alerts Google Group
-* Domains Google Group
+- Ops Eng Google Group
+- Certificates Google Group
+- Certificate Alerts Google Group
+- Domains Google Group
 
 ## Google Drive
 

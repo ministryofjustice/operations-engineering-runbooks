@@ -14,7 +14,6 @@ a [Sentry usage alert](https://github.com/ministryofjustice/operations-engineeri
 which checks whether the Ministry of Justice (MoJ) Sentry quota has
 exceeded a quota over a period
 
->
 > The configuration for the alert is
 >
 > - Period to check = `1 day`

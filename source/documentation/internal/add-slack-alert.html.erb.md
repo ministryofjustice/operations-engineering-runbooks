@@ -11,20 +11,20 @@ review_in: 3 months
 
 This document will serve as a guide on how to add an alert to our Slack alerts channel below:
 
-* #operations-engineering-alerts
+- #operations-engineering-alerts
 
 There are three types of alerts at time of writing:
 
-* RSS Feed - third party tools usually offer an RSS feed we can subscribe to which will alert us if they are having issues
-* Pingdom - end point checking, Pingdom will simply ping an end point every X seconds and report if it responds with bad return code
-* GitHub Actions - a snippet of code we add at the end of certain GitHub Action files to report to us when they fail.
+- RSS Feed - third party tools usually offer an RSS feed we can subscribe to which will alert us if they are having issues
+- Pingdom - end point checking, Pingdom will simply ping an end point every X seconds and report if it responds with bad return code
+- GitHub Actions - a snippet of code we add at the end of certain GitHub Action files to report to us when they fail.
 
 ## RSS Feeds
 
 ### Requirements
 
-* The RSS feed - this can be retrieved from the third party tools website, an example is the [Get Updates button on this page](https://status.pingdom.com/)
-* Access to the Slack RSS application from MoJ (<https://mojdt.slack.com/services/B642DDZG9>)
+- The RSS feed - this can be retrieved from the third party tools website, an example is the [Get Updates button on this page](https://status.pingdom.com/)
+- Access to the Slack RSS application from MoJ (<https://mojdt.slack.com/services/B642DDZG9>)
 
 ### Adding a feed
 
@@ -39,8 +39,8 @@ Once this has been done, every time the selected feed reports an issue, it will 
 
 ### Requirements
 
-* Access to the Operations Engineering tools account (it's in LastPass)
-* The end point you wish monitor
+- Access to the Operations Engineering tools account (it's in LastPass)
+- The end point you wish monitor
 
 ### Adding a Pingdom alert
 
@@ -64,14 +64,14 @@ Once this has been done, every time the selected end point is down, it will let 
 
 ### Requirements
 
-* SLACK_WEBHOOK_URL secret configured on target repository (secure notes in LastPass)
-* Access to push to target repository
+- SLACK_WEBHOOK_URL secret configured on target repository (secure notes in LastPass)
+- Access to push to target repository
 
 ### Adding GitHub Actions alert
 
-1. Clone the repository containing the GitHub action file you want to add the alert to
-2. Open the GitHub action/workflow file
-3. As the last step of the action, add the following code:
+1.  Clone the repository containing the GitHub action file you want to add the alert to
+2.  Open the GitHub action/workflow file
+3.  As the last step of the action, add the following code:
 
               - name: Report failure to Slack
                 if: always()
@@ -83,7 +83,7 @@ Once this has been done, every time the selected end point is down, it will let 
                 env:
                     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
-4. An example of a complete workflow with this step is [here](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/archive-repos.yml)
-5. Pull request this change into `main`
+4.  An example of a complete workflow with this step is [here](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/archive-repos.yml)
+5.  Pull request this change into `main`
 
 Once this has been done, every time the selected GitHub Action fails, it will let us know on Slack.
