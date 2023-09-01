@@ -39,11 +39,11 @@ and the [MoJ Analytical Services organisation](https://github.com/orgs/moj-analy
 
 At this point, it's a simple click ops exercise. You can do this by following the steps below:
 
-* Log into GitHub
+- Log into GitHub
 
-* Navigate to the organisation's 'people' page, for example [MoJ organisation](https://github.com/orgs/ministryofjustice/people)
+- Navigate to the organisation's 'people' page, for example [MoJ organisation](https://github.com/orgs/ministryofjustice/people)
 
-* Use the search and select to remove the user from the organisation.
+- Use the search and select to remove the user from the organisation.
 
 ### Docker
 

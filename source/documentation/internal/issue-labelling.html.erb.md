@@ -35,24 +35,24 @@ There are two exceptions for labelling Issues:
 
 ## Available Labels for Story type Issues
 
-| Product/Service | Workflow Status | MoSCoW Priority | Type of Story | Language |
-|-----------------|-----------------|-----------------|---------------|----------|
-| 1Password | Needs Refining | Must Have | Community | Ruby |
-| Auth0 | Refined | Should Have | Documentation | Python |
-| CircleCI | Agreed for Sprint | Could Have | EPIC | Terraform |
-| DNS-IAC | Purged | Wont Have | Feature Request | |
-| Docker | Blocked |  | Policy | |
-| Domain Management | Unplanned |  | Spike | |
-| Github | | | Support | |
-| Github actions | | | User Research | |
-| Maintenance Pages | | Development | |
-| OS Data Hub APIs | | | |
-| Other Support Request | | | |
-| PagerDuty | | | |
-| Pingdom | | | |
-| Sentry | | | |
-| SonarCloud.io | | | |
-| SSL Certificate Management | | | |
-| Standards | | | |
-| Tech Docs | | | |
-| AWS Root Account | | | |
+| Product/Service            | Workflow Status   | MoSCoW Priority | Type of Story   | Language  |
+| -------------------------- | ----------------- | --------------- | --------------- | --------- |
+| 1Password                  | Needs Refining    | Must Have       | Community       | Ruby      |
+| Auth0                      | Refined           | Should Have     | Documentation   | Python    |
+| CircleCI                   | Agreed for Sprint | Could Have      | EPIC            | Terraform |
+| DNS-IAC                    | Purged            | Wont Have       | Feature Request |           |
+| Docker                     | Blocked           |                 | Policy          |           |
+| Domain Management          | Unplanned         |                 | Spike           |           |
+| Github                     |                   |                 | Support         |           |
+| Github actions             |                   |                 | User Research   |           |
+| Maintenance Pages          |                   | Development     |                 |
+| OS Data Hub APIs           |                   |                 |                 |
+| Other Support Request      |                   |                 |                 |
+| PagerDuty                  |                   |                 |                 |
+| Pingdom                    |                   |                 |                 |
+| Sentry                     |                   |                 |                 |
+| SonarCloud.io              |                   |                 |                 |
+| SSL Certificate Management |                   |                 |                 |
+| Standards                  |                   |                 |                 |
+| Tech Docs                  |                   |                 |                 |
+| AWS Root Account           |                   |                 |                 |

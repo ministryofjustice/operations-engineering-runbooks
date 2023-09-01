@@ -47,7 +47,7 @@ A few examples of the types of requests you'll receive in these mailboxes are:
 - [Respond to certificates that have expired/about to expire](../certificates/respond-to-expired-certificates.html)
 - [Respond to leavers forms and remove their access](respond-to-leavers.html)
 
-    3. Review documentation that has expired
+  3. Review documentation that has expired
 
 Documentation in Operations Engineering is reviewed on a regular basis.
 If a document was reviewed more than 3 months ago, it should be reviewed again. Expired documentation will appear in the #operations-engineering-alerts slack channel.

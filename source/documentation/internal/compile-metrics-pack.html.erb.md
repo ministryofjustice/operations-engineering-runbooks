@@ -17,9 +17,9 @@ The Operations Engineering team aim to provide a metrics pack as part of their s
 
 This metrics pack will allow for the following benefits to the team and MoJ:
 
-* A clear indication of where the teams efforts have been placed.
-* The ability to draw trends over time on the usefulness/quality of the teams services.
-* Additional data to help cost cutting exercises.
+- A clear indication of where the teams efforts have been placed.
+- The ability to draw trends over time on the usefulness/quality of the teams services.
+- Additional data to help cost cutting exercises.
 
 ## GitHub Metrics
 

@@ -13,17 +13,17 @@ This plan details to the who, how and when we will communicate information to us
 
 The table below sets out the typical types of communications the Cloud Platform will want to issue.
 
-| What information | Target Audience | When          | Channel               |
-|------------------|-----------------|---------------|-----------------------|
-| New features or services | Service Teams | As features are shipped | #operations-engineering-update |
-| New GitHub features or services | Service Teams | As features are shipped | #github-community |
-| Things we have learned | Justice Digital & Technology | Regularly when we have key things to show or promote | Show the Thing |
-| Service impacting incidents | Service Teams | When an incident has been declared, key updates during resolution, and at incident closure | #operations-engineering-update |
-| Sharing postmortems for service impacting incidents | Service Teams | When postmortem has been documented | #operations-engineering-update |
-| Service impacting upgrades/Maintenance | Service Teams | As required | #operations-engineering-update |
-| Sharing successes | Chief Technology Officer | Weekly | One to ones and team meetings |
-| Sharing successes | SMT | Fortnightly | Architecture & Platforms weeknotes |
-| Sharing successes | Justice Digital & Technology | Regularly when we have key things to show or promote | Post about them in #chat on Slack/Consider for a Show the Thing |
+| What information                                    | Target Audience              | When                                                                                       | Channel                                                         |
+| --------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| New features or services                            | Service Teams                | As features are shipped                                                                    | #operations-engineering-update                                  |
+| New GitHub features or services                     | Service Teams                | As features are shipped                                                                    | #github-community                                               |
+| Things we have learned                              | Justice Digital & Technology | Regularly when we have key things to show or promote                                       | Show the Thing                                                  |
+| Service impacting incidents                         | Service Teams                | When an incident has been declared, key updates during resolution, and at incident closure | #operations-engineering-update                                  |
+| Sharing postmortems for service impacting incidents | Service Teams                | When postmortem has been documented                                                        | #operations-engineering-update                                  |
+| Service impacting upgrades/Maintenance              | Service Teams                | As required                                                                                | #operations-engineering-update                                  |
+| Sharing successes                                   | Chief Technology Officer     | Weekly                                                                                     | One to ones and team meetings                                   |
+| Sharing successes                                   | SMT                          | Fortnightly                                                                                | Architecture & Platforms weeknotes                              |
+| Sharing successes                                   | Justice Digital & Technology | Regularly when we have key things to show or promote                                       | Post about them in #chat on Slack/Consider for a Show the Thing |
 
 ## Tips on format of communications
 
@@ -67,13 +67,12 @@ The #operations-engineering-update channel is used for a number of different typ
 
 ### Example
 
-> **Certificate Manager Upgrade**
-> **When**: 23rd April starts at 12:00 PM.
+> **Certificate Manager Upgrade** > **When**: 23rd April starts at 12:00 PM.
 > **What**: Cert-Manager upgrade to v0.14 from v0.8
 > **Description**:
-> We are upgrading cert-manager, which manages all of the SSL certificates for  > your websites and web applications, from version 0.8 to 0.14.
+> We are upgrading cert-manager, which manages all of the SSL certificates for > your websites and web applications, from version 0.8 to 0.14.
 >
->This is a significant change. Version 0.14 removes the “v1alpha1” designation for > certificates, and changes the API group from certmanager.k82.io to > > > > cert-manager.io.
+> This is a significant change. Version 0.14 removes the “v1alpha1” designation for > certificates, and changes the API group from certmanager.k82.io to > > > > cert-manager.io.
 >
 > **What you need to do**:
 > Move all of your certificate definitions into your namespace folders in the environments repository, by the end of 22nd April 2020.
