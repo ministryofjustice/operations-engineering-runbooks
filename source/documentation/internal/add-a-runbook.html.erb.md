@@ -1,0 +1,17 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Add a Runbook
+last_reviewed_on: 2023-09-01
+review_in: 3 months
+---
+
+# Add a Runbook
+
+## To add a new runbook
+
+* Create a new `*.html.md.erb` file in the `source/documentation/<subdirectory>` directory of this repository, containing the runbook information
+* Add a corresponding list item in the `source/documentation/index.html.md.erb` file
+
+> The link target should be `runbooks/documentation/<subdirectory>/[filename].html` i.e. if the runbook file is `source/documentation/certificates/foobar.html.md.erb` then the link target should be `runbooks/certificates/foobar.html`
+
+* Raise and merge a PR to add your changes to the `main` branch of this repository
