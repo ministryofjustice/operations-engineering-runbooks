@@ -44,7 +44,7 @@ When you've completed the required action, add the `closed` label to the email.
 
 A few examples of the types of requests you'll receive in these mailboxes are:
 
-- [Respond to certificates that have expired/about to expire](../certificates/respond-to-expired-certificates.html)
+- [Respond to certificates that have expired/about to expire](../../certificates/respond-to-expired-certificates.html)
 - [Respond to leavers forms and remove their access](respond-to-leavers.html)
 
   3. Review documentation that has expired
