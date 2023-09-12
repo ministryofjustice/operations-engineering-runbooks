@@ -39,7 +39,8 @@ Redirect user to #digital_it_forum slack channel
 
 ## JIRA
 
-Redirect user to #digital_it_forum slack channel
+For Access redirect user to #digital_it_forum slack channel
+For support queries redirect user to #jirahelp
 
 ## LucidChart
 
