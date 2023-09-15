@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Resolving Drift for DNS-IAC
-last_reviewed_on: 2023-06-14
+last_reviewed_on: 2023-09-15
 review_in: 3 months
 ---
 
