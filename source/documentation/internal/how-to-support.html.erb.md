@@ -26,7 +26,7 @@ Note: This list is not exhaustive, and is subject to change. It was gathered dur
 
     1. Respond to customer queries and requests
 
-The #ask-operations-engineering Slack channel is our primary channel for customer queries and requests.
+The [#ask-operations-engineering](https://mojdt.slack.com/archives/C01BUKJSZD4) Slack channel is our primary channel for customer queries and requests.
 Monitor this channel and respond to queries and requests as they come in. If you don't know something, ask the team.
 
     2. Monitor the support inbox
@@ -44,8 +44,8 @@ When you've completed the required action, add the `closed` label to the email.
 
 A few examples of the types of requests you'll receive in these mailboxes are:
 
-- [Respond to certificates that have expired/about to expire](../certificates/respond-to-expired-certs.html)
-- [Respond to leavers forms and remove their access](respond-to-leavers.html)
+- [Respond to certificates that have expired/about to expire](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/certificates/respond-to-expired-certs.html)
+- [Respond to leavers forms and remove their access](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/respond-to-leavers.html)
 
   3. Review documentation that has expired
 

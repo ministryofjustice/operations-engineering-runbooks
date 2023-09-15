@@ -102,7 +102,7 @@ This section contains metrics based around our support and project tickets.
 
 ### Slack support channel requests
 
-A large amount of our services/support function is engaged with through the Slack support channel (#ask-operations-engineering).
+A large amount of our services/support function is engaged with through the Slack support channel [#ask-operations-engineering](https://mojdt.slack.com/archives/C01BUKJSZD4).
 
 This metric offers the number of unique requests the channel has had each day for the past 30 days.
 

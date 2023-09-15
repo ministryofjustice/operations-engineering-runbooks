@@ -43,7 +43,7 @@ Notify Service Team when changes have been completed.
 
 If a domain is in BT-DNS it will be managed via BT.
 
-Before submitting a change request via the BT Portal you should read ["BT DNS Change Process Pre-requisites"](https://operations-engineering.service.justice.gov.uk/documentation/runbooks/dns/BT_pre_requisites.html).
+Before submitting a change request via the BT Portal you should read ["BT DNS Change Process Pre-requisites"](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/dns/BT-pre-requisites.html).
 
 When you are ready you can submit new NS records via the BT-DNS.
 

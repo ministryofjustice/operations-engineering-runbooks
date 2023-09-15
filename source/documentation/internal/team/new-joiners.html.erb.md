@@ -38,7 +38,7 @@ Setup a new account on [Github](https://github.com/) or assign the digital justi
 
 ## MoJ Github
 
-Runbook: [Add user to GitHub](../../services/github/add-github-user.html)
+Runbook: [Add user to GitHub](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/services/github/add-github-user.html)
 
 After the invitation has been accepted, check access to the [Ministry of Justice organisation](https://github.com/ministryofjustice) and the [moj-analytical-services organisation](https://github.com/orgs/moj-analytical-services).
 
@@ -62,7 +62,7 @@ A google account will enable log-ins to some/most of these tools MOJ provision h
 
 A team member will send you an email invite to join 1Password.
 
-Runbook: [Add New Users to 1Password](../../services/1password/1password-add-new-user.html)
+Runbook: [Add New Users to 1Password](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/services/1password/1password-add-new-user.html)
 
 Add to **Administrators** Group.
 
@@ -109,7 +109,7 @@ Creds in Ops Eng Folder in LastPass. Will be in the shared area of passwords.
 
 ## Docker
 
-Runbook: [Add user to Docker](../../services/docker/add-docker-user.html)
+Runbook: [Add user to Docker](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/services/docker/add-docker-user.html)
 
 ## [Auth0](https://auth0.com/)
 

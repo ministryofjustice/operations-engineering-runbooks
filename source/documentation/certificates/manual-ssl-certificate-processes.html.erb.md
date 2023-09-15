@@ -105,8 +105,6 @@ We will review the list of Gandi.net certificates and identify any that require 
 
 **There is also a comprehensive [swimlane diagram of this process](https://drive.google.com/file/d/1x94rAx9L1Dnlw7dC9BMSudxlvFUywwBR/view?usp=sharing)**. To view it, you will need access to the
 
-[comment]: # (Fix this link - [Shared Google Drive Folder](../internal/new-joiners.html#google-drive).)
-
 ## Revoking Gandi.net certificates
 
 Certificates will expire automatically if not renewed. If a certificate doesn’t require renewal you can leave the certificate to expire and no further action is required. You’ll receive a notification to the Certificate Alerts confirming expiry.

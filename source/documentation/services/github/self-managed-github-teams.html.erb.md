@@ -56,7 +56,7 @@ On the first of every month, a GitHub Action runs and performs the following act
 
 ## Support and Assistance
 
-Since this feature is in beta testing, your feedback and insights are invaluable to us. If you need any assistance, have questions, or encounter any issues, please feel free to contact us in the **#ask-operations-engineering** Slack channel.
+Since this feature is in beta testing, your feedback and insights are invaluable to us. If you need any assistance, have questions, or encounter any issues, please feel free to contact us in the **[#ask-operations-engineering](https://mojdt.slack.com/archives/C01BUKJSZD4)** Slack channel.
 
 ## Opting Out
 
