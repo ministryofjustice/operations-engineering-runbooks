@@ -17,7 +17,7 @@ However, depending on the type of domain or what it's being used for may mean di
 
 Before starting the domain decommissioning process, it's possible to view the DNS queries for a specific domain over a set period of time. It's important to check this to ensure that there is no ongoing activity for the domain, which may indicate it is still in use.
 
-To do this, navigate to the [Checking Domain Activity](check-domain-activity.html) runbook for futher information.
+To do this, navigate to the [Checking Domain Activity](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/dns/check-domain-activity.html) runbook for futher information.
 
 ## (service).justice.gov.uk domains
 

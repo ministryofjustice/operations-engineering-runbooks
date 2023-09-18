@@ -93,5 +93,5 @@ This is enough permissions for the team to then publish the Orb from a GH repo.
 ## Support
 
 User Slack channel: #circleci-users
-Access help channel: #ask-operations-engineering
-Troubleshooting guide: [CircleCI Troubleshooting](circleci-troubleshoot.html)
+Access help channel: [#ask-operations-engineering](https://mojdt.slack.com/archives/C01BUKJSZD4)
+Troubleshooting guide: [CircleCI Troubleshooting](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/services/circleci/circleci-troubleshoot.html)

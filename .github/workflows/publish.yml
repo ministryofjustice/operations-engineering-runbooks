@@ -69,8 +69,10 @@ jobs:
             --skip https://github.com/ministryofjustice/dns \
             --skip https://github.com/ministryofjustice/moj-ip-addresses \
             --skip https://github.com/ministryofjustice/mta-sts \
-            --skip https://user-guides.operations-engineering.service.justice.gov.uk/images/govuk-large.png \
-            --skip https://ministryofjustice.github.io/template-documentation-site/images/govuk-large.png \
-            --skip https://operations-engineering.service.justice.gov.uk/images/govuk-large.png \
-            --skip https://github.com/ministryofjustice/operations-engineering/issues/* \
+            --skip https://manage.auth0.com/dashboard/eu/moj-uk \
+            --skip https://github.com/orgs/ministryofjustice/teams/operations-engineering \
+            --skip https://github.com/organizations/ministryofjustice/settings/installations/16911235 \
+            --skip https://runbooks.operations-engineering.service.justice.gov.uk/images/govuk-large.png \
+            --skip https://github.com/ministryofjustice/%7BPROJECT_NAME%7D/settings/keys \
+            --skip https://github.com/ministryofjustice/operations-engineering-runbooks/issues/*
           # "URL Check will fail on private and internal GitHub repositories"
