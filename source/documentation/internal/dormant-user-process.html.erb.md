@@ -69,4 +69,6 @@ review_in: 3 months
 
 8. Run the Operations-Engineering GH Action [Dormant Users reminder email](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-reminder-email.yml). This will send a Notify email to the users who were emailed in step 7.
 
-9. Run the Operations-Engineering GH Action [Dormant Users remove users](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-remove-users.yml). This will remove the still dormant users from GitHub and send a Notify email to those users.
+9. Repeat steps 2, 3 and 4. The two uploaded files will have the users latest last login date. The login date is used in the comparison conducted in the next step which determines if a user is still Dormant or not.
+
+10. Run the Operations-Engineering GH Action [Dormant Users remove users](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-remove-users.yml). This will remove the still dormant users from GitHub and send a Notify email to those users.
