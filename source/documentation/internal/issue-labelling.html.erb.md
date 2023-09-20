@@ -44,7 +44,7 @@ There are two exceptions for labelling Issues:
 | CircleCI                   | Agreed for Sprint | Could Have      | EPIC             | Terraform | Unplanned      |
 | DNS-IAC                    | Purged            | Wont Have       | Feature Request  |           | Experimental   |
 | Docker                     | Blocked           |                 | Policy           |           |                |
-| Domain Management          | Unplanned         |                 | Spike            |           |                |
+| Domain Management          |                   |                 | Spike            |           |                |
 | Github                     |                   |                 | Support          |           |                |
 | Github actions             |                   |                 | User Research    |           |                |
 | Maintenance Pages          |                   |                 | Development      |           |                |
