@@ -45,7 +45,7 @@ There are two exceptions for labelling Issues:
 | DNS-IAC                    | Purged            | Wont Have       | Feature Request  |           | Experimental   |
 | Docker                     | Blocked           |                 | Policy           |           |                |
 | Domain Management          | Unplanned         |                 | Spike            |           |                |
-| Github                     |                   |                 | Support          |           |                |              
+| Github                     |                   |                 | Support          |           |                |
 | Github actions             |                   |                 | User Research    |           |                |
 | Maintenance Pages          |                   |                 | Development      |           |                |
 | OS Data Hub APIs           |                   |                 | Maintenance      |           |                |
