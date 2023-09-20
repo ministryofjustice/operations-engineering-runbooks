@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Issue Labelling
-last_reviewed_on: 2023-09-07
+last_reviewed_on: 2023-09-20
 review_in: 3 months
 ---
 
@@ -21,9 +21,11 @@ A story type Issue will typically have 4 labels assigned to it:
 
 **MoSCoW Priority** - This helps identify priority using the [MoSCoW system](https://www.productplan.com/glossary/moscow-prioritization/#:~:text=The%20acronym%20MoSCoW%20represents%20four,MoSCoW%20to%20mean%20%E2%80%9Cwish.%E2%80%9D). This label will normally be agreed during Backlog Refinement or Planning e.g. `Must Have` (i.e. mandatory user need)
 
-**Type of Story** - This indicates the principle type of work that the story might involve e.g. `Documentation` (e.g. the story is for creating a runbook)
+**Type of Activity** - This indicates the principle type of work that the story might involve e.g. `Documentation` (e.g. the story is for creating a runbook)
 
 **Language** - Idetifies coding language required to complete this story. Only applies to `Development` "Type" stories
+
+**Type of Work** - Identifies the [type of work](https://mojdt.slack.com/archives/CPVD6398C/p1695132022778289) so that we ensure that our sprints are balanced, and check that our team focus is not on one type of work e.g. we focusing on lots of new features and projects and don't spend any time addressing technical debt.
 
 ## Exceptions
 
@@ -35,24 +37,24 @@ There are two exceptions for labelling Issues:
 
 ## Available Labels for Story type Issues
 
-| Product/Service            | Workflow Status   | MoSCoW Priority | Type of Story   | Language  |
-| -------------------------- | ----------------- | --------------- | --------------- | --------- |
-| 1Password                  | Needs Refining    | Must Have       | Community       | Ruby      |
-| Auth0                      | Refined           | Should Have     | Documentation   | Python    |
-| CircleCI                   | Agreed for Sprint | Could Have      | EPIC            | Terraform |
-| DNS-IAC                    | Purged            | Wont Have       | Feature Request |           |
-| Docker                     | Blocked           |                 | Policy          |           |
-| Domain Management          | Unplanned         |                 | Spike           |           |
-| Github                     |                   |                 | Support         |           |
-| Github actions             |                   |                 | User Research   |           |
-| Maintenance Pages          |                   |                 | Development     |           |
-| OS Data Hub APIs           |                   |                 | Maintenance     |           |
-| Other Support Request      |                   |                 |                 |
-| PagerDuty                  |                   |                 |                 |
-| Pingdom                    |                   |                 |                 |
-| Sentry                     |                   |                 |                 |
-| SonarCloud.io              |                   |                 |                 |
-| SSL Certificate Management |                   |                 |                 |
-| Standards                  |                   |                 |                 |
-| Tech Docs                  |                   |                 |                 |
-| AWS Root Account           |                   |                 |                 |
+| Product/Service            | Workflow Status   | MoSCoW Priority | Type of Activity | Language  | Type of Work   |
+| -------------------------- | ----------------- | --------------- | ---------------- | --------- | -------------- |
+| 1Password                  | Needs Refining    | Must Have       | Community        | Ruby      | Project        |
+| Auth0                      | Refined           | Should Have     | Documentation    | Python    | Technical Debt |
+| CircleCI                   | Agreed for Sprint | Could Have      | EPIC             | Terraform | Unplanned      |
+| DNS-IAC                    | Purged            | Wont Have       | Feature Request  |           | Experimental   |
+| Docker                     | Blocked           |                 | Policy           |           |                |
+| Domain Management          | Unplanned         |                 | Spike            |           |                |
+| Github                     |                   |                 | Support          |           |                |              
+| Github actions             |                   |                 | User Research    |           |                |
+| Maintenance Pages          |                   |                 | Development      |           |                |
+| OS Data Hub APIs           |                   |                 | Maintenance      |           |                |
+| Other Support Request      |                   |                 |                  |           |                |
+| PagerDuty                  |                   |                 |                  |           |                |
+| Pingdom                    |                   |                 |                  |           |                |
+| Sentry                     |                   |                 |                  |           |                |
+| SonarCloud.io              |                   |                 |                  |           |                |
+| SSL Certificate Management |                   |                 |                  |           |                |
+| Standards                  |                   |                 |                  |           |                |
+| Tech Docs                  |                   |                 |                  |           |                |
+| AWS Root Account           |                   |                 |                  |           |                |
