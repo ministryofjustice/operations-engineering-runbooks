@@ -27,7 +27,7 @@ Details and any relevant instructions for the above methods are in the sections 
 
 > Please use the GitHub Social Connection for ALL SSO work on Auth0
 
-Auth0 comes with various Plug and Play integrations that may setting up SSO very easy, if a tool supports this, this is the easiest option but does often come with less customisation choices.
+Auth0 comes with various Plug and Play integrations that may make setting up SSO very easy, if a tool supports this, this is the easiest option but does often come with less customisation choices.
 
 Each integration comes with a step by step guide on the Auth0 UI, please follow that to install.
 
