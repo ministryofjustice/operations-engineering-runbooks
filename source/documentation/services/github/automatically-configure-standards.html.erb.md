@@ -35,6 +35,15 @@ In order to enable the automation for a given GitHub repository, follow these st
 3. Add a new topic called "standards-compliant"
 4. Save the changes
 
+## How do I turn off the automation?
+
+In order to disable the automation for a given GitHub repository, follow these steps:
+
+1. Navigate to the Repository page
+2. Click the Cog on the top right of the page
+3. Remove the "standards-compliant" topic
+4. Save the changes
+
 ## When does the automation run?
 
 Currently the automation runs at 6am every day and can be run manually [here](https://github.com/ministryofjustice/operations-engineering/actions/workflows/configure-standards.yml)
