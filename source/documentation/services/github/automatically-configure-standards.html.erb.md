@@ -15,16 +15,16 @@ Operations Engineering maintains automation that can configure and maintain thes
 
 Standards the automation configures:
 
-* Default Branch Protection
-* Enforce Admins
-* Required Review Count
-* Dismiss Stale Reviews
-* Enable Issues
+- Default Branch Protection
+- Enforce Admins
+- Required Review Count
+- Dismiss Stale Reviews
+- Enable Issues
 
 Standards the automation does not currently configure:
 
-* Description set
-* License
+- Description set
+- License
 
 ## How do I use the automation?
 
@@ -52,5 +52,5 @@ Currently the automation runs at 6am every day and can be run manually [here](ht
 
 A few things to note if enabling the automation:
 
-* It will overwrite any changes you make that go against the standards
-* If new standards are added, it will automatically attempt to configure them
+- It will overwrite any changes you make that go against the standards
+- If new standards are added, it will automatically attempt to configure them
