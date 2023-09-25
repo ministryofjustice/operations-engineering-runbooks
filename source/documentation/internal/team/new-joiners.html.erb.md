@@ -26,7 +26,7 @@ Add new team members to `#operations-engineering-team`, `#operations-engineering
 
 ## Ops-Engineering site
 
-This [site](https://user-guides.operations-engineering.service.justice.gov.uk/#moj-operations-engineering-user-guides) explains the Tools below. Details of vision for team, how we work, all our services, code and runbooks.
+This [site](https://user-guide.operations-engineering.service.justice.gov.uk/#moj-operations-engineering-user-guides) explains the Tools below. Details of vision for team, how we work, all our services, code and runbooks.
 
 ## Technical Guidance site
 
