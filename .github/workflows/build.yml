@@ -1,0 +1,51 @@
+name: Build gh-pages
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ministryofjustice/tech-docs-github-pages-publisher:v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Compile Markdown to HTML and create artifact
+        run: |
+          /scripts/deploy.sh
+      - name: Upload artifact to be URL checked
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages-test
+          path: artifact.tar
+          retention-days: 1
+
+  url-check:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download a Build Artifact from build
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages-test
+          path: github-pages-test
+      - name: Unpack files and check URL links
+        run: |
+          cd github-pages-test
+          tar -xvf artifact.tar
+          npm install linkinator
+          npx linkinator . --recurse --markdown \
+            --skip https://groups.google.com/* \
+            --skip https://github.com/ministryofjustice/dns \
+            --skip https://github.com/ministryofjustice/moj-ip-addresses \
+            --skip https://github.com/ministryofjustice/mta-sts \
+            --skip https://manage.auth0.com/dashboard/eu/moj-uk \
+            --skip https://github.com/orgs/ministryofjustice/teams/operations-engineering \
+            --skip https://github.com/organizations/ministryofjustice/settings/installations/16911235 \
+            --skip https://runbooks.operations-engineering.service.justice.gov.uk/images/govuk-large.png \
+            --skip https://github.com/ministryofjustice/%7BPROJECT_NAME%7D/settings/keys \
+            --skip https://github.com/ministryofjustice/operations-engineering-runbooks/issues/*
+          # "URL Check will fail on private and internal GitHub repositories"
