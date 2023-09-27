@@ -95,7 +95,7 @@ Please contact your [administrator](mailto:certificates@digital.justice.gov.uk) 
 
 We will review the list of Gandi.net certificates and identify any that require renewal 4 weeks prior to expiry (we also get a notification to Certificate Alerts 29 and 14 days prior to expiry).
 
-1. Email reminders requesting new CSRs for Gandi.net certificates are automatically sent out via the [Operations Engineering Certificate Renewal](https://github.com/ministryofjustice/operations-engineering-certificate-renewal) repository to the appropriate recipients 30 days before expiry.
+1. Email reminders requesting new CSRs for Gandi.net certificates are automatically sent out via the [Operations Engineering Certificate Renewal](https://github.com/ministryofjustice/operations-engineering-certificate-renewal) repository to the appropriate recipients 30 days before expiry. For more information on how the email addresses are determined and how to edit them, please refer to the [Configuring the Certificate Mappings File](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/certificates/configure-certificate-mappings-file) runbook.
 
 2. If a reply is recieved for one of the automated emails, follow the [Renewal Process](https://docs.gandi.net/en/ssl/renew/index.html). The renewal process is almost exactly the same as the new certificate request process i.e. all the email notifications and validation steps are the same.
 
