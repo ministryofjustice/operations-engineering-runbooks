@@ -28,13 +28,13 @@ Here is an example of an entry in the file, with a breakdown of each field:
   }
 ```
 
-| Field     | Description |
-| --------- | ----------- |
-| example.domain.com | This is where the domain name in question sits, all information below it is attributed to that domain. |
-| recipient | The primary email address to send the notification to. |
-| recipientcc | Any additional email addresses to send the notification to can be defined here, should they be needed. |
-| owner | Which team manages the certificate (OE, CJSCP, HMCTS).
-| external_cname | Contains the email address associated with adding CNAME records to hosted zones outside of Operations Engineering's remit. This is currently not used. |
+| Field              | Description                                                                                                                                            |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| example.domain.com | This is where the domain name in question sits, all information below it is attributed to that domain.                                                 |
+| recipient          | The primary email address to send the notification to.                                                                                                 |
+| recipientcc        | Any additional email addresses to send the notification to can be defined here, should they be needed.                                                 |
+| owner              | Which team manages the certificate (OE, CJSCP, HMCTS).                                                                                                 |
+| external_cname     | Contains the email address associated with adding CNAME records to hosted zones outside of Operations Engineering's remit. This is currently not used. |
 
 More information on the certificate renewal process can be found in the [Renewing an expiring certificate via Gandi.net](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/certificates/manual-ssl-certificate-processes.html#renewing-an-expiring-certificate-via-gandi-net) section of the certificate processes runbook.
 
@@ -51,4 +51,3 @@ It isn't possible to edit the file directly from the S3 bucket it's stored in, s
 5. Reupload the file to the S3 bucket. The file **must** be called `mappings.json`.
 
 The `mappings_old.json` file can be deleted from the bucket whenever, however it's recommended to wait until at least 1 successful run of the notification action to ensure everything is working as expected.
-
