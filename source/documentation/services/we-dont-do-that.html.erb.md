@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Services we don't manage
-last_reviewed_on: 2023-09-05
+last_reviewed_on: 2023-09-29
 review_in: 3 months
 ---
 
@@ -36,6 +36,10 @@ Redirect user to #digital_it_forum slack channel
 ## GSuite or other Google Apps/Features
 
 Redirect user to #digital_it_forum slack channel
+
+## IntelliJ IDEA Licences
+
+IntellIiJ licenses are a local area thing. This will be one for the users budget holder and the licensing/SAM team to help with. Redirect to [SoftwareAssetManagement@justice.gov.uk]((mailto:SoftwareAssetManagement@justice.gov.uk).
 
 ## JIRA
 
