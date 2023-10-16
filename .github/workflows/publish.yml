@@ -75,4 +75,5 @@ jobs:
             --skip https://runbooks.operations-engineering.service.justice.gov.uk/images/govuk-large.png \
             --skip https://github.com/ministryofjustice/%7BPROJECT_NAME%7D/settings/keys \
             --skip https://github.com/ministryofjustice/operations-engineering-runbooks/issues/*
+            --skip https://drive.google.com/file/d/1eYCm5PqpsQXKQdT_XhNi-wbH4976t9M5/view?usp=sharing
           # "URL Check will fail on private and internal GitHub repositories"
