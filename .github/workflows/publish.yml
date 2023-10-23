@@ -76,4 +76,7 @@ jobs:
             --skip https://github.com/ministryofjustice/%7BPROJECT_NAME%7D/settings/keys \
             --skip https://github.com/ministryofjustice/operations-engineering-runbooks/issues/*
             --skip https://drive.google.com/file/d/1eYCm5PqpsQXKQdT_XhNi-wbH4976t9M5/view?usp=sharing
+            --skip https://docs.google.com/document/d/1KvreqmI_P6E7YLpdRrjefv1fo6B3-B6JBz4MAGiL0Jw/edit#heading=h.33v5b0ui54nd
+            --skip https://docs.google.com/spreadsheets/d/1lZ2ffiN_yQEYqTYnBzTbl16iElfrp3rZ8JnznDQWc-g/edit?usp=sharing
+            --skip https://docs.google.com/spreadsheets/d/1gAVhX8Ts-BuhZRNBEF-80UUjlnYyyMKKBQ4ZPnHPZmE/edit?usp=sharing
           # "URL Check will fail on private and internal GitHub repositories"
