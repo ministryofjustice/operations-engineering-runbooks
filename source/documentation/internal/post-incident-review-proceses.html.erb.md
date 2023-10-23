@@ -11,11 +11,11 @@ At the Ministry of Justice, we recognise that incidents happen. Rather than assi
 
 ## Step 1: Schedule a Review Meeting
 
-Within 72 hours of the incident's resolution, the incident lead (the individual who identified or resolved the incident) should schedule a blameless post-incident review meeting. Invite stakeholders and Operations Engineering team members. It is vital to involve everyone who played a part in the incident – from detection to resolution.
+Within 72 hours of the incident's resolution, the incident lead (the individual who identified or resolved the incident) should schedule a blameless post-incident review meeting. Invite stakeholders and Operations Engineering team members. It is vital to involve everyone involved in the incident – from detection to resolution.
 
 ## Step 2: Document the Incident Summary
 
-Prior to the meeting, the incident lead should create a draft document containing:
+Before the meeting, the incident lead should create a draft document containing the following:
 
 - **Date and Time**: When the incident occurred and its duration.
 - **Description**: A concise explanation of the incident.
@@ -48,7 +48,7 @@ Propose actionable improvements for each identified area. Assign ownership and s
 
 ## Step 7: Share the Incident Summary
 
-We encourage you share any documentation through relevant channels. This might be a link in Slack to the post-incident review or a demonstration of the changes made to mitigate any future incidents.
+We encourage you to share any documentation through relevant channels. This might be a link in Slack to the post-incident review or a demonstration of the changes made to mitigate any future incidents.
 
 ## Step 8: Document the Review
 
