@@ -24,7 +24,7 @@ Inside the Python [file](https://github.com/ministryofjustice/operations-enginee
 
 ## Adding a repository to the allow list
 
-The [archive_repository.py](https://github.com/ministryofjustice/operations-engineering/blob/main/python/scripts/archive_repositories.py) module contains a list of repositories for the MoJ GH Org and AS GH Org that this process will ignore.
+The [archive_repository.py](https://github.com/ministryofjustice/operations-engineering/blob/main/bin/archive_repositories.py) module contains a list of repositories for the MoJ GH Org and AS GH Org that this process will ignore.
 
 ## Un-archiving a repository
 
