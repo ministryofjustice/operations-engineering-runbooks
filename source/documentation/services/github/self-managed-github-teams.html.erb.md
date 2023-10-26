@@ -23,7 +23,7 @@ GitHub Self-Managed Teams is an opt-in, automated solution currently in beta tes
 
 ## How to Opt In
 
-Being an opt-in feature in beta testing, you can enable GitHub Self-Managed Teams by creating a configuration block in this [TOML file](https://github.com/ministryofjustice/operations-engineering/blob/main/python/config/inactive-users.toml). Here's an example:
+Being an opt-in feature in beta testing, you can enable GitHub Self-Managed Teams by creating a configuration block in this [TOML file](https://github.com/ministryofjustice/operations-engineering/blob/main/config/inactive-users.toml). Here's an example:
 
 ```toml
 [team.operations_engineering]
