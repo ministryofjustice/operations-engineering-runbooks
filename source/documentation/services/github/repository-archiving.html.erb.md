@@ -20,7 +20,7 @@ There are two ways to configure this process:
 
 ## Changing the archive inactivity time
 
-Inside the Python [file](https://github.com/ministryofjustice/operations-engineering/blob/main/python/scripts/archive_repositories.py) is a DateTime calculation `datetime.now() - relativedelta(days=0, months=6, years=1)` that determines how long a repository has to be inactive before it gets archived.
+Inside the Python [file](https://github.com/ministryofjustice/operations-engineering/blob/main/bin/archive_repositories.py) is a DateTime calculation `datetime.now() - relativedelta(days=0, months=6, years=1)` that determines how long a repository has to be inactive before it gets archived.
 
 ## Adding a repository to the allow list
 

@@ -61,7 +61,7 @@ review_in: 3 months
 
 4. Upload the three files to the AWS S3 bucket `operations-engineering-dormant-users` within our AWS account.
 
-5. Run the Operations-Engineering GH Action [dormant-users-debug-mode](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-debug-mode.yml). Read the GH Action output for the printed list of usernames it detects are dormant. If any usernames appear to be bot accounts, add those usernames to the allow list within the script [file](https://github.com/ministryofjustice/operations-engineering/blob/main/python/scripts/dormant_users.py).
+5. Run the Operations-Engineering GH Action [dormant-users-debug-mode](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-debug-mode.yml). Read the GH Action output for the printed list of usernames it detects are dormant. If any usernames appear to be bot accounts, add those usernames to the allow list within the script [file](https://github.com/ministryofjustice/operations-engineering/blob/main/bin/dormant_users.py).
 
 6. Re-run step 5 to ensure usernames that should be ignored have been correctly ignored by the script.
 
