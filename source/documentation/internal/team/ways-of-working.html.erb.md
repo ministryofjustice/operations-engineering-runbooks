@@ -11,15 +11,17 @@ This document serves as our collaborative playbook, providing clear guidelines a
 
 **Statuses:**
 
-* ✅ Accepted
-* 🧪 Experimenting
+- ✅ Accepted
+- 🧪 Experimenting
 
 ## **Ceremonies**
 
 ### **✅ Backlog Refinement**
+
 These sessions enable us to review, prioritize, and adapt our tasks. By fine-tuning upcoming work items, we ensure clarity and focus. Backlog refinement promotes effective [planning](#sprint-planning), enabling us to address potential challenges in advance. These sessions foster collaboration, empowering team members to contribute ideas and clarify doubts. Through these targeted discussions, we maintain a well-organized backlog. Engaging in backlog refinement enhances our readiness for future sprints.
 
 ### **🧪 Demos**
+
 These sessions ensure transparency, collaboration, and rapid improvement. By showcasing completed work to stakeholders, we align everyone with our progress and gather immediate feedback. This process fosters team pride and accountability. Additionally, demos empower stakeholders with direct insights, enhancing their engagement. Through these efficient sessions, we celebrate successes, pinpoint areas for growth, and pivot effectively for upcoming sprints, ensuring our continuous development and team cohesion.
 
 ### **✅ Retrospectives**
@@ -27,6 +29,7 @@ These sessions ensure transparency, collaboration, and rapid improvement. By sho
 Retrospectives are pivotal in our team's evolution. These sessions, condensed and insightful, provide a dedicated space for reflection, learning, and growth. By analyzing our recent sprint, we identify successes and challenges, enabling us to celebrate achievements and address obstacles. Retrospectives foster open communication, empowering team members to share ideas for improvement candidly. Through these focused discussions, we refine our strategies, enhance collaboration, and fortify our team dynamics. Embracing retrospectives ensures our continuous adaptation and drives us toward excellence in every sprint.
 
 ### **✅ Sprint Planning**
+
 In these focused sessions, we outline our goals and tasks for the upcoming sprint. By defining clear objectives, we foster team alignment and understanding. Sprint planning ensures that every team member comprehends their roles and responsibilities, promoting accountability. These sessions allow us to optimize our efforts toward shared objectives. By engaging in sprint planning, we enhance collaboration, refine our strategies, and set the stage for a successful sprint. This meticulous planning guarantees our team's cohesion, enabling us to deliver high-quality work consistently.
 
 ### **✅ Stand-Up Meetings**
@@ -49,7 +52,7 @@ If you cannot attend stand-up, post a brief update in the designated Slack chann
 
 To keep everyone in the loop and maintain transparency, it's crucial to update the status of your assigned stories regularly. Whether it's a small task or a significant milestone, updating the stories with your progress ensures everyone knows where we stand and how we're moving forward.
 
---- 
+---
 
 ## Adding/Adjusting Ways of Working
 
