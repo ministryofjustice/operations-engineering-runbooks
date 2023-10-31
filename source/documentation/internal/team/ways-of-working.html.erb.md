@@ -13,6 +13,7 @@ This document serves as our collaborative playbook, providing clear guidelines a
 
 - ✅ Accepted
 - 🧪 Experimenting
+- 💡 New idea (waiting to be discussed by the team)
 
 ## **Ceremonies**
 
@@ -27,6 +28,10 @@ These sessions ensure transparency, collaboration, and rapid improvement. By sho
 ### **✅ Retrospectives**
 
 Retrospectives are pivotal in our team's evolution. These sessions, condensed and insightful, provide a dedicated space for reflection, learning, and growth. By analyzing our recent sprint, we identify successes and challenges, enabling us to celebrate achievements and address obstacles. Retrospectives foster open communication, empowering team members to share ideas for improvement candidly. Through these focused discussions, we refine our strategies, enhance collaboration, and fortify our team dynamics. Embracing retrospectives ensures our continuous adaptation and drives us toward excellence in every sprint.
+
+### **💡 Risk Register Review**
+
+These sessions provide a clear understanding of our current risks and serve as a platform to discuss both existing and potential new challenges. By openly addressing these risks, we foster a team-wide awareness and encourage proactive problem-solving. These discussions empower us to develop effective strategies, enhancing our preparedness and adaptability. Our focus is not just on identifying problems but on finding collective solutions. Engaging in these reviews ensures that our team is well-equipped to navigate uncertainties and make informed decisions with confidence.
 
 ### **✅ Sprint Planning**
 
@@ -56,7 +61,7 @@ To keep everyone in the loop and maintain transparency, it's crucial to update t
 
 ## Adding/Adjusting Ways of Working
 
-Adding or adjusting our Ways of Working is a collaborative process. If you have a suggestion or think something needs to change, bring it up during our Retrospective meetings. We value continuous improvement, so your input is essential in shaping how we work together as a team.
+Adding or adjusting our Ways of Working is a collaborative process. If you have a suggestion or think something needs to change, raise a Pull Request to update the document! Feel free to discuss the change in our Slack channel or during our Stand-Up. At latest, we'll discuss any changes during our Retrospective meetings. We value continuous improvement, so your input is essential in shaping how we work together as a team.
 
 ### Experimental Ways of Working
 
