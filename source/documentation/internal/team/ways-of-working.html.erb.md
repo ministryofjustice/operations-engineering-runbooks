@@ -67,6 +67,16 @@ Stay constructive and kind.
 
 To keep everyone in the loop and maintain transparency, it's crucial to update the status of your assigned stories regularly. Whether it's a small task or a significant milestone, updating the stories with your progress ensures everyone knows where we stand and how we're moving forward.
 
+### **🧪 We Use 3 Week Sprints**
+
+In an effort to enhance our project management and delivery process, we have transitioned to using 3 week sprints. This change is designed to provide our team with a longer runway for complex tasks, ensuring thorough planning, development, testing and feedback phases. The additional week allows us to tackle larger features with more depth, without compromising on quality or rushing through tasks. This also allows us to dedicate the necessary time to our ceremonies, free from any time pressures.
+
+### **🧪 Team Socialisation**
+
+We aim to partake in team social days at least every 2 months to ensure a healthy work-life balance and encourage camaraderie through activities outside. These days are essential for us to step back from work and strengthen our team dynamics through shared, informal experiences. We also aim to include virtual activities where we can to help break up some of the more ceremony-intense days.
+
+For anyone wondering, Sam is currently the darts champion.
+
 ---
 
 ## Adding/Adjusting Ways of Working
