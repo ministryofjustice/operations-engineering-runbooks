@@ -59,7 +59,7 @@ To keep everyone in the loop and maintain transparency, it's crucial to update t
 
 ### **🧪 We Use 3 Week Sprints**
 
-In an effort to enhance our project management and delivery process, we have transitioned to using three-week sprints. This change is designed to provide our team with a longer runway for complex tasks, ensuring thorough planning, development, testing and feedback phases. The additional week allows us to tackle larger features with more depth, without compromising on quality or rushing through tasks. This also allows us to dedicate the necessary time to our ceremonies, free from any time pressures.
+In an effort to enhance our project management and delivery process, we have transitioned to using 3 week sprints. This change is designed to provide our team with a longer runway for complex tasks, ensuring thorough planning, development, testing and feedback phases. The additional week allows us to tackle larger features with more depth, without compromising on quality or rushing through tasks. This also allows us to dedicate the necessary time to our ceremonies, free from any time pressures.
 
 ### **🧪 Team Socialisation**
 
