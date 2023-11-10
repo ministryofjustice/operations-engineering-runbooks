@@ -21,7 +21,7 @@ This document serves as our collaborative playbook, providing clear guidelines a
 
 These sessions enable us to review, prioritise, and adapt our tasks. By fine-tuning upcoming work items, we ensure clarity and focus. Backlog refinement promotes effective planning, enabling us to address potential challenges in advance. These sessions foster collaboration, empowering team members to contribute ideas and clarify doubts. Through these targeted discussions, we maintain a well-organized backlog. Engaging in backlog refinement enhances our readiness for future sprints.
 
-### **🧪 Demos**
+### **✅ Demos**
 
 These sessions ensure transparency, collaboration, and rapid improvement. By showcasing completed work to stakeholders, we align everyone with our progress and gather immediate feedback. This process fosters team pride and accountability. Additionally, demos empower stakeholders with direct insights, enhancing their engagement. Through these efficient sessions, we celebrate successes, pinpoint areas for growth, and pivot effectively for upcoming sprints, ensuring our continuous development and team cohesion.
 
@@ -29,7 +29,7 @@ These sessions ensure transparency, collaboration, and rapid improvement. By sho
 
 Retrospectives are pivotal in our team's evolution. These sessions, condensed and insightful, provide a dedicated space for reflection, learning, and growth. By analyzing our recent sprint, we identify successes and challenges, enabling us to celebrate achievements and address obstacles. Retrospectives foster open communication, empowering team members to share ideas for improvement candidly. Through these focused discussions, we refine our strategies, enhance collaboration, and fortify our team dynamics. Embracing retrospectives ensures our continuous adaptation and drives us toward excellence in every sprint.
 
-### **💡 Risk Register Review**
+### **✅ Risk Register Review**
 
 These sessions provide a clear understanding of our current risks and serve as a platform to discuss both existing and potential new challenges. By openly addressing these risks, we foster a team-wide awareness and encourage proactive problem-solving. These discussions empower us to develop effective strategies, enhancing our preparedness and adaptability. Our focus is not just on identifying problems but on finding collective solutions. Engaging in these reviews ensures that our team is well-equipped to navigate uncertainties and make informed decisions with confidence.
 
@@ -43,15 +43,15 @@ In these focused sessions, we outline our goals and tasks for the upcoming sprin
 
 Our team holds daily stand-up meetings in the morning to improve communication and collaboration. This consistent timing aligns everyone, allowing for timely updates and obstacle resolution. Morning meetings enable efficient daily planning, ensuring tasks are in sync with team objectives. This proactive approach enhances productivity and teamwork, making our Agile processes more effective.
 
-#### **🧪 We Walk the Board at Stand-Ups**
+#### **✅ We Walk the Board at Stand-Ups**
 
 At our Stand-Up meetings, it's essential that everyone actively participates. We walk the board together, discussing the tasks and their statuses. This shared understanding helps us identify bottlenecks, dependencies, and progress made. By default, be ready to share your updates and actively engage in the discussion.
 
-#### **🧪 If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
+#### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
 
 If you cannot attend stand-up, post a brief update in the designated Slack channel. Sharing your progress, impediments, and any help you need keeps the team informed and ensures we can support each other effectively, even when we're not physically present.
 
-#### **💡 Stand-Down Reflections for Continuous Growth**
+#### **🧪 Stand-Down Reflections for Continuous Growth**
 
 As we wrap up the day, let's take a moment in our Stand-Down thread to reflect and share. Post updates to celebrate progress, voice frustrations to seek support, and highlight wins to spread joy. This transparency fosters teamwork and growth.
 
@@ -63,13 +63,15 @@ Stay constructive and kind.
 
 ## General
 
-### **🧪 We Update Stories With Progress**
+### **✅ We Update Stories With Progress**
 
 To keep everyone in the loop and maintain transparency, it's crucial to update the status of your assigned stories regularly. Whether it's a small task or a significant milestone, updating the stories with your progress ensures everyone knows where we stand and how we're moving forward.
 
-### **🧪 We Use 3 Week Sprints**
+### **✅ We Use 2-Week Sprints**
 
-In an effort to enhance our project management and delivery process, we have transitioned to using 3 week sprints. This change is designed to provide our team with a longer runway for complex tasks, ensuring thorough planning, development, testing and feedback phases. The additional week allows us to tackle larger features with more depth, without compromising on quality or rushing through tasks. This also allows us to dedicate the necessary time to our ceremonies, free from any time pressures.
+### **🧪 We Use 3-Week Sprints**
+
+In an effort to enhance our project management and delivery process, we have transitioned to using 3-week sprints. This change is designed to provide our team with a longer runway for complex tasks, ensuring thorough planning, development, testing and feedback phases. The additional week allows us to tackle larger features with more depth, without compromising on quality or rushing through tasks. This also allows us to dedicate the necessary time to our ceremonies, free from any time pressures.
 
 ### **🧪 Team Socialisation**
 
@@ -77,9 +79,11 @@ We aim to partake in team social days at least every 2 months to ensure a health
 
 For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed*]</sup>
 
-### **💡 Meeting Notification & Record**
+### **✅ Use Google Meet For Ceremonies**
 
-We use a reminder pop up in Slack for our regular meetings (stand-up, backlog refinement, retro, sprint planning etc), this serves as a thread to use in the meeting for any typed chat, links, etc. This ensures our meeting chats persist and can be used as a resource and memory aid.
+### **🧪 Use Slack Huddles For Ceremonies**
+
+We use Slack huddles to host ceremonies. This serves as a thread to use in the meeting for any typed chat, links, etc. This ensures our meeting chats persist and can be used as a resource and memory aid.
 
 ---
 
