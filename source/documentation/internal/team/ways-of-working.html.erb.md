@@ -75,7 +75,11 @@ In an effort to enhance our project management and delivery process, we have tra
 
 We aim to partake in team social days at least every 2 months to ensure a healthy work-life balance and encourage camaraderie through activities outside. These days are essential for us to step back from work and strengthen our team dynamics through shared, informal experiences. We also aim to include virtual activities where we can to help break up some of the more ceremony-intense days.
 
-For anyone wondering, Sam is currently the darts champion.
+For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed*]</sup>
+
+### **💡 Meeting Notification & Record**
+
+We use a reminder pop up in Slack for our regular meetings (stand-up, backlog refinement, retro, sprint planning etc), this serves as a thread to use in the meeting for any typed chat, links, etc. This ensures our meeting chats persist and can be used as a resource and memory aid.
 
 ---
 
