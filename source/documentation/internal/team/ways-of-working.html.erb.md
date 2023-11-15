@@ -65,7 +65,6 @@ If you cannot attend stand-up, post a brief update in the designated Slack chann
 
 At our Stand-Up meetings, it's essential that everyone actively participates. We walk the board together, discussing the tasks and their statuses. This shared understanding helps us identify bottlenecks, dependencies, and progress made. By default, be ready to share your updates and actively engage in the discussion.
 
-
 ### **🧪 Stand-Down Reflections for Continuous Growth**
 
 As we wrap up the day, let's take a moment in our Stand-Down thread to reflect and share. Post updates to celebrate progress, voice frustrations to seek support, and highlight wins to spread joy. This transparency fosters teamwork and growth.
@@ -89,7 +88,6 @@ We use Slack huddles to host ceremonies. This serves as a thread to use in the m
 We aim to partake in team social days at least every 2 months to ensure a healthy work-life balance and encourage camaraderie through activities outside. These days are essential for us to step back from work and strengthen our team dynamics through shared, informal experiences. We also aim to include virtual activities where we can to help break up some of the more ceremony-intense days.
 
 For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed*]</sup>
-
 
 ---
 
