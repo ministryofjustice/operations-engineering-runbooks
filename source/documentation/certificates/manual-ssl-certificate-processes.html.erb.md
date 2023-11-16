@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Manual SSL Certificate Processes
-last_reviewed_on: 2023-09-07
+last_reviewed_on: 2023-11-16
 review_in: 3 months
 ---
 
@@ -89,7 +89,7 @@ Please contact your [administrator](mailto:certificates@digital.justice.gov.uk) 
 
 12. When validation is complete an email will be sent to the Certificate Alerts Google group. Click on the link in the email to visit Gandi.net and download the new certificate.
 
-13. Email the certificate to the requester along with details of the expiry date. All certificates are valid for 12 months.
+13. Email the certificate to the requester along with details of the expiry date, and the [Gandi.net intermediate certificate](https://docs.gandi.net/en/ssl/common_operations/get_intermediate_certificate.html) (which is required for all new certificates issued after 23rd August 2023). All certificates are valid for 12 months.
 
 ## Renewing an expiring certificate via Gandi.net
 
@@ -101,7 +101,7 @@ We will review the list of Gandi.net certificates and identify any that require 
 
 3. When validation is complete an email will be sent to the Certificate Alerts Google group. Click on the link in the email to visit Gandi.net and download the renewed certificate.
 
-4. Email the certificate to the requester along with details of the expiry date.
+4. Email the certificate to the requester along with details of the new expiry date, and the [Gandi.net intermediate certificate](https://docs.gandi.net/en/ssl/common_operations/get_intermediate_certificate.html) (which is required for all new certificates issued after 23rd August 2023). All certificates are valid for 12 months.
 
 **There is also a comprehensive [swimlane diagram of this process](https://drive.google.com/file/d/1x94rAx9L1Dnlw7dC9BMSudxlvFUywwBR/view?usp=sharing)**. To view it, you will need access to the relevant google drive.
 
