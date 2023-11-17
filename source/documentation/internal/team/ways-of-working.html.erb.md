@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2023-10-30
+last_reviewed_on: 2023-11-10
 review_in: 3 weeks
 ---
 
@@ -14,6 +14,18 @@ This document serves as our collaborative playbook, providing clear guidelines a
 - ✅ Accepted
 - 🧪 Experimenting
 - 💡 New idea (waiting to be discussed by the team)
+
+## **Delivery**
+
+### **✅ We Update Stories With Progress**
+
+To keep everyone in the loop and maintain transparency, it's crucial to update the status of your assigned stories regularly. Whether it's a small task or a significant milestone, updating the stories with your progress ensures everyone knows where we stand and how we're moving forward.
+
+### **✅ We Use 2-Week Sprints**
+
+### **🧪 We Use 3-Week Sprints**
+
+In an effort to enhance our project management and delivery process, we have transitioned to using 3-week sprints. This change is designed to provide our team with a longer runway for complex tasks, ensuring thorough planning, development, testing and feedback phases. The additional week allows us to tackle larger features with more depth, without compromising on quality or rushing through tasks. This also allows us to dedicate the necessary time to our ceremonies, free from any time pressures.
 
 ## **Ceremonies**
 
@@ -33,6 +45,8 @@ Retrospectives are pivotal in our team's evolution. These sessions, condensed an
 
 These sessions provide a clear understanding of our current risks and serve as a platform to discuss both existing and potential new challenges. By openly addressing these risks, we foster a team-wide awareness and encourage proactive problem-solving. These discussions empower us to develop effective strategies, enhancing our preparedness and adaptability. Our focus is not just on identifying problems but on finding collective solutions. Engaging in these reviews ensures that our team is well-equipped to navigate uncertainties and make informed decisions with confidence.
 
+For further details on the ceremony, visit the [Risk Review Meeting Process](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/risk-review.html)
+
 ### **✅ Sprint Planning**
 
 In these focused sessions, we outline our goals and tasks for the upcoming sprint. By defining clear objectives, we foster team alignment and understanding. Sprint planning ensures that every team member comprehends their roles and responsibilities, promoting accountability. These sessions allow us to optimize our efforts toward shared objectives. By engaging in sprint planning, we enhance collaboration, refine our strategies, and set the stage for a successful sprint. This meticulous planning guarantees our team's cohesion, enabling us to deliver high-quality work consistently.
@@ -43,15 +57,15 @@ In these focused sessions, we outline our goals and tasks for the upcoming sprin
 
 Our team holds daily stand-up meetings in the morning to improve communication and collaboration. This consistent timing aligns everyone, allowing for timely updates and obstacle resolution. Morning meetings enable efficient daily planning, ensuring tasks are in sync with team objectives. This proactive approach enhances productivity and teamwork, making our Agile processes more effective.
 
-#### **✅ We Walk the Board at Stand-Ups**
-
-At our Stand-Up meetings, it's essential that everyone actively participates. We walk the board together, discussing the tasks and their statuses. This shared understanding helps us identify bottlenecks, dependencies, and progress made. By default, be ready to share your updates and actively engage in the discussion.
-
 #### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
 
 If you cannot attend stand-up, post a brief update in the designated Slack channel. Sharing your progress, impediments, and any help you need keeps the team informed and ensures we can support each other effectively, even when we're not physically present.
 
-#### **🧪 Stand-Down Reflections for Continuous Growth**
+#### **✅ We Walk the Board at Stand-Ups**
+
+At our Stand-Up meetings, it's essential that everyone actively participates. We walk the board together, discussing the tasks and their statuses. This shared understanding helps us identify bottlenecks, dependencies, and progress made. By default, be ready to share your updates and actively engage in the discussion.
+
+### **🧪 Stand-Down Reflections for Continuous Growth**
 
 As we wrap up the day, let's take a moment in our Stand-Down thread to reflect and share. Post updates to celebrate progress, voice frustrations to seek support, and highlight wins to spread joy. This transparency fosters teamwork and growth.
 
@@ -61,29 +75,19 @@ As we wrap up the day, let's take a moment in our Stand-Down thread to reflect a
 
 Stay constructive and kind.
 
+### **✅ Use Google Meet For Ceremonies**
+
+### **🧪 Use Slack Huddles For Ceremonies**
+
+We use Slack huddles to host ceremonies. This serves as a thread to use in the meeting for any typed chat, links, etc. This ensures our meeting chats persist and can be used as a resource and memory aid.
+
 ## General
-
-### **✅ We Update Stories With Progress**
-
-To keep everyone in the loop and maintain transparency, it's crucial to update the status of your assigned stories regularly. Whether it's a small task or a significant milestone, updating the stories with your progress ensures everyone knows where we stand and how we're moving forward.
-
-### **✅ We Use 2-Week Sprints**
-
-### **🧪 We Use 3-Week Sprints**
-
-In an effort to enhance our project management and delivery process, we have transitioned to using 3-week sprints. This change is designed to provide our team with a longer runway for complex tasks, ensuring thorough planning, development, testing and feedback phases. The additional week allows us to tackle larger features with more depth, without compromising on quality or rushing through tasks. This also allows us to dedicate the necessary time to our ceremonies, free from any time pressures.
 
 ### **🧪 Team Socialisation**
 
 We aim to partake in team social days at least every 2 months to ensure a healthy work-life balance and encourage camaraderie through activities outside. These days are essential for us to step back from work and strengthen our team dynamics through shared, informal experiences. We also aim to include virtual activities where we can to help break up some of the more ceremony-intense days.
 
 For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed*]</sup>
-
-### **✅ Use Google Meet For Ceremonies**
-
-### **🧪 Use Slack Huddles For Ceremonies**
-
-We use Slack huddles to host ceremonies. This serves as a thread to use in the meeting for any typed chat, links, etc. This ensures our meeting chats persist and can be used as a resource and memory aid.
 
 ---
 
