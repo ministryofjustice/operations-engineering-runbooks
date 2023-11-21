@@ -19,8 +19,8 @@ This is a log of Operations Engineering managed incidents.
 
 - **Key events**
 
-  - First detected: 2023-11-16 09:21
-  - Repaired: 2023-11-16 15:45
+  - First detected: 2023-11-17 09:21
+  - Repaired: 2023-11-17 15:45
   - Resolved: TBC
 
 - **Time to repair**: 6h 24m
