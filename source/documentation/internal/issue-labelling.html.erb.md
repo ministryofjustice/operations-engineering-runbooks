@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Issue Labelling
-last_reviewed_on: 2023-09-20
+last_reviewed_on: 2023-11-21
 review_in: 3 months
 ---
 
@@ -29,32 +29,28 @@ A story type Issue will typically have 4 labels assigned to it:
 
 ## Exceptions
 
-There are two exceptions for labelling Issues:
-
-**Support Issues** - These are automatically updated with the `Support` Label. When you raise a support Issue you should manually add the appropriate "Product" label.
-
 **GitHub Feature Requests** - These are automatically updated with the `feature request`, `github` and `third party` labels.
 
 ## Available Labels for Story type Issues
 
-| Product/Service            | Workflow Status   | MoSCoW Priority | Type of Activity | Language  | Type of Work   |
-| -------------------------- | ----------------- | --------------- | ---------------- | --------- | -------------- |
-| 1Password                  | Needs Refining    | Must Have       | Community        | Ruby      | Project        |
-| Auth0                      | Refined           | Should Have     | Documentation    | Python    | Technical Debt |
-| CircleCI                   | Agreed for Sprint | Could Have      | EPIC             | Terraform | Unplanned      |
-| DNS-IAC                    | Purged            | Wont Have       | Feature Request  |           | Experimental   |
-| Docker                     | Blocked           |                 | Policy           |           |                |
-| Domain Management          |                   |                 | Spike            |           |                |
-| Github                     |                   |                 | Support          |           |                |
-| Github actions             |                   |                 | User Research    |           |                |
-| Maintenance Pages          |                   |                 | Development      |           |                |
-| OS Data Hub APIs           |                   |                 | Maintenance      |           |                |
-| Other Support Request      |                   |                 |                  |           |                |
-| PagerDuty                  |                   |                 |                  |           |                |
-| Pingdom                    |                   |                 |                  |           |                |
-| Sentry                     |                   |                 |                  |           |                |
-| SonarCloud.io              |                   |                 |                  |           |                |
-| SSL Certificate Management |                   |                 |                  |           |                |
-| Standards                  |                   |                 |                  |           |                |
-| Tech Docs                  |                   |                 |                  |           |                |
-| AWS Root Account           |                   |                 |                  |           |                |
+| Product/Service            | Workflow Status   | MoSCoW Priority | Type of Activity | Language  | Type of Work         |
+| -------------------------- | ----------------- | --------------- | ---------------- | --------- | -------------------- |
+| 1Password                  | Needs Refining    | Must Have       | Community        | Ruby      | Project              |
+| Auth0                      | Refined           | Should Have     | Documentation    | Python    | Technical Debt       |
+| CircleCI                   | Agreed for Sprint | Could Have      | EPIC             | Terraform | Unplanned            |
+| DNS-IAC                    | Purged            | Wont Have       | Feature Request  |           | Experimental         |
+| Docker                     | Blocked           |                 | Policy           |           | Post Incident Review |
+| Domain Management          |                   |                 | Spike            |           |                      |
+| Github                     |                   |                 | Support          |           |                      |
+| Github actions             |                   |                 | User Research    |           |                      |
+| Maintenance Pages          |                   |                 | Development      |           |                      |
+| OS Data Hub APIs           |                   |                 | Maintenance      |           |                      |
+| Other Support Request      |                   |                 |                  |           |                      |
+| PagerDuty                  |                   |                 |                  |           |                      |
+| Pingdom                    |                   |                 |                  |           |                      |
+| Sentry                     |                   |                 |                  |           |                      |
+| SonarCloud.io              |                   |                 |                  |           |                      |
+| SSL Certificate Management |                   |                 |                  |           |                      |
+| Standards                  |                   |                 |                  |           |                      |
+| Tech Docs                  |                   |                 |                  |           |                      |
+| AWS Root Account           |                   |                 |                  |           |                      |
