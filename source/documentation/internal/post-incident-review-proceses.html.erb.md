@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Blameless Post-Incident Review Process
-last_reviewed_on: 2023-10-23
+last_reviewed_on: 2023-11-21
 review_in: 6 months
 ---
 
@@ -52,7 +52,7 @@ We encourage you to share any documentation through relevant channels. This migh
 
 ## Step 8: Document the Review
 
-Retain a detailed record of the meeting and the insights garnered. This aids future training and helps monitor the implementation of recommendations.
+Retain a detailed record of the meeting and the insights garnered. Update the [Incident Log](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/incident-log.html). This aids future training and helps monitor the implementation of recommendations.
 
 ## Step 9: Implement and Monitor Recommendations
 
