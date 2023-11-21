@@ -18,6 +18,7 @@ This is a log of Operations Engineering managed incidents.
 ### Incident on 2023-11-17 - Sentry Session Replay Quota Breach
 
 - **Key events**
+
   - First detected: 2023-11-16 09:21
   - Repaired: 2023-11-16 15:45
   - Resolved: TBC
@@ -26,10 +27,10 @@ This is a log of Operations Engineering managed incidents.
 - **Time to resolve**: TBC
 
 - **Identified**: Automated alert email from Sentry Support at 80% and 100% Replay quota consumption.
-  
 - **Impact**: This resulted in no further Replays being available to any projects until the monthly subscription resets on 14th December 2023. There are only 3 projects currently using this feature.
 
 - **Context**:
+
   - 2023-11-16 17:17 Email alert from Sentry notifying us that 80% of replay quota exhausted.
   - 2023-11-16 18:01 Email alert from Sentry notifying us that 100% of replay quota exhausted. No more quota until monthly reset on 14th December.
   - 2023-11-17 09:21 Operations Engineering Team aware of email alert from Sentry.
