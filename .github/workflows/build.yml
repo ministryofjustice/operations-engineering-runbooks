@@ -52,4 +52,5 @@ jobs:
             --skip https://docs.google.com/document/d/1KvreqmI_P6E7YLpdRrjefv1fo6B3-B6JBz4MAGiL0Jw/edit#heading=h.33v5b0ui54nd \
             --skip https://docs.google.com/spreadsheets/d/1lZ2ffiN_yQEYqTYnBzTbl16iElfrp3rZ8JnznDQWc-g/edit?usp=sharing \
             --skip https://docs.google.com/spreadsheets/d/1gAVhX8Ts-BuhZRNBEF-80UUjlnYyyMKKBQ4ZPnHPZmE/edit?usp=sharing \
+            --skip https://github.com/ministryofjustice/data-platform-support/issues/new/choose \
           # "URL Check will fail on private and internal GitHub repositories"
