@@ -13,11 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.8.0
-        with:
-          fail: true
-          args: --verbose --exclude-mail --no-progress './**/*.md' './**/*.html' './**/*.erb' --accept 403,200,429
       - name: Compile Markdown to HTML and create artifact
         run: |
           /scripts/deploy.sh
@@ -27,3 +22,13 @@ jobs:
           name: github-pages-test
           path: artifact.tar
           retention-days: 1
+
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          fail: true
+          args: --verbose --exclude-mail --no-progress './**/*.md' './**/*.html' './**/*.erb' --accept 403,200,429
