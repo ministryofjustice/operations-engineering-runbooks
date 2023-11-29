@@ -89,6 +89,12 @@ We aim to partake in team social days at least every 2 months to ensure a health
 
 For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed*]</sup>
 
+## Tools
+
+### **✅ We use ZenHub For Project Workflow Visualisation**
+
+### **💡 We use GitHub Projects For Project Workflow Visualisation**
+
 ---
 
 ## Adding/Adjusting Ways of Working
