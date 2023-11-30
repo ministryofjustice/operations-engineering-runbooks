@@ -80,4 +80,5 @@ jobs:
             --skip https://docs.google.com/spreadsheets/d/1lZ2ffiN_yQEYqTYnBzTbl16iElfrp3rZ8JnznDQWc-g/edit?usp=sharing \
             --skip https://docs.google.com/spreadsheets/d/1gAVhX8Ts-BuhZRNBEF-80UUjlnYyyMKKBQ4ZPnHPZmE/edit?usp=sharing \
             --skip https://github.com/ministryofjustice/data-platform-support/issues/new/choose \
+            --skip https://calendar.google.com/calendar/embed?src=c_rqkd9jdtg9kgditulka4ocit78%40group.calendar.google.com&ctz=Europe%2FLondon \
           # "URL Check will fail on private and internal GitHub repositories"
