@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Delegation of subdomains
-last_reviewed_on: 2023-08-29
+last_reviewed_on: 2023-11-30
 review_in: 3 months
 ---
 
