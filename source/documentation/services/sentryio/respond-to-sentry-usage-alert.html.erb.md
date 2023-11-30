@@ -64,7 +64,7 @@ teams join Sentry and applications gain more traffic.
 
 ## Remediation
 
-Read through the [Sentry Service Documentation](https://github.com/ministryofjustice/operations-engineering-user-guide/blob/main/source/documentation/services/sentry.html.md.erb) and ensure high usage projects are
+Read through the [Sentry Service Documentation](https://user-guide.operations-engineering.service.justice.gov.uk/documentation/services/sentry) and ensure high usage projects are
 following the quota management guidance.
 
 If a project isn't following the guidance, contact the team to understand if there's any particular reason for their
