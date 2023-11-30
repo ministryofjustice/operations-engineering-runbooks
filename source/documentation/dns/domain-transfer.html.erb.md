@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Domain Transfers for Non-gov.uk subdomains
-last_reviewed_on: 2023-08-29
+last_reviewed_on: 2023-11-29
 review_in: 3 months
 ---
 
