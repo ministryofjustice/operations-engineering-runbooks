@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Respond to expired certificates
-last_reviewed_on: 2023-08-30
+last_reviewed_on: 2023-12-01
 review_in: 3 months
 ---
 
