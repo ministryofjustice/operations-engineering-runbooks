@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Responding to Sentry Usage Alerts
-last_reviewed_on: 2023-09-01
+last_reviewed_on: 2023-12-01
 review_in: 3 months
 ---
 
