@@ -47,7 +47,7 @@ A few examples of the types of requests you'll receive in these mailboxes are:
 - [Respond to certificates that have expired/about to expire](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/certificates/respond-to-expired-certs.html)
 - [Respond to leavers forms and remove their access](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/respond-to-leavers.html)
 
-    `3. Review the documentation that has expired`
+  `3. Review the documentation that has expired`
 
 Documentation in Operations Engineering is reviewed regularly.
 If a document was reviewed over 3 months ago, it should be reviewed again. Expired documentation will appear in the #operations-engineering-alerts slack channel.
