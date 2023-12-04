@@ -47,7 +47,7 @@ class TestFixingDocumentDates(unittest.TestCase):
         self.assertNotIn(file.name, documents)
 
 
-class TestMainFunction(unittest.TestCase):
+class TestArgumentPassing(unittest.TestCase):
     @patch("sys.argv", ["", "--fix", "", "--file-path", ""])
     def test_call_main_with_arguments_and_no_docs_to_review(self):
         check.fix_date = MagicMock()
