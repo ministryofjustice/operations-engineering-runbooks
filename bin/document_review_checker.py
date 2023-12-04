@@ -27,7 +27,7 @@ def get_documents_due_for_review(file_path: str) -> list[str]:
         # if the file is a markdown file
         for file in files:
             file_path = os.path.join(root, file)
-            if file.endswith(".erb.md") and __needs_review(file_path):
+            if file.endswith(".md.erb") and __needs_review(file_path):
                 list_of_documents.append(file_path)
 
     return list_of_documents
