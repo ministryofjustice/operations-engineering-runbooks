@@ -3,6 +3,9 @@ IMAGE := ministryofjustice/tech-docs-github-pages-publisher:v3
 # Use this to run a local instance of the documentation site, while editing
 .PHONY: preview check
 
+review-docs:
+	python3 -m bin.document_review_checker
+
 preview:
 	docker run --rm \
 		-v $$(pwd)/config:/app/config \
