@@ -10,7 +10,7 @@ class TestDocumentReviewChecker(unittest.TestCase):
     def setUp(self) -> None:
         self.file_path = tempfile.mkdtemp()
         with tempfile.NamedTemporaryFile(
-                dir=self.file_path, delete=False, suffix=".erb.md") as self.file:
+                dir=self.file_path, delete=False, suffix=".md.erb") as self.file:
             self.file.write(b"last_reviewed_on: 2020-03-14")
 
     def tearDown(self) -> None:
@@ -33,7 +33,7 @@ class TestFixingDocumentDates(unittest.TestCase):
 
     def test_with_file_to_fix(self):
         with tempfile.NamedTemporaryFile(
-                dir=self.file_path, delete=False, suffix=".erb.md") as file:
+                dir=self.file_path, delete=False, suffix=".md.erb") as file:
             file.write(b"last_reviewed_on: 2020-03-14")
 
         self.addCleanup(os.remove, file.name)
