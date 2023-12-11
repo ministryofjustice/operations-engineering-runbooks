@@ -77,8 +77,6 @@ responsibilities, promoting accountability. These sessions allow us to optimize 
 engaging in sprint planning, we enhance collaboration, refine our strategies, and set the stage for a successful sprint.
 This meticulous planning guarantees our team's cohesion, enabling us to deliver high-quality work consistently.
 
-### **✅ Stand-Up Meetings**
-
 ### **✅ Daily Stand-Up Meetings**
 
 Our team holds daily stand-up meetings in the morning to improve communication and collaboration. This consistent timing
