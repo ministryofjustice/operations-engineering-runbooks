@@ -79,20 +79,20 @@ This meticulous planning guarantees our team's cohesion, enabling us to deliver 
 
 ### **✅ Stand-Up Meetings**
 
-#### **✅ Daily Stand-Up Meetings**
+### **✅ Daily Stand-Up Meetings**
 
 Our team holds daily stand-up meetings in the morning to improve communication and collaboration. This consistent timing
 aligns everyone, allowing for timely updates and obstacle resolution. Morning meetings enable efficient daily planning,
 ensuring tasks are in sync with team objectives. This proactive approach enhances productivity and teamwork, making our
 Agile processes more effective.
 
-#### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
+### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
 
 If you cannot attend stand-up, post a brief update in the designated Slack channel. Sharing your progress, impediments,
 and any help you need keeps the team informed and ensures we can support each other effectively, even when we're not
 physically present.
 
-#### **✅ We Walk the Board at Stand-Ups**
+### **✅ We Walk the Board at Stand-Ups**
 
 At our Stand-Up meetings, it's essential that everyone actively participates. We walk the board together, discussing the
 tasks and their statuses. This shared understanding helps us identify bottlenecks, dependencies, and progress made. By
