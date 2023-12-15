@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2023-12-01
+last_reviewed_on: 2023-12-15
 review_in: 3 months
 ---
 
@@ -110,10 +110,19 @@ Stay constructive and kind.
 
 ### **✅ Use Google Meet For Ceremonies**
 
-### **🧪 Use Slack Huddles For Ceremonies**
+To ensure we have stability and functionality required to run ceremonies effectively, we use Google Meets for Ceremonies
+by default. Google Meet is familiar to the team and has been proved to provide most functionality required to run
+meetings effectively, such as:
 
-We use Slack huddles to host all ceremonies. This serves as a thread to use in the meeting for any typed chat, links,
-etc. This ensures our meeting chats persist and can be used as a resource and memory aid.
+- Sharing individual tabs/apps instead of entire screen
+- Quick reactions for instant feedback
+- Easy to use hand-up facility for a better flow of conversation of topics
+- Quality video streaming capabilities, so team members can have cameras enabled
+
+### **🧪 Use Slack Huddles For Stand-Up**
+
+To increase visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
+stand-ups in a public space where our conversation can be saved and referenced later.
 
 ## General
 
@@ -128,9 +137,17 @@ For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed
 
 ## Tools
 
-### **✅ We use ZenHub For Project Workflow Visualisation**
+### **✅ We use GitHub Projects For Project Workflow Visualisation**
 
-### **🧪 We use GitHub Projects For Project Workflow Visualisation**
+To increase visibility of our work in progress and to keep track/plan future work effectively, we uss GitHub projects.
+
+GitHub Projects is a simple-to-use project management tool that integrates seamlessly with our code repositories, which
+are already hosted in GitHub.
+
+It allows to easily add custom fields and metrics to keep track of project management related meta-data for work items,
+and create specialised views to optimise our ceremonies.
+
+Our board can be found [here](https://github.com/orgs/ministryofjustice/projects/52)
 
 ---
 
