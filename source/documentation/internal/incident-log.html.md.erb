@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Incident Log
-last_reviewed_on: 2023-11-21
+last_reviewed_on: 2023-12-18
 review_in: 3 months
 ---
 
@@ -11,9 +11,36 @@ This is a log of Operations Engineering managed incidents.
 
 ## Q4 2023 (October to Decmeber)
 
-- **Mean Time to Repair**: 6h 24m
+- **Mean Time to Repair**: 3h 33m
 
 - **Mean Time to Resolve**: TBC
+
+### Incident on 2023-12-15 - Sentry Session Replay Quota Exhausted
+
+- **Key events**
+
+  - First detected: 2023-12-15 15:34
+  - Repaired: 2023-12-15 16:16
+  - Resolved: TBC
+
+- **Time to repair**: 0h 42m
+- **Time to resolve**: TBC
+
+- **Identified**: Automated alert email from Sentry Support at 80% and 100% Replay quota consumption.
+- **Impact**: This resulted in no further Replays being available to any projects until the monthly subscription resets on 14th January 2024.
+
+- **Context**:
+
+  - 2023-12-15 15:34 Email alert from Sentry notifying us that 80% of replay quota exhausted.
+  - 2023-12-15 16:16 Notification to users via #operations-engineering-update that quota was due to run out. No further resolution until quota increased.
+  - 2023-12-15 22:37 Email alert from Sentry notifying us that 100% of replay quota exhausted.
+
+- **Resolution**: Users notified that quota exhaused and actiomn that is being taken to increase quota.
+
+- **Review Actions**:
+
+N/A - Only action that will resolve furter incidents is an increase in quota, which is already underway.
+
 
 ### Incident on 2023-11-17 - Sentry Session Replay Quota Breach
 
