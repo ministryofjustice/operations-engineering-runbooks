@@ -17,7 +17,7 @@ jobs:
         run: |
           /scripts/deploy.sh
       - name: Upload artifact to be URL checked
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages-test
           path: artifact.tar
