@@ -9,7 +9,7 @@ review_in: 6 months
 
 The purpose of this runbook is to provide guidance and tips when creating DNS for services that are used for email.
 
-This includes creation of new domains and migrations. The runbook here covers the most common scenarios.
+This includes creation of new domains and migrations. The runbook covers the most common scenarios.
 
 ## New domain
 
@@ -17,13 +17,33 @@ If a domain is going to be used for email the requester must provide values for 
 
 **Note** - Not all information may be provided up front as some values will be created as the email service is enabled.
 
-MX Record
-SPF
-DKIM
-DMARC
-TLS
+**MX Record** - record that routes emails to specified mail servers
 
-**Warning** - If a suppier provides a set of `NS Records` for an email service **do not** create these records. This type of record will delegate management of that subdomain and any subsequent subdomains to that supplier. We **must not** do that. If this is the scenario we should go back to the supplier and explain this. An alternative solution using the DNS types above should be used.
+| Name           | Type | Value                | TTL  |
+|----------------|------|----------------------|------|
+| example.gov.uk | MX   | 10 mail1.example.com.| 3600 |
+
+**SPF** - identifies the mail servers and domains that are allowed to send email on behalf of your domain
+
+| Name           | Type | Value                                            | TTL |
+|----------------|------|--------------------------------------------------|-----|
+| example.gov.uk | TXT  | "v=spf1 ip4:xx.xx.xx.xx include:spf.example.com" | 300 |
+
+**DKIM** - email authentication method that uses a digital signature to let the receiver of an email know that the message was sent and authorized by the owner of a domain
+
+| Name                               | Type | Value                                 | TTL |
+|------------------------------------|------|---------------------------------------|-----|
+| selector._domainkey.example.gov.uk | TXT  | "v=DKIM1; h=sha256; k=rsa; p=example" | 300 |
+
+**DMARC** - an email authentication, policy, and reporting protocol
+
+| Name                  | Type | Value                                                                    | TTL  |
+|-----------------------|------|--------------------------------------------------------------------------|------|
+| _dmarc.example.gov.uk | TXT   | "v=DMARC1;p=reject;sp=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk" | 3600 |
+
+More background can be found in [National Cyber Security Centre's email security and anti-spoofing guide](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing).
+
+**Warning** - If a supplier provides a set of `NS Records` for an email service **do not** create these records. This type of record will delegate management of that subdomain and any subsequent subdomains to that supplier. We **must not** do that. If this is the scenario we should go back to the supplier and explain this. An alternative solution using the DNS types above should be used.
 
 ### Enabling Mail Transfer Agent Strict Transport Security (MTA-STS)
 
@@ -31,7 +51,11 @@ Email services **must** use MTA-STS. We use [MTA-STS](https://github.com/ministr
 
 When we first enable MTA-STS we start with a `mode` of `training` and a `max_age` of `86400`. This allows email support teams to monitor the impact of adding MTA-STS. This will not block email but flag potential errors. If no issues are reported the `mode` and `max_age` can be updated to `enfoce` and `1209600`. After this any emails that fail MTA-STS will be blocked. 
 
-## Adding new email subdomains to Mailcheck Service
+As part of the policy creation we also set a DNS record for `_smtp._tls` with MoJ's standard value i.e. `"v=TLSRPTv1;rua=mailto:tls-rua@mailcheck.service.ncsc.gov.uk"`.
+
+### Add new email subdomains to Mailcheck Service
+
+Details on Webcheck can be found [here](https://www.ncsc.gov.uk/information/myncsc).
 
 ## Migration of email from MoJ to another organisation
 
