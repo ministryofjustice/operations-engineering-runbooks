@@ -13,6 +13,26 @@ This includes creation of new domains and migrations. The runbook here covers th
 
 ## New domain
 
+If a domain is going to be used for email the requester must provide values for the following DNS records:
+
+**Note** - Not all information may be provided up front as some values will be created as the email service is enabled.
+
+MX Record
+SPF
+DKIM
+DMARC
+TLS
+
+**Warning** - If a suppier provides a set of `NS Records` for an email service **do not** create these records. This type of record will delegate management of that subdomain and any subsequent subdomains to that supplier. We **must not** do that. If this is the scenario we should go back to the supplier and explain this. An alternative solution using the DNS types above should be used.
+
+### Enabling Mail Transfer Agent Strict Transport Security (MTA-STS)
+
+Email services **must** use MTA-STS. We use [MTA-STS](https://github.com/ministryofjustice/mta-sts) to create the policy and related infrastructure.
+
+When we first enable MTA-STS we start with a `mode` of `training` and a `max_age` of `86400`. This allows email support teams to monitor the impact of adding MTA-STS. This will not block email but flag potential errors. If no issues are reported the `mode` and `max_age` can be updated to `enfoce` and `1209600`. After this any emails that fail MTA-STS will be blocked. 
+
+## Adding new email subdomains to Mailcheck Service
+
 ## Migration of email from MoJ to another organisation
 
 ## Decommissioning an email domain
