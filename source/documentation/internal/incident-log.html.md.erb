@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Incident Log
-last_reviewed_on: 2023-12-18
+last_reviewed_on: 2023-12-19
 review_in: 3 months
 ---
 
@@ -11,7 +11,7 @@ This is a log of Operations Engineering managed incidents.
 
 ## Q4 2023 (October to Decmeber)
 
-- **Mean Time to Repair**: 3h 33m
+- **Mean Time to Repair**: 83h 50m
 
 - **Mean Time to Resolve**: TBC
 
@@ -40,6 +40,43 @@ This is a log of Operations Engineering managed incidents.
 - **Review Actions**:
 
 N/A - Only action that will resolve furter incidents is an increase in quota, which is already underway.
+
+
+### Incident on 2023-12-08 - obr.uk email migration - Email failure due to cached MTA-STS policy
+
+- **Key events**
+
+  - First detected: 2023-12-08 14:12
+  - Repaired: 2023-12-12 15:18
+  - Resolved: 2023-12-12 15:18
+
+- **Time to repair**: 97h 6m
+- **Time to resolve**: 97h 6m
+
+- **Identified**: Reported by Email Migration Team.
+- **Impact**: Emails not delivered.
+
+- **Context**:
+
+  - 2023-12-08 14:12 HM Treasury (HMT) Email Team report that emails being blocked by unknown MTA-SYS policy.
+  - 2023-12-08 15:25 MTA-STS policy removed by Operation Engineering.
+  - 2023-12-09 14:15 HMT Email Team report that some email is being delivered. Email via Google still being blocked.
+  - 2023-12-10 10:30 HMT Email Team report that email appears to be blocked by a cached MTA-STS policy. Cache based on a policy `max_age` of 14 days. Partial delivery of emails.
+  - 2023-12-10 11:08 Original MTA-STS policy reinstated with a short `max_age` to try and clear cached policy.
+  - 2023-12-11 10:30 Technical call held to discuss options as email still only being partially delivered. Reinstating policy did not resolve issue. Decision taklen to implement a new `none` type policy.
+  - 2023-12-11 10:43 New policy deployed
+  - 2023-12-11 14:00 Technical call held. Email still being partially delivered due to cached policy. Decision made to add old MX record server back to see inpact on the policy.
+  - 2023-12-11 14:40 HMT Email Team start seeing Non-Delivery Report (NDR) errors. Decision made to revert MX record changes and remove old mail servers. NDR errors stop.
+  - 2023-12-12 12:00 Technical call held. Identifed that `max_age` value should be at least 24 hers for some email providers to recognise policy changes. 
+  - 2023-12-12 13:05 New MTA-STS policy deployed
+  - 2023-12-12 15:18 HMT Email Team report that emails no longer blocked by orginal MTA-STS policy. Email service working as expected.
+
+- **Resolution**: Implementation of new `none` type MTA-STS policy with 24hr `max_age` and no associated MX records resulted in cached policy being replaced. This enabled email to be delivered as expected.
+
+- **Review Actions**:
+  - Update Readme to include correct decommissioning actions - **DONE**
+  - Create runbook to help assess DNS changes required for email migrations - **TODO**
+  - Review of current MTA-STS Infrastucture as Code solution and process to feed into longer terms strategy for this product i.e. tactical uplift vs tackling longer term technical dept.
 
 
 ### Incident on 2023-11-17 - Sentry Session Replay Quota Breach
