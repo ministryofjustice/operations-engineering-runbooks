@@ -37,9 +37,9 @@ If a domain is going to be used for email the requester must provide values for 
 
 **DMARC** - an email authentication, policy, and reporting protocol
 
-| Name                  | Type | Value                                                                    | TTL  |
-|-----------------------|------|--------------------------------------------------------------------------|------|
-| _dmarc.example.gov.uk | TXT   | "v=DMARC1;p=reject;sp=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk" | 3600 |
+| Name                  | Type | Value                                                                   | TTL  |
+|-----------------------|------|-------------------------------------------------------------------------|------|
+| _dmarc.example.gov.uk | TXT  | "v=DMARC1;p=reject;sp=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk" | 3600 |
 
 More background can be found in [National Cyber Security Centre's email security and anti-spoofing guide](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing).
 
@@ -58,6 +58,8 @@ As part of the policy creation we also set a DNS record for `_smtp._tls` with Mo
 Details on Webcheck can be found [here](https://www.ncsc.gov.uk/information/myncsc).
 
 ## Migration of email domain from MoJ to another organisation
+
+Migration of email domains is a complex process and requires careful planning. The approaches to migration are many and various and the steps involved will depend on the approach. Here are a set of tips rather that instructions to help planning changes.
 
 ## Decommissioning an email domain
 
