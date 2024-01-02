@@ -1,0 +1,81 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: DNS for services using e-mail
+last_reviewed_on: 2024-01-02
+review_in: 6 months
+---
+
+# DNS for services using e-mail
+
+The purpose of this runbook is to provide guidance and tips when creating DNS for services that are used for email.
+
+This includes creation of new domains and migrations. The runbook covers the most common scenarios.
+
+## New domain
+
+If a domain is going to be used for email the requester must provide values for the following DNS records:
+
+**Note** - Not all information may be provided up front as some values will be created as the email service is enabled.
+
+**MX Record** - record that routes emails to specified mail servers
+
+| Name           | Type | Value                | TTL  |
+|----------------|------|----------------------|------|
+| example.gov.uk | MX   | 10 mail1.example.com.| 3600 |
+
+**SPF** - identifies the mail servers and domains that are allowed to send email on behalf of your domain
+
+| Name           | Type | Value                                            | TTL |
+|----------------|------|--------------------------------------------------|-----|
+| example.gov.uk | TXT  | "v=spf1 ip4:xx.xx.xx.xx include:spf.example.com" | 300 |
+
+**DKIM** - email authentication method that uses a digital signature to let the receiver of an email know that the message was sent and authorized by the owner of a domain
+
+| Name                               | Type | Value                                 | TTL |
+|------------------------------------|------|---------------------------------------|-----|
+| selector._domainkey.example.gov.uk | TXT  | "v=DKIM1; h=sha256; k=rsa; p=example" | 300 |
+
+**DMARC** - an email authentication, policy, and reporting protocol
+
+| Name                  | Type | Value                                                                   | TTL  |
+|-----------------------|------|-------------------------------------------------------------------------|------|
+| _dmarc.example.gov.uk | TXT  | "v=DMARC1;p=reject;sp=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk" | 3600 |
+
+More background can be found in [National Cyber Security Centre's email security and anti-spoofing guide](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing).
+
+**Warning** - If a supplier provides a set of `NS Records` for an email service **do not** create these records. This type of record will delegate management of that subdomain and any subsequent subdomains to that supplier. We **must not** do that. If this is the scenario we should go back to the supplier and explain this. An alternative solution using the DNS types above must be used.
+
+### Enabling Mail Transfer Agent Strict Transport Security (MTA-STS)
+
+Email services **must** use MTA-STS. We use [MTA-STS](https://github.com/ministryofjustice/mta-sts) to create the policy and related infrastructure.
+
+When we first enable MTA-STS we start with a `mode` of `training` and a `max_age` of `86400`. This allows email support teams to monitor the impact of adding MTA-STS. This will not block email but flag potential errors. If no issues are reported the `mode` and `max_age` can be updated to `enfoce` and `1209600`. After this any emails that fail MTA-STS will be blocked. 
+
+As part of the policy creation we also set a DNS record for `_smtp._tls` with MoJ's standard value i.e. `"v=TLSRPTv1;rua=mailto:tls-rua@mailcheck.service.ncsc.gov.uk"`.
+
+### Add new email subdomains to Mailcheck Service
+
+Details on Webcheck can be found [here](https://www.ncsc.gov.uk/information/myncsc).
+
+## Migration of email domain from MoJ to another organisation
+
+Migration of email domains is a complex process and requires careful planning. The approaches to migration are many and various and the steps involved will depend on the approach. Here are a set of tips rather that instructions to help plan changes.
+
+### Domains with MTA-STS already enabled
+
+MoJ has MTA-STS enabled for all domains used for email. Before you can make any other changes to DNS you will need to follow instructions for [destroying and MTA-STS stack](https://github.com/ministryofjustice/mta-sts?tab=readme-ov-file#destroying-mta-sts-stacks). A new `none` mode policy should be created and no other changes should be made until the `max_age` of the original policy has expired e.g. after 14 days. This additional 14 days should be factored into any change planning.
+
+### Avoid a "big bang" cutover
+
+If at all possible avoid a "big bang" cutover of DNS i.e. at an agreed point of time all MoJ DNS records are replaced with a completely new set of DNS records managed by the new organisation. This is an approach, but has additional risk:
+
+* DNS records will have a variety of TTLs which may be cached for longer periods of time. This makes troubleshooting issues much harder to diagnose.
+* changes will most likley be made out of hours to avoid business disruption, however this also means it is less likley that issue might be idenfied by normal operations and there are less support teams around to troubleshoot and fix issues.
+
+A "soft" cutover is a better approach. This involves MoJ providing the new organisation with a copy of the existing DNS records. The new orgaisnation can replicate these records and then delegation can take place from MoJ to the new organisation. The new organisation will then be running the known DNS configuration prior to any cutover. The new orgainsatin can then have a greater level of control for making change to DNS for other services as required.
+
+## Decommissioning an email domain
+
+If an email domain is decommissioned, treat it like a [defensive domain](https://security-guidance.service.justice.gov.uk/defensive-domain-registration/#mandatory-features-for-defensively-registered-domains) and set DNS values appropriately to ensure the domain can't be used for email.
+
+
