@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: DNS for services using e-mail
-last_reviewed_on: 2023-12-20
+last_reviewed_on: 2024-01-02
 review_in: 6 months
 ---
 
@@ -43,7 +43,7 @@ If a domain is going to be used for email the requester must provide values for 
 
 More background can be found in [National Cyber Security Centre's email security and anti-spoofing guide](https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing).
 
-**Warning** - If a supplier provides a set of `NS Records` for an email service **do not** create these records. This type of record will delegate management of that subdomain and any subsequent subdomains to that supplier. We **must not** do that. If this is the scenario we should go back to the supplier and explain this. An alternative solution using the DNS types above should be used.
+**Warning** - If a supplier provides a set of `NS Records` for an email service **do not** create these records. This type of record will delegate management of that subdomain and any subsequent subdomains to that supplier. We **must not** do that. If this is the scenario we should go back to the supplier and explain this. An alternative solution using the DNS types above must be used.
 
 ### Enabling Mail Transfer Agent Strict Transport Security (MTA-STS)
 
@@ -59,7 +59,20 @@ Details on Webcheck can be found [here](https://www.ncsc.gov.uk/information/mync
 
 ## Migration of email domain from MoJ to another organisation
 
-Migration of email domains is a complex process and requires careful planning. The approaches to migration are many and various and the steps involved will depend on the approach. Here are a set of tips rather that instructions to help planning changes.
+Migration of email domains is a complex process and requires careful planning. The approaches to migration are many and various and the steps involved will depend on the approach. Here are a set of tips rather that instructions to help plan changes.
+
+### Domains with MTA-STS already enabled
+
+MoJ has MTA-STS enabled for all domains used for email. Before you can make any other changes to DNS you will need to follow instructions for [destroying and MTA-STS stack](https://github.com/ministryofjustice/mta-sts?tab=readme-ov-file#destroying-mta-sts-stacks). A new `none` mode policy should be created and no other changes should be made until the `max_age` of the original policy has expired e.g. after 14 days. This additional 14 days should be factored into any change planning.
+
+### Avoid a "big bang" cutover
+
+If at all possible avoid a "big bang" cutover of DNS i.e. at an agreed point of time all MoJ DNS records are replaced with a completely new set of DNS records managed by the new organisation. This is an approach, but has additional risk:
+
+* DNS records will have a variety of TTLs which may be cached for longer periods of time. This makes troubleshooting issues much harder to diagnose.
+* changes will most likley be made out of hours to avoid business disruption, however this also means it is less likley that issue might be idenfied by normal operations and there are less support teams around to troubleshoot and fix issues.
+
+A "soft" cutover is a better approach. This involves MoJ providing the new organisation with a copy of the existing DNS records. The new orgaisnation can replicate these records and then delegation can take place from MoJ to the new organisation. The new organisation will then be running the known DNS configuration prior to any cutover. The new orgainsatin can then have a greater level of control for making change to DNS for other services as required.
 
 ## Decommissioning an email domain
 
