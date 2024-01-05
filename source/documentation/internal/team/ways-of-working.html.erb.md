@@ -1,13 +1,13 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2024-01-02
+last_reviewed_on: 2024-01-05
 review_in: 3 months
 ---
 
 # Ways of Working
 
-This document serves as our collaborative playbook, providing clear guidelines and standardised processes for 'how we
+This document serves as our collaborative play-book, providing clear guidelines and standardised processes for 'how we
 work' together. It ensures consistency, clarity, and efficiency in our daily tasks, fostering a harmonious team culture.
 By referring to this document, we align ourselves toward common goals, resolve conflicts, and adapt to changing needs.
 It's not just a set of rules; it's a tool for continuous improvement, helping us evolve and excel as a team.
@@ -51,7 +51,7 @@ continuous development and team cohesion.
 ### **✅ Retrospectives**
 
 Retrospectives are pivotal in our team's evolution. These condensed and insightful sessions provide a dedicated space
-for reflection, learning, and growth. By analyzing our recent sprint, we identify successes and challenges, enabling us
+for reflection, learning, and growth. By analysing our recent sprint, we identify successes and challenges, enabling us
 to celebrate achievements and address obstacles. Retrospectives foster open communication, empowering team members to
 share ideas for improvement candidly. Through these focused discussions, we refine our strategies, enhance
 collaboration, and fortify our team dynamics. Embracing retrospectives ensures our continuous adaptation and drives us
@@ -118,7 +118,7 @@ meetings effectively, such as:
 - Easy to use hand-up facility for a better flow of conversation of topics
 - Quality video streaming capabilities so team members can have cameras enabled
 
-### **🧪 Use Slack Huddles For Stand-Up**
+### **✅ Use Slack Huddles For Stand-Up**
 
 To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
@@ -148,7 +148,8 @@ and create specialised views to optimise our ceremonies.
 
 Our board can be found [here](https://github.com/orgs/ministryofjustice/projects/52)
 
-### **💡 Adopt GitHub Discussions for Firebreak Ideas**
+### **🧪 Adopt GitHub Discussions for Firebreak Ideas**
+
 To streamline our firebreak innovation process, we should adopt GitHub Discussions. This tool offers a more engaging and organised way to capture, discuss, and evolve our firebreak ideas compared to the current use of GitHub issues.
 
 **Benefits:**
