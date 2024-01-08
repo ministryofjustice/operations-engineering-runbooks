@@ -8,10 +8,10 @@ language: 'en-GB'
 words:
   - 'githubusercontent'
 # ignorePaths - list of globs to ignore file paths
-ignorePaths:
+# ignorePaths:
 # ignoreWords - list of words to ignore
-ignoreWords:
+# ignoreWords:
 # flagWords - list of words to be always considered incorrect
 # This is useful for offensive words and common spelling errors.
 # For example "hte" should be "the"
-flagWords:
+# flagWords:
