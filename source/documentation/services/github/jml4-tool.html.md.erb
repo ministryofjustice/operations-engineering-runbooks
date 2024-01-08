@@ -1,0 +1,58 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Monthly Upload of Github User Data for JML4 Tool
+last_reviewed_on: 2024-01-05
+review_in: 3 months
+---
+
+# Monthly Upload of Github User Data for JML4 Tool
+
+## Overview
+
+This runbook relates to a trial of the [JML4 Tool](https://app.powerbi.com/groups/me/reports/ad061100-2417-4616-9481-efb533fb88d9/ReportSectionbe145fa8de8a4c99e949?experience=power-bi) (JML = Joiners, Movers, Leavers). The JML4 Tool is a user account remediation tool that collates user data from multiple sources to identify leavers.
+
+To use this tool we need to provide the Data Controller with a monthly extract of Github user data.
+
+This runbook covers the data export from Github, and upload to Sharepoint processes. The Data Controller will process data from Sharepoint.
+
+## Frequency of process
+
+This process is run on the last working day of each month. Data must be uploaded within 5 working days of the last day of the month.
+
+## Pre-requisites
+
+1. You must be a Github Owner to have permission to export user lists.
+2. You must have access to the Sharepoint folder used for data uploads.
+
+## Github User Data Exports
+
+1. [Export a user list](https://docs.github.com/en/organizations/managing-membership-in-your-organization/exporting-member-information-for-your-organization) from `Ministry of Justice` organisation in `.csv` format
+
+2. Open the exported `.csv` file
+
+3. Insert a column before the current first column (`login`)
+
+4. Add the column heading `Effective Date` to the new first column
+
+5. For every populated row add todays date
+
+6. Delete the column headed `tfa_required_by`
+
+7. Save the file with the name `Github MOJ.csv`
+
+8. Repeat these step 1 to 6 for the `MoJ Analytical Services` Github organisation. Save the file with the name `Github AP.csv`
+
+## Upload Github Data to JML Sharepoint
+
+1. Go to the [Ministry of Justice "Live" data folder](https://justiceuk.sharepoint.com/:f:/r/sites/JoinersMoversLeaversAccountRemediation-TargetSystems2/Shared%20Documents/Github/Github%20MOJ/Live?csf=1&web=1&e=4zAtO7)
+
+2. Delete the existing `Github MOJ.csv` file that is in Sharepoint.
+
+3. Upload the new `Github MOJ.csv` created earlier.
+
+4. Go to the [MoJ Analytical Services "Live" data folder](https://justiceuk.sharepoint.com/:f:/r/sites/JoinersMoversLeaversAccountRemediation-TargetSystems2/Shared%20Documents/Github/Github%20AP/Live?csf=1&web=1&e=J8ioDd)
+
+5. Delete the existing `Github AP.csv` file that is in Sharepoint.
+
+6. Upload the new `Github AP.csv` created earlier.
+
