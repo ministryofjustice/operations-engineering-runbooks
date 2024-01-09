@@ -1,14 +1,14 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2023-12-15
+last_reviewed_on: 2024-01-05
 review_in: 3 months
 ---
 
 # Ways of Working
 
-This document serves as our collaborative playbook, providing clear guidelines and standardised processes for how we
-work together. It ensures consistency, clarity, and efficiency in our daily tasks, fostering a harmonious team culture.
+This document serves as our collaborative play-book, providing clear guidelines and standardised processes for 'how we
+work' together. It ensures consistency, clarity, and efficiency in our daily tasks, fostering a harmonious team culture.
 By referring to this document, we align ourselves toward common goals, resolve conflicts, and adapt to changing needs.
 It's not just a set of rules; it's a tool for continuous improvement, helping us evolve and excel as a team.
 
@@ -22,14 +22,13 @@ It's not just a set of rules; it's a tool for continuous improvement, helping us
 
 ### **✅ We Update Stories With Progress**
 
-To keep everyone in the loop and maintain transparency, it's crucial to update the status of your assigned stories
-regularly. Whether it's a small task or a significant milestone, updating the stories with your progress ensures
+To keep everyone in the loop and maintain transparency, updating your assigned stories' status regularly is crucial. Whether it's a small task or a significant milestone, updating the stories with your progress ensures
 everyone knows where we stand and how we're moving forward.
 
 ### **✅ We Use 2-Week Sprints**
 
 2-week sprints have been accepted as a reasonable time frame to balance the need for the team to deliver complex work
-items, and the need to include reflective practices such as demos, retrospectives, sprint planning frequently.
+items, and the need to include reflective practices such as demos, retrospectives, and sprint planning frequently.
 
 ## **Ceremonies**
 
@@ -51,8 +50,8 @@ continuous development and team cohesion.
 
 ### **✅ Retrospectives**
 
-Retrospectives are pivotal in our team's evolution. These sessions, condensed and insightful, provide a dedicated space
-for reflection, learning, and growth. By analyzing our recent sprint, we identify successes and challenges, enabling us
+Retrospectives are pivotal in our team's evolution. These condensed and insightful sessions provide a dedicated space
+for reflection, learning, and growth. By analysing our recent sprint, we identify successes and challenges, enabling us
 to celebrate achievements and address obstacles. Retrospectives foster open communication, empowering team members to
 share ideas for improvement candidly. Through these focused discussions, we refine our strategies, enhance
 collaboration, and fortify our team dynamics. Embracing retrospectives ensures our continuous adaptation and drives us
@@ -64,7 +63,7 @@ These sessions provide a clear understanding of our current risks and serve as a
 potential new challenges. By openly addressing these risks, we foster a team-wide awareness and encourage proactive
 problem-solving. These discussions empower us to develop effective strategies, enhancing our preparedness and
 adaptability. Our focus is not just on identifying problems but on finding collective solutions. Engaging in these
-reviews ensures that our team is well-equipped to navigate uncertainties and make informed decisions with confidence.
+reviews ensures that our team is well-equipped to navigate uncertainties and confidently make informed decisions.
 
 For further details on the ceremony, visit
 the [Risk Review Meeting Process](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/risk-review.html)
@@ -82,11 +81,11 @@ This meticulous planning guarantees our team's cohesion, enabling us to deliver 
 Our team holds daily stand-up meetings in the morning to improve communication and collaboration. This consistent timing
 aligns everyone, allowing for timely updates and obstacle resolution. Morning meetings enable efficient daily planning,
 ensuring tasks are in sync with team objectives. This proactive approach enhances productivity and teamwork, making our
-Agile processes more effective.
+Agile process more effective.
 
 ### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
 
-If you cannot attend stand-up, post a brief update in the designated Slack channel. Sharing your progress, impediments,
+Post a brief update in the designated Slack channel if you cannot attend stand-up. Sharing your progress, impediments,
 and any help you need keeps the team informed and ensures we can support each other effectively, even when we're not
 physically present.
 
@@ -94,11 +93,11 @@ physically present.
 
 At our Stand-Up meetings, it's essential that everyone actively participates. We walk the board together, discussing the
 tasks and their statuses. This shared understanding helps us identify bottlenecks, dependencies, and progress made. By
-default, be ready to share your updates and actively engage in the discussion.
+default, you should be ready to share your updates and actively engage in the discussion.
 
 ### **✅ Stand-Down Reflections for Continuous Growth**
 
-As we wrap up the day, let's take a moment in our Stand-Down thread to reflect and share. Post updates to celebrate
+As we wrap up the day, let's reflect and share a moment in our Stand-Down thread. Post updates to celebrate
 progress, voice frustrations to seek support, and highlight wins to spread joy. This transparency fosters teamwork and
 growth.
 
@@ -110,27 +109,27 @@ Stay constructive and kind.
 
 ### **✅ Use Google Meet For Ceremonies**
 
-To ensure we have stability and functionality required to run ceremonies effectively, we use Google Meets for Ceremonies
-by default. Google Meet is familiar to the team and has been proved to provide most functionality required to run
+To ensure we have the stability and functionality required to run ceremonies effectively, we use Google Meets for Ceremonies
+by default. Google Meet is familiar to the team and has been proven to provide most of the functionality required to run
 meetings effectively, such as:
 
-- Sharing individual tabs/apps instead of entire screen
+- Sharing individual tabs/apps instead of the entire screen
 - Quick reactions for instant feedback
 - Easy to use hand-up facility for a better flow of conversation of topics
-- Quality video streaming capabilities, so team members can have cameras enabled
+- Quality video streaming capabilities so team members can have cameras enabled
 
-### **🧪 Use Slack Huddles For Stand-Up**
+### **✅ Use Slack Huddles For Stand-Up**
 
-To increase visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
+To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
 
 ## General
 
 ### **✅ Team Socialisation**
 
-We aim to partake in team social days at least every 2 months to ensure a healthy work-life balance and encourage
+We aim to partake in team social days at least every two months to ensure a healthy work-life balance and encourage
 camaraderie through activities outside. These days are essential for us to step back from work and strengthen our team
-dynamics through shared, informal experiences. We also aim to include virtual activities where we can to help break up
+dynamics through shared, informal experiences. We also aim to include virtual activities where we can help break up
 some of the more ceremony-intense days.
 
 For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed*]</sup>
@@ -139,7 +138,7 @@ For anyone wondering, Sam is currently the darts champion.<sup>[*citation needed
 
 ### **✅ We use GitHub Projects For Project Workflow Visualisation**
 
-To increase visibility of our work in progress and to keep track/plan future work effectively, we uss GitHub projects.
+To increase the visibility of our work in progress and to keep track/plan future work effectively, we use GitHub projects.
 
 GitHub Projects is a simple-to-use project management tool that integrates seamlessly with our code repositories, which
 are already hosted in GitHub.
@@ -148,6 +147,17 @@ It allows to easily add custom fields and metrics to keep track of project manag
 and create specialised views to optimise our ceremonies.
 
 Our board can be found [here](https://github.com/orgs/ministryofjustice/projects/52)
+
+### **🧪 Adopt GitHub Discussions for Firebreak Ideas**
+
+To streamline our firebreak innovation process, we should adopt GitHub Discussions. This tool offers a more engaging and organised way to capture, discuss, and evolve our firebreak ideas compared to the current use of GitHub issues.
+
+**Benefits:**
+
+- Discussions are categorised for easy navigation.
+- Allows voting, commenting, and interactive dialogue.
+- Ideas can be continuously updated and refined based on team input.
+- Preserves valuable discussions for future reference.
 
 ---
 

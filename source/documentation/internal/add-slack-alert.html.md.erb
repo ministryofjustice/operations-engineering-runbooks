@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Add a Slack alert to our alert channel
-last_reviewed_on: 2023-12-04
+last_reviewed_on: 2024-01-05
 review_in: 3 months
 ---
 
@@ -83,7 +83,7 @@ Once this has been done, every time the selected end point is down, it will let 
                 env:
                     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
-4.  An example of a complete workflow with this step is [here](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/archive-repos.yml)
+4.  An example of a complete workflow with this step is [here](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/job-archive-inactive-repos-moj.yml)
 5.  Pull request this change into `main`
 
 Once this has been done, every time the selected GitHub Action fails, it will let us know on Slack.

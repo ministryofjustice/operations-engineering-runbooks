@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: GitHub Repository Archiving
-last_reviewed_on: 2023-12-05
+last_reviewed_on: 2024-01-05
 review_in: 3 months
 ---
 
@@ -11,8 +11,7 @@ review_in: 3 months
 
 Repositories that have been inactive for a period of time will automatically be archived by this automation. This preserves the repository, prevents further changes, prevents Dependabot updates and stops any scheduled GH actions from running. There is an allow list for repositories that should not be archived.
 
-This GitHub Action workflow file for the [MoJ GH Org](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/archive-repos.yml) and [AS GH Org](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/mojas-archive-repos.yml) run a Python script daily to archive inactive GitHub repositories.
-
+This GitHub Action workflow file for the [MoJ GH Org](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/job-archive-inactive-repos-moj.yml) and [AS GH Org](https://github.com/ministryofjustice/operations-engineering/blob/main/.github/workflows/job-archive-inactive-repos-mojas.yml) run a Python script daily to archive inactive GitHub repositories.
 There are two ways to configure this process:
 
 - Add/remove a repository to the allow list within the script file so that it filters out the repository from this process.
