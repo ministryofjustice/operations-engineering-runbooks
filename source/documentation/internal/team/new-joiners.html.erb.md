@@ -58,6 +58,33 @@ Go to [Miro](https://miro.com/) and sign in using Google account. If it asks whi
 
 A google account will enable log-ins to some/most of these tools MOJ provision however some may require licences to use full suite of apps ( e.g Miro for creating boards etc..).
 
+## Tooling for Local Development  
+
+New developers are recommended to have the following tools installed:
+
+- Homebrew 
+- Python 3.11
+- Docker 
+- Docker Compose 
+- VSCode
+- kubectl
+- Terraform
+- AWS CLI
+
+This can be achieved by running the following script:
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
+&& brew install --cask python@3.11 \
+&& brew install --cask docker \
+&& brew install docker-compose \
+&& brew install --cask visual-studio-code \
+&& brew install kubernetes-cli \ 
+&& brew install tfenv \
+&& tfenv install latest
+```
+
+
 ## 1Password
 
 A team member will send you an email invite to join 1Password.
