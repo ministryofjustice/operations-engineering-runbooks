@@ -71,7 +71,7 @@ New developers are recommended to have the following tools installed:
 - Terraform
 - AWS CLI
 
-This can be acieved by running the following script:
+This can be achieved by running the following script:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
