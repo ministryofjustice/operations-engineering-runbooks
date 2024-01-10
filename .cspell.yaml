@@ -11,6 +11,14 @@ words:
 ignorePaths:
 # ignoreWords - list of words to ignore
 ignoreWords:
+  - 'runbooks'
+  - 'Runbook'
+  - 'Zenhub'
+  - 'Miro'
+  - 'tfenv'
+  - 'JDSD'
+  - 'Gandi'
+  - 'Creds'
 # flagWords - list of words to be always considered incorrect
 # This is useful for offensive words and common spelling errors.
 # For example "hte" should be "the"
