@@ -21,7 +21,7 @@ Many ideas in this guide are based on the following resources, which can be used
 
 Agile, by principle, rarely produces a _'one shoe fits all'_ solution for delivery and project management.
 
-Operations Engineering has documented the teams agreed approach below, enabling the process to be critically analysed and reflected upon later. This ensures continuos improvement to how projects are managed and services are delivered.
+Operations Engineering has documented the teams' agreed approach below, enabling the process to be critically analysed and reflected upon later. This ensures continuos improvement to how projects are managed and services are delivered.
 
 ## Phases of Delivery
 
@@ -55,7 +55,7 @@ Detailed in [How the beta phase works](https://www.gov.uk/service-manual/agile-d
 
 ### Live
 
-Detailed in [How the beta phase works](https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works), the live phase is all about supporting a service ina sustainable way.
+Detailed in [How the beta phase works](https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works), the live phase is all about supporting a service in a sustainable way.
 
 **Primary Lifecycle Stages:** Maintenance, Monitoring
 
