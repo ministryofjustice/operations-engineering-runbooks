@@ -67,7 +67,7 @@ Detailed in [Retiring your service](https://www.gov.uk/service-manual/agile-deli
 
 ## Types of Work
 
-Loosely based on [The Four Types of Work (Phoenix Project)](http://www.mattkimberley.co.uk/posts/2019/10/the-four-types-of-work-phoenix-project/)
+Loosely based on _The Four Types of Work (Phoenix Project)_
 
 - Unplanned
 - Tech Debt
