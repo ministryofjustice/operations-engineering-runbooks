@@ -50,7 +50,7 @@ continuous development and team cohesion.
 
 ### **💡 Milestone Planning**
 
-To enable effective delivery of tackle larger, more complex problems - we dedicate a session to looking ahead and planning what we should work on next and detail the work required.
+To enable effective delivery of larger, more complex problems - we dedicate a session to looking ahead and planning what we should work on next and detail the work required.
 
 As priority, we ensure current milestones that are being worked on contain the work items required to complete the milestone.
 
