@@ -48,6 +48,16 @@ Additionally, demos empower stakeholders with direct insights, enhancing their e
 sessions, we celebrate successes, pinpoint areas for growth, and pivot effectively for upcoming sprints, ensuring our
 continuous development and team cohesion.
 
+### **💡 Milestone Planning**
+
+To enable effective delivery of larger, more complex problems - we dedicate a session to looking ahead and planning what we should work on next and detail the work required.
+
+As priority, we ensure current milestones that are being worked on contain the work items required to complete the milestone.
+
+After, we look forward to the next milestones the team could start planning.
+
+These sessions help foster a collaborative culture, ensuring all team members can have their voices heard early in the planning stages.
+
 ### **✅ Retrospectives**
 
 Retrospectives are pivotal in our team's evolution. These condensed and insightful sessions provide a dedicated space
@@ -122,6 +132,14 @@ meetings effectively, such as:
 
 To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
+
+### **🧪 Round Robin Stand-Up Meetings**
+
+We should use a round-robin approach to hosting our daily stand-up meetings to enhance engagement and shared responsibility. Each team member will take turns facilitating the stand-up, ensuring diverse perspectives and a deeper sense of involvement. This approach aims to foster a more inclusive and dynamic team environment.
+
+The host will walk the team through the board, ensuring each member has a chance to update on their progress and raise any blockers.
+
+Team members are encouraged to support the host, fostering a collaborative atmosphere.
 
 ## General
 
