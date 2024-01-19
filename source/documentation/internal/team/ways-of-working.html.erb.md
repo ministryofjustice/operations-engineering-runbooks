@@ -48,6 +48,16 @@ Additionally, demos empower stakeholders with direct insights, enhancing their e
 sessions, we celebrate successes, pinpoint areas for growth, and pivot effectively for upcoming sprints, ensuring our
 continuous development and team cohesion.
 
+### **💡 Milestone Planning**
+
+To enable effective delivery of tackle larger, more complex problems - we dedicate a session to looking ahead and planning what we should work on next and detail the work required.
+
+As priority, we ensure current milestones that are being worked on contain the work items required to complete the milestone.
+
+After, we look forward to the next milestones the team could start planning.
+
+These sessions help foster a collaborative culture, ensuring all team members can have their voices heard early in the planning stages.
+
 ### **✅ Retrospectives**
 
 Retrospectives are pivotal in our team's evolution. These condensed and insightful sessions provide a dedicated space
