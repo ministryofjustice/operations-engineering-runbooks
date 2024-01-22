@@ -48,7 +48,7 @@ Additionally, demos empower stakeholders with direct insights, enhancing their e
 sessions, we celebrate successes, pinpoint areas for growth, and pivot effectively for upcoming sprints, ensuring our
 continuous development and team cohesion.
 
-### **💡 Milestone Planning**
+### **🧪 Milestone Planning**
 
 To enable effective delivery of larger, more complex problems - we dedicate a session to looking ahead and planning what we should work on next and detail the work required.
 
@@ -133,7 +133,7 @@ meetings effectively, such as:
 To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
 
-### **🧪 Round Robin Stand-Up Meetings**
+### **✅ Round Robin Stand-Up Meetings**
 
 We should use a round-robin approach to hosting our daily stand-up meetings to enhance engagement and shared responsibility. Each team member will take turns facilitating the stand-up, ensuring diverse perspectives and a deeper sense of involvement. This approach aims to foster a more inclusive and dynamic team environment.
 
