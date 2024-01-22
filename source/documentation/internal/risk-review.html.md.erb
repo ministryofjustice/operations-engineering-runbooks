@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Risk Review Meeting Process
-last_reviewed_on: 2023-11-14
+last_reviewed_on: 2024-01-22
 review_in: 3 months
 ---
 
@@ -32,6 +32,48 @@ This runbook outlines the process for conducting a risk review meeting for the O
 - **Risk Scoring:** Use the Likelihood and Impact scores to calculate the Risk Score, which helps in prioritising risks.
 - **Review Dates:** Pay special attention to risks with overdue review dates, as highlighted by the conditional formatting in the register.
 - **Actionable Insights:** Focus discussions on actionable insights and decisions that affect the risk register entries.
+
+**Measuring Likelihood and Impact of Risks**
+
+To effectively assess and prioritise risks, we use a systematic approach to measure both the likelihood and impact of each identified risk. This approach involves assigning scores on a scale of 1 to 5 for both likelihood and impact, and then calculating a risk score to determine the overall severity of the risk.
+
+### Likelihood Scale:
+
+1. **Very Low (1):** The risk is unlikely to occur.
+2. **Low (2):** There is a small chance that the risk will occur.
+3. **Moderate (3):** There is a moderate chance of the risk occurring.
+4. **High (4):** The risk is likely to occur.
+5. **Very High (5):** The risk is almost certain to occur.
+
+### Impact Scale:
+
+1. **Very Low (1):** Impact is negligible or minimal.
+2. **Low (2):** Impact is minor and can be managed with ease.
+3. **Moderate (3):** Impact is noticeable and requires management attention.
+4. **High (4):** Impact is significant and may require substantial resources to manage.
+5. **Very High (5):** Impact is severe and critical to address.
+
+### Risk Score Calculation:
+
+The risk score is calculated by multiplying the Likelihood score by the Impact score. 
+
+\[ Risk Score = Likelihood Score × Impact Score \]
+
+### Risk Level Determination:
+
+- **Low Risk:** Scores 1-10
+- **Moderate Risk:** Scores 11-15
+- **High Risk:** Scores above 15
+
+A risk with a score above 15 should be highlighted as a high risk, warranting immediate attention and action. 
+
+### Example:
+
+If a risk has a likelihood of 4 (High) and an impact of 4 (High), its risk score would be:
+
+\[ Risk Score = 4 (Likelihood) × 4 (Impact) = 16 \]
+
+Since the score is above 15, this risk would be categorised as high and highlighted for priority action.
 
 ## Meeting Structure
 
@@ -70,9 +112,3 @@ Summarise the meeting outcomes and next steps.
 1. Update the risk register with any changes or new information.
 2. Share the meeting minutes, including action items and deadlines, with all participants and relevant stakeholders.
 3. Ensure follow-up on assigned actions and prepare for interim reviews if needed.
-
-## Additional Tips
-
-- Ensure each risk has a clear owner responsible for monitoring and mitigating it.
-- Encourage team members to update the risk register as new information arises.
-- Have a system for team members to contribute to the risk register outside of formal meetings.
