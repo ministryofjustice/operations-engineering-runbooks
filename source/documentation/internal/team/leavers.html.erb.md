@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Leavers Guide
-last_reviewed_on: 2023-12-01
+last_reviewed_on: 2023-01-24
 review_in: 3 months
 ---
 
@@ -51,6 +51,4 @@ This is not just about returning their Mac - it will do the important step of cl
 
 ## Line manager actions
 
-1. Fill in the MOJ Digital [Leavers Form](https://leavers.form.service.justice.gov.uk/)
-
-2. Complete the [Leavers Checklist for Managers](https://intranet.justice.gov.uk/documents/2015/04/leavers-checklist-for-managers.docx)
+1. Complete the [Leavers Checklist for Managers](https://intranet.justice.gov.uk/documents/2015/04/leavers-checklist-for-managers.docx)
