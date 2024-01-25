@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Leavers Guide
-last_reviewed_on: 2023-01-24
+last_reviewed_on: 2024-01-25
 review_in: 3 months
 ---
 
