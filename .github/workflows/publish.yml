@@ -55,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.8.0
+        uses: lycheeverse/lychee-action@v1.9.3
         with:
           fail: true
           args: --verbose --exclude-mail --no-progress './**/*.md' './**/*.html' './**/*.erb' --accept 403,200,429
