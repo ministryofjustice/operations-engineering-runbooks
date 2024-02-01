@@ -1,0 +1,35 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Github Repository Terraform
+last_reviewed_on: 2023-01-31
+review_in: 6 months
+---
+
+# Github Repository Terraform
+
+In Operations Engineering, we manage our Github Repositories through Terraform. Our repositories are defined in a [Terraform stack](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories) in the operations-engineering repository. The stack uses a [Github repository Terraform module](https://registry.terraform.io/modules/ministryofjustice/repository/github/latest).
+
+## How to create a new repository in the ministryofjustice organization
+
+Clone the [operations-engineering](https://github.com/ministryofjustice/operations-engineering) repository:
+
+```markdown
+https://github.com/ministryofjustice/operations-engineering.git
+```
+
+Create a branch. On your new branch add a '.tf' file to the 'terraform/github/repositories' directory, bearing the same name as the repository you intend to create. In the new file, add the repository definition as described in the [module repository](https://github.com/ministryofjustice/terraform-github-repository).
+
+'example-repo.tf':
+
+```
+    module "example-repo" {
+        source  = "ministryofjustice/repository/github"
+        version = "0.0.4"
+  
+        name = "example-repo"
+        application_name = "example-repo"
+        description = "This is an example of how to define a repository in Terraform"
+    }
+```
+
+Push your changes to the remote repository and raise a PR. The PR will inititate a Terraform plan showing how your changes will affect the Terraform state. On merging into the main branch, the changes will be applied to the Terraform state and your repository will be created in the 'ministryofjustice' Github organization. 
