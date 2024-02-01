@@ -21,7 +21,7 @@ We have decided to use Terraform to manage our Github repositories through infra
 
 ## Consequences
 
-- The standards for OE repositories will be defined in the a Github repository Terraform module. 
+- The standards for OE repositories will be defined in the Github repository Terraform module. 
 - New OE repositories will be created by modifying the Terraform in the operations-engineering repository and raising a pull request (PR). 
 - Github Actions repository variables will be defined in Terraform in the operations-engineering repository.
 - Once the team's Github Actions repository secrets are stored in a secrets manager, these secrets will also be defined in Terraform in the operations-engineering repository.
