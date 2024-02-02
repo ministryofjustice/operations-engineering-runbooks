@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Leavers Guide
-last_reviewed_on: 2024-01-25
+last_reviewed_on: 2024-02-01
 review_in: 3 months
 ---
 
@@ -21,7 +21,7 @@ This is not just about returning their Mac - it will do the important step of cl
 
 ### Access to Operations Engineering tools and services
 
-1. Remove from [MoJ Github Organisation](https://github.com/ministryofjustice) and/or [AP Github Organisation](https://github.com/orgs/moj-analytical-services/) **Note: Removal from GitHub will also remove access to other services that use this account for single sign-on i.e. AWS SSO, Sentry.io**
+1. Remove from [MoJ Github Organisation](https://github.com/ministryofjustice), [AP Github Organisation](https://github.com/orgs/moj-analytical-services/) and/or [ministryofjustice-test](https://github.com/ministryofjustice-test) **Note: Removal from GitHub will also remove access to other services that use this account for single sign-on i.e. AWS SSO, Sentry.io**
 
 2. Remove them from [1Password](https://ministryofjustice.1password.eu/home) **Note: Removal from 1Password will remove access to shared team credentials for most services**
 
