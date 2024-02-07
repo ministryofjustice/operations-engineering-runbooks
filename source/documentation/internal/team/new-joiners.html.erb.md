@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: New Joiners Guide
-last_reviewed_on: 2023-12-06
+last_reviewed_on: 2024-02-07
 review_in: 3 months
 ---
 
@@ -48,9 +48,7 @@ Join the the operations-engineering team on both Organisations.
 
 ## Access to project board(s)
 
-[Register for Zenhub account (using a Github SSO)](https://www.zenhub.com/)
-
-Login using GitHub SSO but it wants full read and write access to private repo's!
+We use the [Operations Engineering GitHub Project](https://github.com/orgs/ministryofjustice/projects/52) to manage our workflow.
 
 ## Access to Miro
 
