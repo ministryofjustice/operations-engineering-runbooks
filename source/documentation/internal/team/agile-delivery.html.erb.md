@@ -35,9 +35,23 @@ Detailed in the [GDS Agile Delivery](https://www.gov.uk/service-manual/agile-del
 
 In this section, there will be a small summary of each phase, quickly followed by the specific details of how Operations Engineering approach the phase in the life cycle.
 
+For each phase, Operations Engineering will create a [GitHub Milestone within the operations-engineering repository](https://github.com/ministryofjustice/operations-engineering/milestones) to indicate the start of a new phase.
+
 ### Discovery
 
 Detailed in [How the discovery phase works](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works), the discovery phase is all about understanding the problem.
+
+#### Outcomes of Discovery
+
+At the end of discovery, Operations Engineering will have understood, documented and agreed on the following:
+
+- ✅ **Key Stakeholders** - these are the stakeholders that will gain the most from a solution in the identified problem space. Frameworks such as [Stakeholder Mapping](https://en.wikipedia.org/wiki/Stakeholder_analysis#Stakeholder_mapping) can help when deciding key stakeholders.
+- ✅ **Key Stakeholder - Needs** - the needs of the stakeholders should be well understood. These will aid in scoping the problem down to provide a solution that resolves a whole problem for users.
+- ✅ **Process Diagram** - process diagrams are helpful visual aids for simply explaining processes. Creating a process diagram by the end of discovery will help the team to identify problem areas, smaller scoped issues that could be tackled first, constraints, and help communication with stakeholders by using a common view.
+- ✅ **Scope** - there will be an agreement on the scope of the problem the team will attempt to solve. Being able to scope the problem sufficiently will help ensure a successful solution can be delivered to stakeholders in a timely manner. _Don't attempt to solve the whole problem, but ensure you solve a whole problem for the user._
+- ✅ **Problem Statement** - by the end of the discovery - the team is able to succinctly express the problem providing useful insight into the problem domain i.e. the users and their needs. 
+- ✅ **Success Metrics** - agreement of success metrics by the end of discovery will ensure the team focuses on solving the right problem and enable us to later critically evaluate solutions that are built.
+- ✅ **Decision on Whether to Continue** - At the end of discovery, Operations Engineering will have enough information about the problem to decide whether it is valuable to do something about the problem.
 
 **Primary Lifecycle Stages:** Planning, User Research, Data Gathering
 
