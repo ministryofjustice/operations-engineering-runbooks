@@ -1,15 +1,17 @@
 ---
 owner_slack: "#operations-engineering-alerts"
-title: Github Repository Terraform
+title: GitHub Repository Terraform
 last_reviewed_on: 2024-02-02
 review_in: 6 months
 ---
 
 # Github Repository Terraform
 
-In Operations Engineering, we manage our Github Repositories through Terraform. Our repositories are defined in a [Terraform stack](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories) in the operations-engineering repository. The stack uses a [Github repository Terraform module](https://registry.terraform.io/modules/ministryofjustice/repository/github/latest).
+In Operations Engineering we manage our GitHub Repositories through Terraform. Our repositories are defined in a Terraform stack in
+the [operations-engineering](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories) repository.
+The stack uses our own module sourced via the Terraform registry as [ministryofjustice/repository/github](https://registry.terraform.io/modules/ministryofjustice/repository/github/latest).
 
-## How to create a new repository in the ministryofjustice organization
+## Create a new repository in the ministryofjustice organisation
 
 Clone the [operations-engineering](https://github.com/ministryofjustice/operations-engineering) repository:
 
@@ -17,19 +19,66 @@ Clone the [operations-engineering](https://github.com/ministryofjustice/operatio
 https://github.com/ministryofjustice/operations-engineering.git
 ```
 
-Create a branch. On your new branch add a '.tf' file to the 'terraform/github/repositories' directory, bearing the same name as the repository you intend to create. In the new file, add the repository definition as described in the [module repository](https://github.com/ministryofjustice/terraform-github-repository).
+Create a new branch. On this branch add a `.tf` file to the `terraform/github/repositories` directory with the same name as the repository you intend to create.
+In this file add the repository definition, see the module repository [terraform-github-repository](https://github.com/ministryofjustice/terraform-github-repository)
+for full details. For example,
 
-'example-repo.tf':
+`example-repo.tf`:
 
 ```
     module "example-repo" {
         source  = "ministryofjustice/repository/github"
-        version = "0.0.4"
+        version = "0.0.7"
   
         name = "example-repo"
-        application_name = "example-repo"
         description = "This is an example of how to define a repository in Terraform"
+        topics      = ["a-topic", "another-topic]
+        team_access = {
+          admin = [data.github_team.operations_engineering.id]
+        }
     }
 ```
 
-Push your changes to the remote repository and raise a PR. The PR will inititate a Terraform plan showing how your changes will affect the Terraform state. On merging into the main branch, the changes will be applied to the Terraform state and your repository will be created in the 'ministryofjustice' Github organization. 
+The `team_access` input creates a `gituhub_team_repository` association that grants a team a specified access level to the given repository. There are
+four access levels; `admin`, `maintain`, `push` (write), `pull` (read). To create an association to an existing team please add the team as a data
+source to the `data.tf` file and then reference it as above. For example, to add the `operations-engineering` team (where `slug` refers to its name in GitHub),
+
+```
+data "github_team" "operations_engineering" {
+  slug = "operations-engineering"
+}
+```
+
+The default GitHub organisation is `ministryofjustice` if you need to create a repository in another Ministry of Justice GitHub organisation
+please add it to the `main.tf` file as a provider with an `alias`. For example to add the `ministryofjustice-test` organisation:
+
+```
+provider "github" {
+  alias = "ministryofjustice-test"
+  token = var.github_token
+  owner = "ministryofjustice-test"
+}
+``` 
+
+To import an existing resource into the Terraform stack create an `imports.tf` file and add import blocks. For example, to import an
+existing team repository association into the module,
+
+```
+import {
+  to = module.<repository-name>.github_team_repository.<access-level>["<team-id>"]
+  id = "<team_id>:<repository-name>"
+}
+
+import {
+  to = module.example-repo.github_team_repository.admin["4192115"]
+  id = "4192115:example-repo"
+}
+```
+Here `4192115` is the team ID for the `operations-engineering` team in the `ministryofjustice` organisation. 
+
+Before trying to import resource you can first push your changes and inspect the Terraform plan (as detailed below). The Terraform plan
+output contains the correct resource and data source references required in the import block. 
+
+Push your changes to the remote repository and raise a PR. The PR will inititate a Terraform plan showing how your changes will
+affect the Terraform state. Once approved and merged into the main branch, the changes are applied to the Terraform state and the new repository
+is created in the specifed Ministry of Justice GitHub organisation. 
