@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2024-01-05
+last_reviewed_on: 2024-02-16
 review_in: 3 months
 ---
 
@@ -48,7 +48,7 @@ Additionally, demos empower stakeholders with direct insights, enhancing their e
 sessions, we celebrate successes, pinpoint areas for growth, and pivot effectively for upcoming sprints, ensuring our
 continuous development and team cohesion.
 
-### **🧪 Milestone Planning**
+### **✅ Milestone Planning**
 
 To enable effective delivery of larger, more complex problems - we dedicate a session to looking ahead and planning what we should work on next and detail the work required.
 
@@ -165,17 +165,6 @@ It allows to easily add custom fields and metrics to keep track of project manag
 and create specialised views to optimise our ceremonies.
 
 Our board can be found [here](https://github.com/orgs/ministryofjustice/projects/52)
-
-### **🧪 Adopt GitHub Discussions for Firebreak Ideas**
-
-To streamline our firebreak innovation process, we should adopt GitHub Discussions. This tool offers a more engaging and organised way to capture, discuss, and evolve our firebreak ideas compared to the current use of GitHub issues.
-
-**Benefits:**
-
-- Discussions are categorised for easy navigation.
-- Allows voting, commenting, and interactive dialogue.
-- Ideas can be continuously updated and refined based on team input.
-- Preserves valuable discussions for future reference.
 
 ---
 
