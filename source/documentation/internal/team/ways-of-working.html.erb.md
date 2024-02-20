@@ -30,6 +30,12 @@ everyone knows where we stand and how we're moving forward.
 2-week sprints have been accepted as a reasonable time frame to balance the need for the team to deliver complex work
 items, and the need to include reflective practices such as demos, retrospectives, and sprint planning frequently.
 
+### **💡 Implementing Firebreak Sprints**
+
+We embrace Firebreak Sprints as a vital component of our engineering process, dedicating structured breaks from our regular sprint cycles to activities that significantly contribute to our technical health, innovation, and team well-being.
+
+For inspiration and guidance, we look to the GOV.UK team's approach to Firebreak Sprints. Their experiences underscore the value of such initiatives in promoting technical excellence and team well-being. For more information, please see our documentation describing [Firebreak Sprints](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/firebreak-sprints.html).
+
 ## **Ceremonies**
 
 ### **✅ Backlog Refinement**
