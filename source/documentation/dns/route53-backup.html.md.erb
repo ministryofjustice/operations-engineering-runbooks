@@ -1,0 +1,109 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Restoring Route 53 from Backup
+last_reviewed_on: 2024-03-01
+review_in: 6 months
+---
+
+# Introduction
+
+A JSON backup of our DSD Route 53 estate lives in a S3 bucket in cloud platform, this backup can be used to restore Route 53 records in the event of a failure.
+
+The JSON backup has the following structure:
+
+```
+{
+    'hosted_zone_id': 
+        {
+            'name': 'somename.aws.com.', 
+            'records': 
+                [
+                    {
+                        'Name': 'somename.aws.com.', 
+                        'Type': 'NS', 
+                        'TTL': 172800, 
+                        'ResourceRecords': ['some-nameserver']
+                    }, 
+                    {
+                        'Name': 'somename.aws.com.', 
+                        'Type': 'SOA', 
+                        'TTL': 900, 
+                        'ResourceRecords': ['some-nameserver']
+                    }
+                ]
+        }
+}
+```
+
+## Pulling the JSON backup from CP
+
+1. Authenticate to the Cloud Platform route 53 backup IAM role `operations-engineering-route53-backup-prod-state-role`.
+2. Pull the backup data from the S3 bucket: 
+
+```
+aws s3api get-object --bucket cloud-platform-50ad54b3b789d9fba7b301cce9d35f39 --key hosted_zones.json hosted_zones.json
+```
+
+## Restoring a Hosted Zone
+
+This implementation uses the Python boto3 SDK for AWS
+
+1. Authenticate to the DSD admin account.
+2. Setup:
+
+```
+import boto3
+
+r53_client = boto3.client("route53")
+```
+
+2. Create a new hosted zone: 
+
+```
+new_zone_id = r53_client.create_hosted_zone(Name=hosted_zone_name, CallerReference=str(hash(hosted_zone_id)))
+
+print(new_zone_id)
+```
+Make a note of the new hosted zone id, as this will be required to create records in the new hosted zone.
+
+3. Create Resource Record Sets:
+
+You will have to create a change request for each new resource record set, for example:
+
+```
+response = r53_client.change_resource_record_sets(
+    HostedZoneId=hosted_zone_id,
+    ChangeBatch={
+        'Changes': 
+            [
+                {
+                    "Action": "CREATE",
+                    "ResourceRecordSet": 
+                        {
+                            "Name": "somename.aws.com.",
+                            "Type": "MX",
+                            "TTL": 1800,
+                            "ResourceRecords": ['some-nameserver']
+                        }
+                },
+                {
+                    "Action": "CREATE",
+                    "ResourceRecordSet": 
+                        {
+                            "Name": "somealias.somename.aws.com.",
+                            "Type": "A",
+                            "AliasTarget": 
+                                {
+                                    "HostedZoneId": "hosted_zone_id",
+                                    "DNSName": "somename",
+                                    "EvaluateTargetHealth": False
+                                }   
+                        },
+                }
+
+            ]
+    }
+)
+
+print("Change info:", response)
+```
