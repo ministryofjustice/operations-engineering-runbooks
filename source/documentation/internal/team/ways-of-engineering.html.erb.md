@@ -7,7 +7,7 @@ review_in: 3 months
 
 # Ways of Engineering
 
-This foundational document outlines our collective approach to engineering practices, fostering a culture of continuous improvement, innovation, and excellence. It acts as a compass for our technical journey, guiding us in making informed decisions, embracing best practices, and exploring new technological frontiers. Through this document, we aim to harmonise our engineering efforts, ensuring efficiency, quality, and sustainability in our projects.
+This foundational document outlines our collective approach to engineering practices, fostering a culture of continuous improvement, innovation, and excellence. It is a compass for our technical journey, guiding us to make informed decisions, embrace best practices, and explore new technological frontiers. This document aims to harmonise our engineering efforts, ensuring efficiency, quality, and sustainability in our projects.
 
 **Statuses:**
 
@@ -19,13 +19,13 @@ This foundational document outlines our collective approach to engineering pract
 
 ### **🧪 Use PipEnv for Python Package Manager**
 
-We are experimenting with adopting PipEnv as our Python package manager, moving away from our current setup using pip. PipEnv offers a more streamlined approach to managing package dependencies and Python environments. This tool combines the best aspects of various packaging tools into a single interface, aiming to improve our workflow and project consistency. The experiment will assess PipEnv's impact on our development process, focusing on ease of use, dependency resolution, and environment management.
+We are experimenting with adopting PipEnv as our Python package manager, moving away from our current setup using Pip. PipEnv offers a more streamlined approach to managing package dependencies and Python environments. This tool combines the best aspects of various packaging tools into a single interface, aiming to improve our workflow and project consistency. The experiment will assess PipEnv's impact on our development process, focusing on ease of use, dependency resolution, and environment management.
 
 ## **Security and Dependency Management**
 
 ### **🧪 Replace Dependabot with Trivy for CVE Dependency Management**
 
-To enhance our security posture and streamline the management of vulnerabilities within our dependencies, we are experimenting with replacing Dependabot with Trivy. This shift aims to leverage Trivy's comprehensive vulnerability detection across multiple languages and package managers, coupled with its ease of integration into our CI/CD pipelines. During this experimental phase, we will evaluate Trivy's effectiveness in identifying and mitigating known vulnerabilities, comparing it to Dependabot's performance and utility.
+To enhance our security posture and streamline the management of vulnerabilities within our dependencies, we are experimenting with replacing Dependabot with Trivy. This shift aims to leverage Trivy's comprehensive vulnerability detection across multiple languages and package managers and ease of integration into our CI/CD pipelines. During this experimental phase, we will evaluate Trivy's effectiveness in identifying and mitigating known vulnerabilities, comparing it to Dependabot's performance and utility.
 
 ---
 
@@ -35,4 +35,4 @@ To maintain the relevance and effectiveness of our Ways of Engineering, we encou
 
 ### Experimental Engineering Practices
 
-We're committed to innovation not just in our projects but also in how we work together as an engineering team. Experimenting with new practices allows us to continuously improve and adapt to the changing tech landscape. Participation and feedback from all team members are essential for these experiments to yield valuable insights and guide our evolution.
+We're committed to innovation in our projects and how we work together as an engineering team. Experimenting with new practices allows us to improve and adapt to the changing tech landscape continuously. Participation and feedback from all team members are essential for these experiments to yield valuable insights and guide our evolution.
