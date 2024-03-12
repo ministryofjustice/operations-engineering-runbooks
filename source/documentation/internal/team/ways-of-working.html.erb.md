@@ -147,6 +147,10 @@ The host will walk the team through the board, ensuring each member has a chance
 
 Team members are encouraged to support the host, fostering a collaborative atmosphere.
 
+### **🧪 Ways of Engineering**
+
+As an experimental practice, we will introduce a "Ways of Engineering Ceremony" to our routine. This ceremony is dedicated to discussing and reviewing our team's engineering practices in a structured yet open forum. The goal is to foster continuous dialogue on improvements, innovations, and adjustments needed within our engineering domain. This initiative will allow us to collectively assess the effectiveness of our current practices, explore new methodologies, and decide on the adoption of experimental practices on a regular basis. Participation and input from every team member are crucial for making this ceremony a valuable asset in our continuous improvement journey.
+
 ## General
 
 ### **✅ Team Socialisation**
