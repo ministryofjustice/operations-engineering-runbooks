@@ -25,15 +25,11 @@ review_in: 3 months
 
 - The users that are still classed as dormant users after the additional check is made, are sent a Notify email to inform the user that our automation considers the user inactive and to log into Github within a month.
 
-- After the first Notify email is sent to the users, a list of users that were emailed is uploaded to AWS S3 within a separate json file for each Organisation.
+- After the first (only) Notify email is sent to the users, a list of users that were emailed is uploaded to AWS S3 within a separate json file for each Organisation.
 
 - After the file is uploaded the script checks if all the first Notify emails were delivered successfully or not.
 
 - If the script detects any undelivered emails it will raise a Slack notification with the email addresses that failed. The users of these email addresses have had their email accounts deactivated. You will need to run the Leavers process on these users.
-
-- The script can send out a reminder email via Notify to those users it has emailed already. This reads the json file from AWS S3 for each Organisation.
-
-- The reminder email should be sent a week or so before the deadline specified in the first email to the users. This is a manual step that needs to be scheduled.
 
 - Once the deadline has passed the script can start the final step to remove the dormant users.
 
@@ -53,22 +49,24 @@ review_in: 3 months
 
 ## Dormant User Steps
 
-1. Ask Tony to create a new GitHub Dormant export and save it as `dormant.csv`.
+1. Ask a [GitHub Enterprise Owner](https://github.com/orgs/ministryofjustice/people/enterprise_owners) to create a new GitHub Dormant Users export.
 
-2. Generate a People page export file for the [MoJ Org](https://github.com/orgs/ministryofjustice/people) and [AS Org](https://github.com/orgs/moj-analytical-services/people) in json format.
+2. The Enterprise Owner will generate the export using the [GitHub user guidance](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/managing-dormant-users). The resulting export should be saved/renamed as `dormant.csv`. Provide `dormant.csv` to the team member who requested the export.
 
-3. Rename the files to be `export-ministryofjustice.json` and `export-moj-analytical-services.json`.
+3. Generate a People page export file for the [MoJ Org](https://github.com/orgs/ministryofjustice/people) and [AS Org](https://github.com/orgs/moj-analytical-services/people) in json format.
 
-4. Upload the three files to the AWS S3 bucket `operations-engineering-dormant-users` within our AWS account.
+4. Rename the files to be `export-ministryofjustice.json` and `export-moj-analytical-services.json`.
 
-5. Run the Operations-Engineering GH Action [dormant-users-debug-mode](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-debug-mode.yml). Read the GH Action output for the printed list of usernames it detects are dormant. If any usernames appear to be bot accounts, add those usernames to the allow list within the script [file](https://github.com/ministryofjustice/operations-engineering/blob/main/bin/dormant_users.py).
+5. Upload the three files to the AWS S3 bucket `operations-engineering-dormant-users` within our AWS account.
 
-6. Re-run step 5 to ensure usernames that should be ignored have been correctly ignored by the script.
+6. Run the Operations-Engineering GH Action [dormant-users-debug-mode](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-debug-mode.yml). Read the GH Action output for the printed list of usernames it detects are dormant. If any usernames appear to be bot accounts, add those usernames to the allow list within the script [file](https://github.com/ministryofjustice/operations-engineering/blob/main/bin/dormant_users.py).
 
-7. Run the Operations-Engineering GH Action [Dormant Users first email](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-first-email.yml). This will send the Notify email to the dormant users and upload the list of emailed users within a json file to AWS S3.
+7. Re-run step 5 to ensure usernames that should be ignored have been correctly ignored by the script.
 
-8. Run the Operations-Engineering GH Action [Dormant Users reminder email](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-reminder-email.yml). This will send a Notify email to the users who were emailed in step 7.
+8. Run the Operations-Engineering GH Action [Dormant Users first email](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-first-email.yml). This will send the Notify email to the dormant users and upload the list of emailed users within a json file to AWS S3.
 
-9. Repeat steps 2, 3 and 4. The two uploaded files will have the users latest last login date. The login date is used in the comparison conducted in the next step which determines if a user is still Dormant or not.
+9. Set a reminder date to proceed to steps 10 and 11 to action the removal of users.
 
-10. Run the Operations-Engineering GH Action [Dormant Users remove users](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-remove-users.yml). This will remove the still dormant users from GitHub and send a Notify email to those users.
+10. Repeat steps 3, 4 and 5. The two uploaded files will have the users latest last login date. The login date is used in the comparison conducted in the next step which determines if a user is still Dormant or not.
+
+11. Run the Operations-Engineering GH Action [Dormant Users remove users](https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-remove-users.yml). This will remove the still dormant users from GitHub and send a Notify email to those users.
