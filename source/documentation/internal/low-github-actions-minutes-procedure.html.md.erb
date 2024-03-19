@@ -25,6 +25,20 @@ Comms should be sent to the following channels:
 
 - `#github-community`
 
+The following template can be used:
+
+```
+:alert: :github-292: GitHub Actions minutes: over quota
+As part of our GitHub usage, we get 50,000 minutes to use for private and internal repositories. We have hit that limit. The allowance restarts on 1st September 2023. Actions that are part of private or internal repositories will not be able to run until 1st September 2023. Public repositories are not affected.
+
+This is a reminder that repositories should be public by default to meet point 12 of the GOV.UK Service Standard. Private or internal repositories should be limited to:
+- keys and credentials
+- algorithms used to detect fraud
+- unreleased policy
+
+If your repository is private or internal, consider making it public going forward, as this will not use the minutes. If you cannot, please audit your GitHub Actions and either offload them to CircleCI or reduce the frequency and length of time they run for.
+```
+
 ### Investigate Github Actions Minutes Consumption:
 
 Investigate any spikes in Github Actions minutes quota consumption. 
