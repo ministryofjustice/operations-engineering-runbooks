@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: CircleCI Troubleshooting
-last_reviewed_on: 2024-03-05
+last_reviewed_on: 2024-03-22
 review_in: 3 months
 ---
 
@@ -48,3 +48,19 @@ There should not be a deploy key already preset, if there is, it may be a differ
 7. Rerun one of the failed builds for the project
 
 Deploy keys should now be created in both the CircleCI settings page and the GitHub settings page. If this is not the case, please contact #operations-engineering.
+
+## Troubleshooting Builds "Unauthorised" due to contexts error
+
+User may get the following error:
+
+```
+The user who triggered the build may not have permission to a context being used. Visit our help article, Troubleshooting Builds "Unauthorized" due to contexts.
+```
+
+This issue is most likley caused by a user not being in the same GitHub Team that has access to the conext. [CircleCI Guide for reference](https://support.circleci.com/hc/en-us/articles/360050273651-Troubleshooting-Builds-Unauthorized-due-to-contexts)
+
+You can check Context restictions (i.e. the GitHub Team that has access to the Context) via the Contexts section of Organisational Settings.
+
+This will appear under the "Security" heading in the Contexts list, or if you click on the specific Context, the Team value will be shown under the heading "Group".
+
+To resolve the the authentication error the user must be added to the correct Team. Advise user to contact the GitHub Team Maintainer.
