@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Agile Delivery
-last_reviewed_on: 2024-01-05
+last_reviewed_on: 2024-04-05
 review_in: 3 months
 ---
 
@@ -49,7 +49,7 @@ At the end of discovery, Operations Engineering will have understood, documented
 - ✅ **Key Stakeholder - Needs** - the needs of the stakeholders should be well understood. These will aid in scoping the problem down to provide a solution that resolves a whole problem for users.
 - ✅ **Process Diagram** - process diagrams are helpful visual aids for simply explaining processes. Creating a process diagram by the end of discovery will help the team to identify problem areas, smaller scoped issues that could be tackled first, constraints, and help communication with stakeholders by using a common view.
 - ✅ **Scope** - there will be an agreement on the scope of the problem the team will attempt to solve. Being able to scope the problem sufficiently will help ensure a successful solution can be delivered to stakeholders in a timely manner. _Don't attempt to solve the whole problem, but ensure you solve a whole problem for the user._
-- ✅ **Problem Statement** - by the end of the discovery - the team is able to succinctly express the problem providing useful insight into the problem domain i.e. the users and their needs. 
+- ✅ **Problem Statement** - by the end of the discovery - the team is able to succinctly express the problem providing useful insight into the problem domain i.e. the users and their needs.
 - ✅ **Success Metrics** - agreement of success metrics by the end of discovery will ensure the team focuses on solving the right problem and enable us to later critically evaluate solutions that are built.
 - ✅ **Decision on Whether to Continue** - At the end of discovery, Operations Engineering will have enough information about the problem to decide whether it is valuable to do something about the problem.
 
