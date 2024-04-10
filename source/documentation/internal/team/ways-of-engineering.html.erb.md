@@ -23,7 +23,7 @@ We are experimenting with adopting PipEnv as our Python package manager, moving 
 
 ## **Security and Dependency Management**
 
-### **🧪 Replace Dependabot with Trivy for CVE Dependency Management**
+### **✅  Replace Dependabot with Trivy for CVE Dependency Management**
 
 To enhance our security posture and streamline the management of vulnerabilities within our dependencies, we are experimenting with replacing Dependabot with Trivy. This shift aims to leverage Trivy's comprehensive vulnerability detection across multiple languages and package managers and ease of integration into our CI/CD pipelines. During this experimental phase, we will evaluate Trivy's effectiveness in identifying and mitigating known vulnerabilities, comparing it to Dependabot's performance and utility.
 
