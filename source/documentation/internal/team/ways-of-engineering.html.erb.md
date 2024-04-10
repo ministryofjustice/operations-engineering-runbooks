@@ -23,9 +23,13 @@ We are experimenting with adopting PipEnv as our Python package manager, moving 
 
 ## **Security and Dependency Management**
 
-### **🧪 Replace Dependabot with Trivy for CVE Dependency Management**
+### **✅ Replace Dependabot with Trivy for CVE Dependency Management**
 
 To enhance our security posture and streamline the management of vulnerabilities within our dependencies, we are experimenting with replacing Dependabot with Trivy. This shift aims to leverage Trivy's comprehensive vulnerability detection across multiple languages and package managers and ease of integration into our CI/CD pipelines. During this experimental phase, we will evaluate Trivy's effectiveness in identifying and mitigating known vulnerabilities, comparing it to Dependabot's performance and utility.
+
+### **🧪 Implement CodeQL for Python Code Security Review**
+
+To uphold the highest security standards in our Python codebase, we have decided to integrate CodeQL into our development workflow. CodeQL will serve as a critical tool in identifying security weaknesses within our Python code at pull request (PR) stages and on a regular basis through automated scans. Including CodeQL aims to enhance our proactive security measures, allowing us to address vulnerabilities effectively and maintain the integrity of our applications.
 
 ---
 
