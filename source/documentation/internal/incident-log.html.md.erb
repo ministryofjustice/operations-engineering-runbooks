@@ -9,11 +9,23 @@ review_in: 3 months
 
 This is a log of Operations Engineering managed incidents.
 
+## Q2 2024 (April to June)
+
+- **Mean Time to Repair**: 0h 0m
+
+- **Mean Time to Resolve**: 0h 0m
+
+## Q1 2024 (January to March)
+
+- **Mean Time to Repair**: 0h 0m
+
+- **Mean Time to Resolve**: 0h 0m
+
 ## Q4 2023 (October to Decmeber)
 
 - **Mean Time to Repair**: 83h 50m
 
-- **Mean Time to Resolve**: TBC
+- **Mean Time to Resolve**: 2185h 6m
 
 ### Incident on 2023-12-15 - Sentry Session Replay Quota Exhausted
 
@@ -21,10 +33,10 @@ This is a log of Operations Engineering managed incidents.
 
   - First detected: 2023-12-15 15:34
   - Repaired: 2023-12-15 16:16
-  - Resolved: TBC
+  - Resolved: 2024-04-11 11:06
 
 - **Time to repair**: 0h 42m
-- **Time to resolve**: TBC
+- **Time to resolve**: 2808h 28m
 
 - **Identified**: Automated alert email from Sentry Support at 80% and 100% Replay quota consumption.
 - **Impact**: This resulted in no further Replays being available to any projects until the monthly subscription resets on 14th January 2024.
@@ -85,10 +97,10 @@ N/A - Only action that will resolve furter incidents is an increase in quota, wh
 
   - First detected: 2023-11-17 09:21
   - Repaired: 2023-11-17 15:45
-  - Resolved: TBC
+  - Resolved: 2024-04-11 11:06
 
 - **Time to repair**: 6h 24m
-- **Time to resolve**: TBC
+- **Time to resolve**: 3649h 45m
 
 - **Identified**: Automated alert email from Sentry Support at 80% and 100% Replay quota consumption.
 - **Impact**: This resulted in no further Replays being available to any projects until the monthly subscription resets on 14th December 2023. There are only 3 projects currently using this feature.
@@ -109,7 +121,7 @@ N/A - Only action that will resolve furter incidents is an increase in quota, wh
 - **Resolution**: Worked with Service Team to update configuration to reduce risk of further quota spikes. It is likely that until the quota is increased that further breaches may occur.
 
 - **Review Actions**:
-  - Improve detection of spikes by adding Replays to existing anolmoly detection and alerting - **TODO**
+  - Improve detection of spikes by adding Replays to existing anolmoly detection and alerting - **Done**
   - Forward automated email alerts from Sentry to alerts channel in slack to improve visibility an align to operational practices - **Done**
-  - Increase Replay subscription to allow users to be able to use the feature - **TODO**
+  - Increase Replay subscription to allow users to be able to use the feature - **Done**
   - Create user documentation to help Service Teams set appropraite sample rates - **TODO**
