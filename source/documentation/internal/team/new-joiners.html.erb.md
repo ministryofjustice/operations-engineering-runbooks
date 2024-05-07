@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: New Joiners Guide
-last_reviewed_on: 2024-02-07
+last_reviewed_on: 2024-05-07
 review_in: 3 months
 ---
 
@@ -60,10 +60,10 @@ A google account will enable log-ins to some/most of these tools MOJ provision h
 
 New developers are recommended to have the following tools installed:
 
-- Homebrew 
+- Homebrew
 - Python 3.11
-- Docker 
-- Docker Compose 
+- Docker
+- Docker Compose
 - VSCode
 - kubectl
 - Terraform
@@ -81,7 +81,6 @@ This can be achieved by running the following script:
 && brew install tfenv \
 && tfenv install latest
 ```
-
 
 ## 1Password
 
