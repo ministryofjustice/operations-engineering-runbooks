@@ -1,0 +1,83 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Responding to Organisation Fine-Grained Personal Access Tokens
+last_reviewed_on: 2024-06-17
+review_in: 3 months
+---
+
+# Responding to Organisation Fine-Grained Personal Access Token Requests
+
+## Recieving Requests
+
+Requests for new organisation-level Personal Access Tokens (PATs) are sent to the operations engineering email inbox. These requests can also be viewed directly on GitHub for both the [ministryofjustice](https://github.com/organizations/ministryofjustice/settings/personal-access-token-requests) organisation and the [moj-analytical-services](https://github.com/organizations/moj-analytical-services/settings/personal-access-token-requests) organisation.
+
+When an email request for a PAT is received, it should be promptly picked up by a member of the team and the information logged in our [centralised spreadsheet](https://docs.google.com/spreadsheets/d/1IMAhnj-BDqPIxwJgl2lXR1Mn3AoUQjcoVsdx861KK3k/edit#gid=0) for auditing purposes.
+
+It is essential to capture the following information from the requester:
+
+- Name of the token
+- Purpose of the token
+- Scope of access
+- Token permissions
+- The date of creation
+- The owner of the token
+- Any risks associated with the token
+- The member of the operations-engineering team that approved the request
+
+The only piece of information above that isn't a default part of the request is the purpose of the token. For this we will need to contact the requestor for a brief description of why this token is needed.
+
+## Validating the Request
+
+Once the operations-engineering team have received a new token request, we will need to validate the information to ensure adheres to best practices. This step helps us verify that the token is necessary, appropriately scoped, and aligned with our security policies.
+
+### Scope of Access
+
+**Minimum Permissions:** Validate that the requested access scope follows the principle of least privilege, granting only the permissions necessary for the intended purpose on a per-repository basis.
+
+**Large Scope Justification:** Ensure that any elevated or broad access is well justified and documented.
+
+### Requester's Role and Authority
+
+**Legitimacy:** Ensure the purpose for which the token is requested is legitimate and necessary for the requester's role.
+
+**Role Verification:** Confirm that the requester's role within the organization necessitates the access they are requesting.
+
+**Authority:** Verify that the requester has the authority to request such access.
+
+### Information Clarity
+
+**Token Name:** Ensure the name of the token is clear and refelcts the purpose or service it was created for.
+
+**Request Details:** Ensure all required information has been provided by the requester. Incomplete requests should be sent back for additional information.
+
+### Risks
+
+**Potential Risks:** Assess the potential risks associated with granting the token. At this point we should be considering the impact of token misuse or compromise.
+
+### Communication with Requester
+
+If the request lacks sufficient detail/any part of the request does not meet validation criteria, open up a conversation with the requester to gather the missing information through either email or Slack.
+
+### Approval or Denial
+
+**Approval:** If the request meets all validation criteria, proceed with logging the request and moving it to the review phase.
+
+**Denial:** If the request fails to meet the criteria, provide the requester with a clear explanation for the denial and any steps they can take to meet the validation requirements.
+
+## Logging the Request
+
+Once a new PAT request has been approved by a member of the team, we must move on to log it in the [Organisation PAT Records](https://docs.google.com/spreadsheets/d/1IMAhnj-BDqPIxwJgl2lXR1Mn3AoUQjcoVsdx861KK3k/edit#gid=0) spreadsheet. Maintaining comprehensive historical records of all approved, denied, or revoked PAT tokens is essential for transparency, accountability, and aids in tracking and managing access within the operations engineering team.
+
+## Revoking Tokens
+
+Token should be revoked as soon as possible if any of the following situations arise:
+
+- The token has expired and does not need to be renewed.
+- The token is no longer required.
+- The token has been compromised.
+
+*Note: We should receive notifications for expired org-level tokens through the [operations-engineering-alerts](https://moj.enterprise.slack.com/archives/C033QBE511V) channel.*
+
+You can revoke a token on GitHub by selecting the token from the list of active tokens in the organisation, and manually revoking it.
+
+Once complete, we should mark the token as revoked on the [Organisation PAT Records](https://docs.google.com/spreadsheets/d/1IMAhnj-BDqPIxwJgl2lXR1Mn3AoUQjcoVsdx861KK3k/edit#gid=0) spreadsheet.
