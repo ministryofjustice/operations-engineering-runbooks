@@ -17,6 +17,14 @@ This foundational document outlines our collective approach to engineering pract
 
 ## **Package Management and Environment**
 
+### ✅ Python as the Primary Programming Language
+
+We have decided to continue using Python as our primary programming language due to the following reasons:
+
+- Python has a large and active community, ensuring abundant resources, libraries, and support.
+- Python's simplicity and readability make it easier to onboard new developers, especially those with an interest in infrastructure and DevOps.
+- For our team's requirements, Python's flexibility and emphasis on rapid development suit our needs well. We prioritize the velocity of features over extreme performance or resilience.
+
 ### **✅ Use PipEnv for Python Package Manager**
 
 We are experimenting with adopting PipEnv as our Python package manager, moving away from our current setup using Pip. PipEnv offers a more streamlined approach to managing package dependencies and Python environments. This tool combines the best aspects of various packaging tools into a single interface, aiming to improve our workflow and project consistency. The experiment will assess PipEnv's impact on our development process, focusing on ease of use, dependency resolution, and environment management.
