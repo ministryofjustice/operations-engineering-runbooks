@@ -1,0 +1,37 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: ADR-020 Bot Account Personal Access Token Standards
+last_reviewed_on: 2024-06-20
+review_in: 6 months
+---
+
+# ADR-020 Fine-grained Personal Access Token Standards
+
+## Status
+
+⌛️ Thinking
+
+## Context
+
+The Operations Engineering (OE) team at the Ministry of Justice (MoJ) need a standard
+way to use Personal Access Tokens (PATs) in the moj-operations-engineering-bot account
+so that we can reduce risks, improve clarity, and align with best practices in token management.
+
+## Decision
+
+For tokens created in the the moj-operations-engineering-bot account we have agreed;
+
+- To use Fine-grained PATs (FG-PATs) where possible in accordance with industry standards and GitHub recommendations.
+- To name the FG-PAT descriptively, referencing the project where it is used.
+- To include in the FG-PAT description field the full organisation/repository and project name where it is used.
+- To only use a token in a single repository. A repository may use more than one token.
+- To only enable the minimum permissions required (POLP).
+- To set an expiration date of 1 year.
+
+
+
+## Consequences
+
+- These standards help to manage our current secrets manually
+- Facilitate progress towards managing secrets automatically (storage and regeneration in a secrets manager).
+- Supports direction outlined in ADR 019 to enable repository secret management in Terraform.
