@@ -1,0 +1,34 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: ADR-021 Management of DNS Records through OctoDNS
+last_reviewed_on: 2024-06-25
+review_in: 6 months
+---
+
+# ADR-021 Managing DNS Records Through OctoDNS
+
+## Status
+
+✅ Accepted
+
+## Context
+
+The Operations Engineering (OE) team at the Ministry of Justice (MoJ) recognized the need for a system to manage DNS records consistently across multiple providers and teams. Currently, DNS management is performed leading to inconsistencies and a lack of traceability.
+We require a solution that supports automation, provides a unified configuration format, and integrates seamlessly with our existing CI/CD pipelines.
+
+## Decision
+
+- We have decided to use OctoDNS to manage our DNS records.  OctoDNS is a DNS Management tool designed to make it easier to manage DNS records across multiple providers, It was created by engineers at GitHub.
+- It is open-source. A standardised YAML configuration format will be employed to declare DNS records, and these configurations will be managed within a dedicated repository.
+- OctoDNS will be integrated with our CI/CD pipelines to automate the deployment and updates of DNS records.
+
+
+## Consequences
+
+- DNS records across multiple providers will be managed using a single configuration format, ensuring consistency.
+- DNS updates will be automated through our CI/CD pipelines, reducing manual effort and the potential for human error.
+- All changes to DNS records will be tracked in version control, providing a clear audit trail.
+- Built-in validation within OctoDNS will help prevent misconfigurations.
+- Initial effort will be required to integrate OctoDNS with our existing systems and pipelines.
+- OctoDNS supports a wide range of DNS providers, allowing us to manage records across different services seamlessly.
+- OctoDNS will enable scalable DNS management, allowing the team to easily handle an increasing number of domains and records as the organisation grows. This scalability ensures that the DNS management process remains efficient and manageable even as the DNS infrastructure expands.
