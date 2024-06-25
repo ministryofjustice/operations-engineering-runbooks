@@ -17,21 +17,46 @@ The Operations Engineering (OE) team at the Ministry of Justice (MoJ) need a sta
 way to use Personal Access Tokens (PATs) in the moj-operations-engineering-bot account
 so that we can reduce risks, improve clarity, and align with best practices in token management.
 
+
 ## Decision
 
 For tokens created in the the moj-operations-engineering-bot account we have agreed;
 
 - To use Fine-grained PATs (FG-PATs) where possible in accordance with industry standards and GitHub recommendations.
-- To name the FG-PAT descriptively, referencing the project where it is used.
+- To name the FG-PAT descriptively, referencing the project where it is used, following Naming Convention detailed below.
 - To include in the FG-PAT description field the full organisation/repository, project name, and the GitHub secret name is it used under.
-- To only use a token in a single repository. A repository may use more than one token.
+- To use a token at most in a single repository. A repository may use more than one token.
 - To only enable the minimum permissions required (POLP).
 - To set an expiration date of 1 year.
+
+
+## 🤔 Token Naming Convention
+This naming convention applies pricipally to the tokens in the `moj-operations-engineering-bot` account, however,
+it may be used elsewhere.
+
+The naming convention consists of three parts; `<business_domain>_<usage>_<permission_type>`
+
+- Business domain; this should succintly describe the business domain or blobbum for which the token is created.
+For example, `DORMANT_USERS`, `DNS`, `JOIN_GITHUB`.
+- Usage; this should describe the intended use of the token within the given business domain. For example,
+  - When used for everything in the business domain; `GENERAL`
+  - When used for a specific tool or integration; `SENTRY`, `SLACK`, `GITHUB`, `TERRAFORM`.
+- Permission type; this must give an indication of the amount of power the token wields. For example,
+`ADMIN`, `WRITE`, `READ` are clear and sufficient. 
+
+The page in the `moj-operations-engineering-bot` account where tokens are listed contains the full permission list
+for reference. If a token’s permission level changes then its name should be updated accordingly.
+
+Full examples,
+
+- `DORMANT_USERS_SLACK_ADMIN`
+- `DNS_OCTODNS_WRITE`
+- `JOIN_GITHUB_FLASK_ADMIN`
 
 
 
 ## Consequences
 
-- These standards help to manage our current secrets manually
-- Facilitate progress towards managing secrets automatically (storage and regeneration in a secrets manager).
+- These standards and conventions help to manage our current secrets manually.
+- Facilitate progress towards managing secrets automatically (storage and rotation controlled via a secrets manager).
 - Supports direction outlined in ADR 019 to enable repository secret management in Terraform.
