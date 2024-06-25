@@ -13,8 +13,9 @@ review_in: 6 months
 
 ## Context
 
-The Operations Engineering (OE) team at the Ministry of Justice (MoJ) recognized the need for a system to manage DNS records consistently across multiple providers and teams. Currently, DNS management is performed leading to inconsistencies and a lack of traceability.
-We require a solution that supports automation, provides a unified configuration format, and integrates seamlessly with our existing CI/CD pipelines.
+The Operations Engineering (OE) team at the Ministry of Justice (MoJ) needs to improve DNS management to address security and operational inefficiencies. Current unstructured processes lead to inconsistencies and delays.
+By gathering security stakeholder requirements, the OE team aims to make DNS management more robust, secure, and compliant, reducing manual interventions and aligning practices with MoJ's security policies
+After evaluating OctoDNS and splitting the Terraform state file by hosted zone, we chose OctoDNS for managing Route53 records. This eliminates the state file dependency, simplifies DNS record management with YAML, and integrates with our CI/CD pipelines, enhancing efficiency and maintainability
 
 ## Decision
 
