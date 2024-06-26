@@ -15,12 +15,13 @@ review_in: 6 months
 
 The Operations Engineering (OE) team at the Ministry of Justice (MoJ) needs to improve DNS management to address security and operational inefficiencies. Current unstructured processes lead to inconsistencies and delays.
 By gathering security stakeholder requirements, the OE team aims to make DNS management more robust, secure, and compliant, reducing manual interventions and aligning practices with MoJ's security policies
-After evaluating OctoDNS and splitting the Terraform state file by hosted zone, we chose OctoDNS for managing Route53 records. This eliminates the state file dependency, simplifies DNS record management with YAML, and integrates with our CI/CD pipelines, enhancing efficiency and maintainability
+After evaluating OctoDNS and Terraform as IaC tools, we chose OctoDNS for managing Route53 records. This decision eliminates the state file dependency, simplifies DNS record management with YAML, and integrates seamlessly with our CI/CD pipelines, enhancing efficiency and maintainability.
 
 ## Decision
 
+- Performance tests have demonstrated that OctoDNS operations are significantly faster, offering a reliable and maintainable solution for our DNS management needs.
 - After conducting Proof of Concepts (PoCs) for both OctoDNS and Terraform, we have decided to use OctoDNS for managing our Route53 DNS records. OctoDNS eliminates the need for a state file, significantly improving efficiency and reducing complexity.
-- Its standardised YAML configuration format is more readable and maintainable, and it integrates seamlessly with our CI/CD pipelines for automated deployment and updates. Performance tests showed that OctoDNS operations are faster, providing a reliable and maintainable solution for our DNS management needs. 
+- Its standardised YAML configuration format is more readable and maintainable, and it integrates seamlessly with our CI/CD pipelines for automated deployment and updates. 
 - This decision addresses the key challenges we faced with Terraform and aligns with our goal to streamline and enhance DNS record management.
 
 ## Consequences
