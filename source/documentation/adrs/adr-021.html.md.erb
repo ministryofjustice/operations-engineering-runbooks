@@ -1,0 +1,35 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: ADR-021 Management of DNS Records through OctoDNS
+last_reviewed_on: 2024-06-26
+review_in: 6 months
+---
+
+# ADR-021 Managing DNS Records Through OctoDNS
+
+## Status
+
+✅ Accepted
+
+## Context
+
+The Operations Engineering (OE) team at the Ministry of Justice (MoJ) needs to improve DNS management to address security and operational inefficiencies. Current unstructured processes lead to inconsistencies and delays.
+By gathering security stakeholder requirements, the OE team aims to make DNS management more robust, secure, and compliant, reducing manual interventions and aligning practices with MoJ's security policies
+After evaluating OctoDNS and Terraform as IaC tools, we chose OctoDNS for managing Route53 records. This decision eliminates the state file dependency, simplifies DNS record management with YAML, and integrates seamlessly with our CI/CD pipelines, enhancing efficiency and maintainability.
+
+## Decision
+
+- Performance tests have demonstrated that OctoDNS operations are significantly faster, offering a reliable and maintainable solution for our DNS management needs.
+- After conducting Proof of Concepts (PoCs) for both OctoDNS and Terraform, we have decided to use OctoDNS for managing our Route53 DNS records. OctoDNS eliminates the need for a state file, significantly improving efficiency and reducing complexity and issues.
+- Its standardised YAML configuration format is more readable and maintainable, and it integrates seamlessly with our CI/CD pipelines for automated deployment and updates. 
+- This decision addresses the key challenges we faced with Terraform and aligns with our goal to streamline and enhance DNS record management.
+
+## Consequences
+
+- DNS records across multiple providers will be managed using a single configuration format, ensuring consistency.
+- DNS updates will be automated through our CI/CD pipelines, reducing manual effort and the potential for human error.
+- All changes to DNS records will be tracked in version control, providing a clear audit trail.
+- Built-in validation within OctoDNS will help prevent misconfigurations.
+- Initial effort will be required to integrate OctoDNS with our existing systems and pipelines.
+- OctoDNS supports a wide range of DNS providers, allowing us to manage records across different services seamlessly.
+- OctoDNS will enable scalable DNS management, allowing the team to easily handle an increasing number of domains and records as the organisation grows. This scalability ensures that the DNS management process remains efficient and manageable even as the DNS infrastructure expands.
