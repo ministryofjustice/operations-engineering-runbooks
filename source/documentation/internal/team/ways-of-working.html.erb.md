@@ -30,7 +30,7 @@ everyone knows where we stand and how we're moving forward.
 2-week sprints have been accepted as a reasonable time frame to balance the need for the team to deliver complex work
 items, and the need to include reflective practices such as demos, retrospectives, and sprint planning frequently.
 
-### **💡 Implementing Firebreak Sprints**
+### **✅ Implementing Firebreak Sprints**
 
 We embrace Firebreak Sprints as a vital component of our engineering process, dedicating structured breaks from our regular sprint cycles to activities that significantly contribute to our technical health, innovation, and team well-being.
 
@@ -147,7 +147,7 @@ The host will walk the team through the board, ensuring each member has a chance
 
 Team members are encouraged to support the host, fostering a collaborative atmosphere.
 
-### **🧪 Ways of Engineering**
+### **✅ Ways of Engineering**
 
 As an experimental practice, we will introduce a "Ways of Engineering Ceremony" to our routine. This ceremony is dedicated to discussing and reviewing our team's engineering practices in a structured yet open forum. The goal is to foster continuous dialogue on improvements, innovations, and adjustments needed within our engineering domain. This initiative will allow us to collectively assess the effectiveness of our current practices, explore new methodologies, and decide on the adoption of experimental practices on a regular basis. Participation and input from every team member are crucial for making this ceremony a valuable asset in our continuous improvement journey.
 
