@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Manual SSL Certificate Processes
-last_reviewed_on: 2024-05-16
+last_reviewed_on: 2024-07-09
 review_in: 3 months
 ---
 
@@ -15,7 +15,6 @@ There are 3 categories of certificate we use at Ministry of Justice:
 
 - AWS Certificate Manager (ACM)/Let’s Encrypt - automated certificate management for modern cloud native software and infrastructure
 - Gandi.net - where automated certificate management is not possible
-- DigiCert - for legacy GSI domains only (this process is being deprecated)
 
 Where at all practicable we should be looking to utilise automated certificate management. The MoJ Hosting Service is looking at strategies to move consumers to modern certificate management solutions.
 
@@ -81,7 +80,7 @@ Please contact your [administrator](mailto:certificates@digital.justice.gov.uk) 
 
 10. If creation has been successful two emails will be sent to the Certificate Alerts Google group. An invoice (which can be ignored), and a Validation email. Click on the link in the validation email to obtain CNAME details that will need to be added in the Hosted Zone in Route53.
 
-11. Create the CNAME record in Route53. Gandi.net will automatically try to pick up this CNAME to confirm that we have ownership of the domain.
+11. Create the CNAME record in Route53 via [DNS](https://github.com/ministryofjustice/dns) repository. Gandi.net will automatically try to pick up this CNAME to confirm that we have ownership of the domain.
 
 **Note - Any preceding "\_" or trailing "." characters in the CNAME values are extremely important for validation. Missing characters will mean that validation will not be successful.**
 
