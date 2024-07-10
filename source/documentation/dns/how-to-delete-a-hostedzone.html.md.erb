@@ -1,0 +1,41 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: How to delete a Hostedzone
+last_reviewed_on: 2024-07-10
+review_in: 3 months
+---
+
+# How to delete a Hostedzone
+
+## When to use this process
+
+It is very unlikely that we will delete a hostedzone. In the first instance refer to [Decommissioning Domains](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/dns/decommission-dns.html#decommissioning-domains) guide to determine in deletion is appropriate.
+
+The most likley scenarios for deletion of a hostedzone would be:
+- removal of a hostedzone created by Operations Engineering for testing purposes that is no longer required
+- removal of a hostedzone following transfer of a domain to another Governemnt agency
+- a delegation to a hostedzone managed inside of MoJDSD is no longer required
+
+We use OctoDNS to manage changes to DNS. At present OctoDNS cannot delete a whole Hostedzone, therefore this process exists to ensure that what is in [DNS](https://github.com/ministryofjustice/dns) is aligned to what is in AWS Route53. This requires some manually steps that we should look to automate at a later time.
+
+## Steps to delete the Hostedzone
+
+1. You have consulted the Decommissioning Domains guide and you are satisfied that the scenario for deletion applies in this instance.
+
+2. Check the hostedzone `.yaml` file to identify any delegations from that zone. These will take the form of `NS records` for subdomains within that hostedzone e.g NS record for `subdomain.example.justice.gov.uk` in the `example.justice.gov.uk` hostedzone. If you have identified any delegations you will first need to establish if any of those are still active before progressing to the next steps. If any delegations are still required the hostedzone **cannot** be deleted.
+
+3. If the hostedzone to be deleted is a delegtion from within the MoJDSD account start by removing the relevant delegation NS record from the parent hostedzone. This change must be implemented via [DNS](https://github.com/ministryofjustice/dns). It can part of the same PR to delete the hostedzone in step 5.
+
+4. Delete the `.yaml` file related to the hostedzone to be deleted via [DNS](https://github.com/ministryofjustice/dns).
+
+5. Raise the PR relating to the removal of the `.yaml` file, including removal of any delegation DNS records identifed in step 3. Check the `dry-run` output to ensure that the expected changes will be made. If this is just the removal of the .`yaml` file there should be `no changes`.
+
+6. After the change has been applied successfully (i.e. no alerts or pipeline failures), access Route53 via the console and manually remove the hostedzone. You will be unable to delete the zone if it contains additional DNS records to the default NS and SOA records. Manually delete these DNS records first, and then delete the Hostedzone.  
+
+## (service).gov.uk subdomains domains
+
+In the **extremely unlikely** scenario that you need to delete one of these types of domain, there are some additional manual steps to complete deletionthat must be completed.
+
+1. Check if a domain is registered in [BT DNS](https://dmc.bt.com/). If the domain is registered here you will need to submit an order via the BT DNS Portal to `Cease` registartion of the domain.
+
+2. Contact [Cabinet Office Domain Team](mailto:domainmanagement@digital.cabinet-office.gov.uk) via email to confirm that the domain is being deleted.
