@@ -44,3 +44,11 @@ The primary rationale behind this decision is the commitment to maintaining the 
 ## Future Considerations:
 
 This decision should be revisited if either GitHub Actions changes its requirements to be more aligned with our security policies, or if our Cloud Platform evolves to accommodate such requirements in a secure manner.
+
+## Investigation 24/07/2024
+
+Investigated the impact of internal github actions minutes quota saturation on repositories across the organisation. 
+We were able to relieve pressure on the quota using non-infrastructural solutions, such as tuning down high minutes consuming pipelines and converting some internal repositories to public repositories.
+It was found that those repositories most affected by quota saturation run priveleged workloads, which we cannot currently facilitate an infrastructural solution for (see decision above).
+There are several internal repositories which don't conduct priveleged operations in their CICD, and therefore we could potentially deploy non-priveleged failover infrastrcutre for, however these repositories are less affected by running out of minutes at this time. 
+The conclusion of this investigation was that there currently isn't a strong enough argument to create a failover solution for this issue, and non-infrastructural solutions should suffice in controlling gha minutes quota consumption by internal repositories for the forseeable future. 
