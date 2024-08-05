@@ -39,6 +39,13 @@ To enhance our security posture and streamline the management of vulnerabilities
 
 To uphold the highest security standards in our Python codebase, we have decided to integrate CodeQL into our development workflow. CodeQL will serve as a critical tool in identifying security weaknesses within our Python code at pull request (PR) stages and on a regular basis through automated scans. Including CodeQL aims to enhance our proactive security measures, allowing us to address vulnerabilities effectively and maintain the integrity of our applications.
 
+## **Third Party Tooling Dependency Management**
+
+### **💡 Maintain MoJ GitHub Actions**
+
+We introduce dependency whenever we decide to use a third party GitHub Action, this is an action not maintained by GitHub themselves, but nevertheless available on the GitHub Actions Marketplace. We can estimate the risk by number of likes, maintainence history, number of contributors, etc but sometimes there is little choice for the particuar action required. Here we make a decision between spending time creating the action ourselves (and maintaining it henceforth) and the as yet unknown risk of using an untested tool. So far we have generally chosen the latter, however there are some issues arising with reliability and maintainability which incur effort to detangle; effort which could be better spent maintaining our own version of the action. Doing so would give us full control over the action, the ability to keep it simple, the ongoing effort put into maintaining it could be considered slightly less wasteful than effort put into debugging someone else's code. We could develop a standard way of writing GitHub Actions, and split each into their own repository inevitably culminating in a refactor [ministryofjustice/github-actions](https://github.com/ministryofjustice/github-actions). Standardisation of existing and new MoJ GitHub Actions would reduce the maintainence burden by increasing familiarity.
+
+
 ---
 
 ## Adding/Adjusting Ways of Engineering
