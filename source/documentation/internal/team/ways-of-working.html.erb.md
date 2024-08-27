@@ -7,7 +7,7 @@ review_in: 3 months
 
 # Ways of Working
 
-This document serves as our collaborative play-book, providing clear guidelines and standardised processes for 'how we
+This document serves as our collaborative playbook, providing clear guidelines and standardised processes for 'how we
 work' together. It ensures consistency, clarity, and efficiency in our daily tasks, fostering a harmonious team culture.
 By referring to this document, we align ourselves toward common goals, resolve conflicts, and adapt to changing needs.
 It's not just a set of rules; it's a tool for continuous improvement, helping us evolve and excel as a team.
@@ -84,13 +84,20 @@ reviews ensures that our team is well-equipped to navigate uncertainties and con
 For further details on the ceremony, visit
 the [Risk Review Meeting Process](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/risk-review.html)
 
-### **✅ Sprint Planning**
+### **💡 Sprint Planning**
 
-In these focused sessions, we outline our goals and tasks for the upcoming sprint. By defining clear objectives, we
-foster team alignment and understanding. Sprint planning ensures that every team member comprehends their roles and
-responsibilities, promoting accountability. These sessions allow us to optimize our efforts toward shared objectives. By
-engaging in sprint planning, we enhance collaboration, refine our strategies, and set the stage for a successful sprint.
-This meticulous planning guarantees our team's cohesion, enabling us to deliver high-quality work consistently.
+Sprint planning will now be conducted in three stages to prepare our tickets for the upcoming sprint better and ensure all tasks are well-defined and aligned with our sprint goals. This structured approach aims to enhance clarity, collaboration, and effective use of time:
+
+1. **Initial Sprint Planning Session (30 minutes):**  
+   The first part of the meeting is a brief session led by the Project Manager. The goal is to provide an overview of the upcoming sprint and a rough sorting of the relevant tickets. This initial sort sets the direction and context for the sprint, aligning the team on high-level priorities and focus areas.
+
+2. **Mob Refinement Session (1 hour):**  
+   The second stage is a collaborative mobbing session where the team refines each task or topic. This session focuses on ensuring that tickets are well-sized, clearly defined, and have a solid definition of done. It is driven by team input to foster a comprehensive understanding of the work ahead and ensure everyone is aligned on the expectations and deliverables.
+
+3. **Final Sprint Planning and Prioritisation (30 minutes to 1 hour):**  
+   In the final session, the team performs a detailed sorting and prioritisation of all items proposed for the sprint. This stage considers constraints such as the number of staff available, the complexity of tasks, and the team’s understanding of each topic. This focused session ensures the sprint plan is realistic, achievable, and tailored to the team's capacity and expertise.
+
+By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
 
 ### **✅ Daily Stand-Up Meetings**
 
