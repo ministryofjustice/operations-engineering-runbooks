@@ -56,13 +56,15 @@ continuous development and team cohesion.
 
 ### **✅ Milestone Planning**
 
-To enable effective delivery of larger, more complex problems - we dedicate a session to looking ahead and planning what we should work on next and detail the work required.
+To manage and deliver larger, more complex projects, we dedicate focused planning sessions for each phase of our Agile delivery process. These sessions are structured around specific delivery phases—Discovery, Alpha, Beta, Live, and Retirement—each represented by a dedicated milestone in our GitHub repository.
 
-As priority, we ensure current milestones that are being worked on contain the work items required to complete the milestone.
+1. Dedicated Milestones for Each Phase: We create a separate milestone for each delivery phase in GitHub, ensuring transparent tracking and accountability for all tasks and objectives associated with that phase.
 
-After, we look forward to the next milestones the team could start planning.
+2. Planning for Future Phases: After establishing the tasks for the current milestone, we look ahead to upcoming phases. This proactive approach allows us to anticipate future needs and align our efforts accordingly, ensuring smooth transitions between phases.
 
-These sessions help foster a collaborative culture, ensuring all team members can have their voices heard early in the planning stages.
+3. Fostering Collaboration and Inclusion: These planning sessions are designed to be inclusive, giving every team member a voice in the process. Engaging all team members early enhances collaboration, gathers diverse insights, and ensures alignment on our shared goals.
+
+You can read more about the delivery phases [here](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/team/agile-delivery.html#agile-delivery)
 
 ### **✅ Retrospectives**
 
