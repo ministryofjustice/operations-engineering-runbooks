@@ -111,13 +111,15 @@ the [Risk Review Meeting Process](https://runbooks.operations-engineering.servic
 
 Sprint planning will now be conducted in three stages to prepare our tickets for the upcoming sprint better and ensure all tasks are well-defined and aligned with our sprint goals. This structured approach aims to enhance clarity, collaboration, and effective use of time:
 
-1. **Initial Sprint Planning Session (30 minutes):**  
+1. **Initial Sprint Planning Session (~10 minutes):**
    The first part of the meeting is a brief session led by the Project Manager. The goal is to provide an overview of the upcoming sprint and a rough sorting of the relevant tickets. This initial sort sets the direction and context for the sprint, aligning the team on high-level priorities and focus areas.
 
-2. **Mob Refinement Session (1 hour):**  
+2. **Mob Refinement Session (1 - 2 hour(s)):**
    The second stage is a collaborative mobbing session where the team refines each task or topic. This session focuses on ensuring that tickets are well-sized, clearly defined, and have a solid definition of done. It is driven by team input to foster a comprehensive understanding of the work ahead and ensure everyone is aligned on the expectations and deliverables.
 
-3. **Final Sprint Planning and Prioritisation (30 minutes to 1 hour):**  
+   We should include a 10 minute break during this section of the meeting to allow for a quick recharge.
+
+3. **Final Sprint Planning and Prioritisation (~10 minutes):**
    In the final session, the team performs a detailed sorting and prioritisation of all items proposed for the sprint. This stage considers constraints such as the number of staff available, the complexity of tasks, and the team’s understanding of each topic. This focused session ensures the sprint plan is realistic, achievable, and tailored to the team's capacity and expertise.
 
 By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
