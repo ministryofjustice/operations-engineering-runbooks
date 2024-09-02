@@ -94,6 +94,8 @@ share ideas for improvement candidly. Through these focused discussions, we refi
 collaboration, and fortify our team dynamics. Embracing retrospectives ensures our continuous adaptation and drives us
 toward excellence in every sprint.
 
+To make it easier for anyone in the team to create a retrospective, we have included a 'Build-a-Retro' section on our [current board](https://miro.com/app/board/o9J_lsgfhYk=/). This is an area to improve over time with common components we feel help bring out the best of us in our retrospectives, and to help decrease the time needed to create one from scratch.
+
 ### **✅ Risk Register Review**
 
 These sessions provide a clear understanding of our current risks and serve as a platform to discuss both existing and
