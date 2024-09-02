@@ -64,6 +64,23 @@ To manage and deliver larger, more complex projects, we dedicate focused plannin
 
 3. Fostering Collaboration and Inclusion: These planning sessions are designed to be inclusive, giving every team member a voice in the process. Engaging all team members early enhances collaboration, gathers diverse insights, and ensures alignment on our shared goals.
 
+### Meeting Structure
+
+Below is a suggested structure for the milestone planning meetings. This can evolve over time as we find a system that works best for the team:
+
+1. **10 Minutes**: Review the full list of Operations Engineering [milestones](https://github.com/ministryofjustice/operations-engineering/milestones). Some milestones are hidden from the [default list](https://github.com/orgs/ministryofjustice/projects/52/views/11) due to no active stories being allocated to them.
+
+This section of the meeting is to confirm that the team is still happy with their state, and whether additional tickets are needed to bring these into the active milestone section.
+
+2. **40 Minutes**: Starting from the top of the active milestone list the team reviews the current list of tickets. Each ticket is confirmed by the team to be an essential part of the work needed to complete the milestone.
+
+Once completed, we add any relevant stories from the backlog that currently have no milestones assigned, and create new stories should we feel further work is needed. These stories are not to be filled out in detail, and act only as placeholders until the team's refinement meeting.
+
+For this section we need to take into consideration the stage of the milestone (alpha, beta, etc) when deciding on the work that is required.
+
+3. **10 Minutes**: The team performs a final review of the active milestones to ensure we are happy that everything in progress is relevant. This is an opportunity to close off milestones that are complete or are no longer relevant to the team.
+
+
 You can read more about the delivery phases [here](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/team/agile-delivery.html#agile-delivery)
 
 ### **✅ Retrospectives**
