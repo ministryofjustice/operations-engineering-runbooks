@@ -68,20 +68,22 @@ To manage and deliver larger, more complex projects, we dedicate focused plannin
 
 Below is a suggested structure for the milestone planning meetings. This can evolve over time as we find a system that works best for the team:
 
-1. **10 Minutes**: Review the full list of Operations Engineering [milestones](https://github.com/ministryofjustice/operations-engineering/milestones). Some milestones are hidden from the [default list](https://github.com/orgs/ministryofjustice/projects/52/views/11) due to no active stories being allocated to them.
+1. **Review Full Milestone List (~10 Minutes):**:
+   Review the full list of Operations Engineering [milestones](https://github.com/ministryofjustice/operations-engineering/milestones). Some milestones are hidden from the [default list](https://github.com/orgs/ministryofjustice/projects/52/views/11) due to no active stories being allocated to them.
 
-This section of the meeting is to confirm that the team is still happy with their state, and whether additional tickets are needed to bring these into the active milestone section.
+   This section of the meeting is to confirm that the team is still happy with their state, and whether additional tickets are needed to bring these into the active milestone section.
 
-2. **40 Minutes**: Starting from the top of the active milestone list the team reviews the current list of tickets. Each ticket is confirmed by the team to be an essential part of the work needed to complete the milestone.
+2. **Initial Ticket Sort (~40 Minutes):**:
+   Starting from the top of the active milestone list the team reviews the current list of tickets. Each ticket is confirmed by the team to be an essential part of the work needed to complete the milestone.
 
-Once completed, we add any relevant stories from the backlog that currently have no milestones assigned, and create new stories should we feel further work is needed. These stories are not to be filled out in detail, and act only as placeholders until the team's refinement meeting.
+   Once completed, we add any relevant stories from the backlog that currently have no milestones assigned, and create new stories should we feel further work is needed. These stories are not to be filled out in detail, and act only as placeholders until the team's refinement meeting.
 
-For this section we need to take into consideration the stage of the milestone (alpha, beta, etc) when deciding on the work that is required.
+   For this section we need to take into consideration the stage of the milestone (alpha, beta, etc) when deciding on the work that is required.
 
-3. **10 Minutes**: The team performs a final review of the active milestones to ensure we are happy that everything in progress is relevant. This is an opportunity to close off milestones that are complete or are no longer relevant to the team.
+3. **Milestone Progress Overview (~10 Minutes):**:
+   The team performs a final review of the active milestones to ensure we are happy that everything in progress is relevant. This is an opportunity to close off milestones that are complete or are no longer relevant to the team.
 
-
-You can read more about the delivery phases [here](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/team/agile-delivery.html#agile-delivery)
+   You can read more about the delivery phases [here](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/team/agile-delivery.html#agile-delivery)
 
 ### **✅ Retrospectives**
 
@@ -91,6 +93,8 @@ to celebrate achievements and address obstacles. Retrospectives foster open comm
 share ideas for improvement candidly. Through these focused discussions, we refine our strategies, enhance
 collaboration, and fortify our team dynamics. Embracing retrospectives ensures our continuous adaptation and drives us
 toward excellence in every sprint.
+
+To make it easier for anyone in the team to create a retrospective, we have included a 'Build-a-Retro' section on our [current board](https://miro.com/app/board/o9J_lsgfhYk=/). This is an area to improve over time with common components we feel help bring out the best of us in our retrospectives, and to help decrease the time needed to create one from scratch.
 
 ### **✅ Risk Register Review**
 
@@ -107,13 +111,15 @@ the [Risk Review Meeting Process](https://runbooks.operations-engineering.servic
 
 Sprint planning will now be conducted in three stages to prepare our tickets for the upcoming sprint better and ensure all tasks are well-defined and aligned with our sprint goals. This structured approach aims to enhance clarity, collaboration, and effective use of time:
 
-1. **Initial Sprint Planning Session (30 minutes):**  
+1. **Initial Sprint Planning Session (~10 minutes):**
    The first part of the meeting is a brief session led by the Project Manager. The goal is to provide an overview of the upcoming sprint and a rough sorting of the relevant tickets. This initial sort sets the direction and context for the sprint, aligning the team on high-level priorities and focus areas.
 
-2. **Mob Refinement Session (1 hour):**  
+2. **Mob Refinement Session (1 - 2 hour(s)):**
    The second stage is a collaborative mobbing session where the team refines each task or topic. This session focuses on ensuring that tickets are well-sized, clearly defined, and have a solid definition of done. It is driven by team input to foster a comprehensive understanding of the work ahead and ensure everyone is aligned on the expectations and deliverables.
 
-3. **Final Sprint Planning and Prioritisation (30 minutes to 1 hour):**  
+   We should include a 10 minute break during this section of the meeting to allow for a quick recharge.
+
+3. **Final Sprint Planning and Prioritisation (~10 minutes):**
    In the final session, the team performs a detailed sorting and prioritisation of all items proposed for the sprint. This stage considers constraints such as the number of staff available, the complexity of tasks, and the team’s understanding of each topic. This focused session ensures the sprint plan is realistic, achievable, and tailored to the team's capacity and expertise.
 
 By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
