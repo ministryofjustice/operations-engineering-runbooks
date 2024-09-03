@@ -117,7 +117,7 @@ Sprint planning will now be conducted in three stages to prepare our tickets for
 2. **Mob Refinement Session (1 - 2 hour(s)):**
    The second stage is a collaborative mobbing session where the team refines each task or topic. This session focuses on ensuring that tickets are well-sized, clearly defined, and have a solid definition of done. It is driven by team input to foster a comprehensive understanding of the work ahead and ensure everyone is aligned on the expectations and deliverables.
 
-   We should include a 10 minute break during this section of the meeting to allow for a quick recharge.
+   __We should include a 10-minute break during this section of the meeting to allow for a quick recharge.__
 
 3. **Final Sprint Planning and Prioritisation (~10 minutes):**
    In the final session, the team performs a detailed sorting and prioritisation of all items proposed for the sprint. This stage considers constraints such as the number of staff available, the complexity of tasks, and the team’s understanding of each topic. This focused session ensures the sprint plan is realistic, achievable, and tailored to the team's capacity and expertise.
