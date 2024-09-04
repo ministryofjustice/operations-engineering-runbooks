@@ -7,30 +7,30 @@ review_in: 3 months
 
 # How to Remove a Dormant GitHub User
 
-This document provides detailed instructions for identifying and removing dormant GitHub users within the Ministry of Justice GitHub Enterprise. By following this runbook, the Operations Engineering team can optimise the use of GitHub licenses, reduce unnecessary costs, and maintain security by ensuring only active users have access to enterprise resources.
+This document provides detailed instructions for identifying and removing dormant GitHub users within the Ministry of Justice GitHub Enterprise. By following this runbook, the Operations Engineering team can optimise the use of GitHub licenses, reduce unnecessary costs, and maintain security by ensuring only active users can access enterprise resources.
 
 ## What is a Dormant GitHub User?
 
-A dormant GitHub user is defined as a user account that has not performed any activity within the last 90 days in the `ministryofjustice` or `moj-analytical-services` organisation. 
+According to GitHub, A dormant GitHub user is an account that has not performed any activity within the last 90 days in the `ministryofjustice` or `moj-analytical-services` organisation. Many services in the Digital space use GitHub as an identity provider to access their systems. Cloud Platform, Analytical Platform, and Modernisation Platform use Auth0 to access various systems. All logs from respective Auth0 tenants are streamed over the [Operations Engineering Mod Platform AWS Account](https://ministryofjustice.eu.auth0.com/u/login?state=g6Fo2SBja001Z3RlWG10V1A1ZWJiUTdXbzJOeVFoZHNqQnJBRKN0aWTZIHFRcl9oTnpzZnhSQk1FLS03TURVdmRxdmZPV094QXJXo2NpZNkgTzIzNWRMaEN6c1FmWFNHTTRqZjQyM3hHVjRMdXlmY24).
 
 Activities that count towards user activity include:
 
-- Authenticating to access enterprise resources via SAML SSO, i.e. Cloud Platform, AWS, or the Analytical Platform's Control Panel.
+- **Auth0**: Authenticating to access enterprise resources via SAML SSO, i.e. Cloud Platform, AWS, or the Analytical Platform's Control Panel.
 
-- Creating repositories, pushing to repositories, creating or commenting on issues and pull requests, and various other actions within GitHub.
+- **GitHub**: Creating repositories, pushing to repositories, creating or commenting on issues and pull requests, and various other actions within GitHub.
 
-A detailed list of activities that define user activity can be found in the [GitHub documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/managing-dormant-users). We also consider activity on systems like Cloud Platform, AWS, or the Analytical Platform's Control Panel as valid activity.
+The [GitHub documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/managing-dormant-users) provides a detailed list of activities that define user activity in GitHub.
 
 ## Why Remove a Dormant GitHub User?
 
-Removing dormant users is essential for maintaining optimal use of your GitHub licenses and ensuring that only active contributors occupy seats. Dormant users can lead to unnecessary costs if they hold licenses that could otherwise be allocated to active team members or new users. Additionally, managing dormant users helps maintain security and compliance by reducing the number of potentially inactive accounts that could pose a security risk if compromised.
+Removing dormant users is essential for the optimal use of your GitHub licenses and ensuring that only active contributors occupy seats. Dormant users can incur unnecessary costs if they hold licenses that could otherwise be allocated to active team members or new users. Additionally, managing dormant users helps maintain security and compliance by reducing the number of potentially inactive accounts that could pose a security risk if compromised.
 
 ## What's Required to Remove a Dormant GitHub User?
 
 To remove a dormant GitHub user, you will need:
 
 1. **Access to GitHub Enterprise:** Only enterprise owners or users with sufficient administrative privileges can manage dormant users.
-2. **Permissions to Access AWS S3 and CloudWatch Logs in the operations-engineering-development, mod platform AWS account:** The process involves downloading the dormant users report from GitHub, uploading it to an S3 bucket, and querying CloudWatch logs to identify any recent activity outside of GitHub.
+2. **Permissions to Access AWS S3 and CloudWatch Logs in the operations-engineering-development, mod platform AWS account:** The process involves downloading the dormant user report from GitHub, uploading it to an S3 bucket, and querying CloudWatch logs to identify any recent activity outside of GitHub.
 3. **Access to Slack:** Notifications of dormant users will be sent to the specified Slack channel (`#operations-engineering-alerts`).
 4. **Script and GitHub Action Setup:** The provided Python script and GitHub action are necessary to automate the identification of dormant users and their removal from GitHub.
 
@@ -40,18 +40,18 @@ To remove dormant GitHub users using a GitHub Action, follow these steps:
 
 ### 1. Download the Dormant Users Report from GitHub
 
-First, you need to generate and download the dormant users report from GitHub Enterprise (You need to be a GitHub Enterprise Owner to do this). Follow these steps:
+First, you need to generate and download the dormant user report from GitHub Enterprise (You need to be a GitHub Enterprise Owner to do this). Follow these steps:
 
 - Go to your GitHub Enterprise account.
 - Navigate to **Your enterprises** from your profile menu.
-- Select the moj enterprise from the list.
+- Select the MOJ enterprise from the list.
 - In the sidebar, click **Compliance**.
 - Scroll down to **Reports** and next to **Dormant Users**, click **New report** if a recent report is not already available.
 - Once the report is generated, click **Download** next to the latest dormant users report.
 
 ### 2. Upload the Dormant Users CSV to an S3 Bucket
 
-Once you have downloaded the dormant users report as a CSV file (`dormant.csv`), you need to upload it to the designated S3 bucket. You can use the AWS CLI to upload the file. Make sure you have the AWS CLI configured with appropriate permissions to access the S3 bucket.
+Once you have downloaded the dormant user report as a CSV file (`dormant.csv`), you need to upload it to the designated S3 bucket. You can use the AWS CLI to upload the file. Ensure you have the AWS CLI configured with appropriate permissions to access the S3 bucket.
 
 Run the following command in your terminal:
 
