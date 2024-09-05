@@ -7,11 +7,19 @@ review_in: 3 months
 
 # How to Remove a Dormant GitHub User
 
-This document provides detailed instructions for identifying and removing dormant GitHub users within the Ministry of Justice GitHub Enterprise. By following this runbook, the Operations Engineering team can optimise the use of GitHub licenses, reduce unnecessary costs, and maintain security by ensuring only active users can access enterprise resources.
+This document provides instructions for identifying and removing dormant GitHub users within the Ministry of Justice GitHub Enterprise. By following this runbook, the Operations Engineering team can optimise the use of GitHub licenses, reduce unnecessary costs, and maintain security by ensuring only active users can access enterprise resources.
 
 ## What is a Dormant GitHub User?
 
-According to GitHub, A dormant GitHub user is an account that has not performed any activity within the last 90 days in the `ministryofjustice` or `moj-analytical-services` organisation. Many services in the Digital space use GitHub as an identity provider to access their systems. Cloud Platform, Analytical Platform, and Modernisation Platform use Auth0 to access various systems. All logs from respective Auth0 tenants are streamed over the [Operations Engineering Mod Platform AWS Account](https://ministryofjustice.eu.auth0.com/u/login?state=g6Fo2SBja001Z3RlWG10V1A1ZWJiUTdXbzJOeVFoZHNqQnJBRKN0aWTZIHFRcl9oTnpzZnhSQk1FLS03TURVdmRxdmZPV094QXJXo2NpZNkgTzIzNWRMaEN6c1FmWFNHTTRqZjQyM3hHVjRMdXlmY24).
+According to GitHub, A dormant GitHub user is an account that has not performed any activity within the last 90 days in an Enterprise account. Our Enterprise account has two organisations with two different types of users: 
+
+- `ministryofjustice`: traditionally contains developers and folks making changes to codebases.
+
+- `moj-analytical-services`: contains a whole spectrum of technical and non-technical people.
+
+The [GitHub documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/managing-dormant-users) provides a detailed list of activities that define user activity in GitHub.
+
+Many services in the Digital space use GitHub as an identity provider to access their systems. Cloud Platform, Analytical Platform, and Modernisation Platform use Auth0 as an authentication mechanism to access various systems. All logs from respective Auth0 tenants are streamed over the [Operations Engineering Mod Platform AWS Account](https://ministryofjustice.eu.auth0.com/u/login?state=g6Fo2SBja001Z3RlWG10V1A1ZWJiUTdXbzJOeVFoZHNqQnJBRKN0aWTZIHFRcl9oTnpzZnhSQk1FLS03TURVdmRxdmZPV094QXJXo2NpZNkgTzIzNWRMaEN6c1FmWFNHTTRqZjQyM3hHVjRMdXlmY24).
 
 Activities that count towards user activity include:
 
@@ -19,11 +27,9 @@ Activities that count towards user activity include:
 
 - **GitHub**: Creating repositories, pushing to repositories, creating or commenting on issues and pull requests, and various other actions within GitHub.
 
-The [GitHub documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/managing-dormant-users) provides a detailed list of activities that define user activity in GitHub.
-
 ## Why Remove a Dormant GitHub User?
 
-Removing dormant users is essential for the optimal use of your GitHub licenses and ensuring that only active contributors occupy seats. Dormant users can incur unnecessary costs if they hold licenses that could otherwise be allocated to active team members or new users. Additionally, managing dormant users helps maintain security and compliance by reducing the number of potentially inactive accounts that could pose a security risk if compromised.
+Dormant users can incur unnecessary costs if they hold licenses that could otherwise be allocated to active team members or new users. Additionally, managing dormant users helps maintain security and compliance by reducing the number of potentially inactive accounts that could pose a security risk if compromised.
 
 ## What's Required to Remove a Dormant GitHub User?
 
@@ -34,9 +40,9 @@ To remove a dormant GitHub user, you will need:
 3. **Access to Slack:** Notifications of dormant users will be sent to the specified Slack channel (`#operations-engineering-alerts`).
 4. **Script and GitHub Action Setup:** The provided Python script and GitHub action are necessary to automate the identification of dormant users and their removal from GitHub.
 
-## How to Remove a Dormant GitHub User via a GitHub Action
+## Report Dormant GitHub Users to Slack via a GitHub Action
 
-To remove dormant GitHub users using a GitHub Action, follow these steps:
+At present, removing a dormant GitHub user is a manual process. The steps to report those users to Slack are performed using a GitHub Action. Follow these steps:
 
 ### 1. Download the Dormant Users Report from GitHub
 
@@ -51,7 +57,15 @@ First, you need to generate and download the dormant user report from GitHub Ent
 
 ### 2. Upload the Dormant Users CSV to an S3 Bucket
 
-Once you have downloaded the dormant user report as a CSV file (`dormant.csv`), you need to upload it to the designated S3 bucket. You can use the AWS CLI to upload the file. Ensure you have the AWS CLI configured with appropriate permissions to access the S3 bucket.
+Once you have downloaded the dormant user report as a CSV file (`dormant.csv`), upload it to the designated S3 bucket using the AWS CLI. 
+
+First, export some short-term credentials from the Operations Engineering Modernisation Platform into your terminal:
+
+```bash
+export AWS_ACCESS_KEY_ID=<id>
+export AWS_SECRET_ACCESS_KEY=<key>
+export AWS_SESSION_TOKEN=<session>
+```
 
 Run the following command in your terminal:
 
@@ -81,4 +95,4 @@ The GitHub Action will perform the following steps:
 
 ### 5. Review and Act on the Slack Notification
 
-Once the workflow completes, check the `#operations-engineering-alerts` Slack channel for a notification listing dormant users. Review this list and determine if any further actions, such as removing or deactivating these users, are necessary.
+Once the workflow is complete, check the `#operations-engineering-alerts` Slack channel for a notification listing dormant users. Review this list, double-checking the user's activity in the GitHub UI before removing them from either/both organisations.
