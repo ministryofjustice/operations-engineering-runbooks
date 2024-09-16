@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2024-08-16
+last_reviewed_on: 2024-09-16
 review_in: 3 months
 ---
 
@@ -17,6 +17,7 @@ It's not just a set of rules; it's a tool for continuous improvement, helping us
 - ✅ Accepted
 - 🧪 Experimenting
 - 💡 New idea (waiting to be discussed by the team)
+- ⏸️ Paused (due to another active experiment)
 
 ## **Delivery**
 
@@ -107,7 +108,7 @@ reviews ensures that our team is well-equipped to navigate uncertainties and con
 For further details on the ceremony, visit
 the [Risk Review Meeting Process](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/risk-review.html)
 
-### **💡 Sprint Planning**
+### **🧪 Sprint Planning**
 
 Sprint planning will now be conducted in three stages to prepare our tickets for the upcoming sprint better and ensure all tasks are well-defined and aligned with our sprint goals. This structured approach aims to enhance clarity, collaboration, and effective use of time:
 
@@ -117,7 +118,7 @@ Sprint planning will now be conducted in three stages to prepare our tickets for
 2. **Mob Refinement Session (1 - 2 hour(s)):**
    The second stage is a collaborative mobbing session where the team refines each task or topic. This session focuses on ensuring that tickets are well-sized, clearly defined, and have a solid definition of done. It is driven by team input to foster a comprehensive understanding of the work ahead and ensure everyone is aligned on the expectations and deliverables.
 
-   __We should include a 10-minute break during this section of the meeting to allow for a quick recharge.__
+   **We should include a 10-minute break during this section of the meeting to allow for a quick recharge.**
 
 3. **Final Sprint Planning and Prioritisation (~10 minutes):**
    In the final session, the team performs a detailed sorting and prioritisation of all items proposed for the sprint. This stage considers constraints such as the number of staff available, the complexity of tasks, and the team’s understanding of each topic. This focused session ensures the sprint plan is realistic, achievable, and tailored to the team's capacity and expertise.
@@ -126,10 +127,20 @@ By breaking the sprint planning into these three distinct parts, we aim to impro
 
 ### **✅ Daily Stand-Up Meetings**
 
-Our team holds daily stand-up meetings in the morning to improve communication and collaboration. This consistent timing
+Our team holds daily stand-up meetings* in the morning to improve communication and collaboration. This consistent timing
 aligns everyone, allowing for timely updates and obstacle resolution. Morning meetings enable efficient daily planning,
 ensuring tasks are in sync with team objectives. This proactive approach enhances productivity and teamwork, making our
 Agile process more effective.
+
+The structure of the daily stand-up is:
+
+- Discuss work completed
+- Discuss work that is blocked
+- Discuss work in progress
+- 🧪 While discussing work in progress, if the person who is working on the ticket is off for the entire day at stand-up, we move the ticket back in to "To Do"
+- Discuss work happening outside of the normal sprint board view
+
+- *We skip the daily stand-up on the morning of Sprint Planning
 
 ### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
 
@@ -155,22 +166,6 @@ growth.
 
 Stay constructive and kind.
 
-### **✅ Use Google Meet For Ceremonies**
-
-To ensure we have the stability and functionality required to run ceremonies effectively, we use Google Meets for Ceremonies
-by default. Google Meet is familiar to the team and has been proven to provide most of the functionality required to run
-meetings effectively, such as:
-
-- Sharing individual tabs/apps instead of the entire screen
-- Quick reactions for instant feedback
-- Easy to use hand-up facility for a better flow of conversation of topics
-- Quality video streaming capabilities so team members can have cameras enabled
-
-### **✅ Use Slack Huddles For Stand-Up**
-
-To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
-stand-ups in a public space where our conversation can be saved and referenced later.
-
 ### **✅ Rotational Stand-Up Meeting Hosts**
 
 We should use a rotational approach to hosting our daily stand-up meetings to enhance engagement and shared responsibility. Each team member will take turns facilitating the stand-up, ensuring diverse perspectives and a deeper sense of involvement. This approach aims to foster a more inclusive and dynamic team environment.
@@ -181,7 +176,9 @@ Team members are encouraged to support the host, fostering a collaborative atmos
 
 ### **✅ Ways of Engineering**
 
-As an experimental practice, we will introduce a "Ways of Engineering Ceremony" to our routine. This ceremony is dedicated to discussing and reviewing our team's engineering practices in a structured yet open forum. The goal is to foster continuous dialogue on improvements, innovations, and adjustments needed within our engineering domain. This initiative will allow us to collectively assess the effectiveness of our current practices, explore new methodologies, and decide on the adoption of experimental practices on a regular basis. Participation and input from every team member are crucial for making this ceremony a valuable asset in our continuous improvement journey.
+As an experimental practice, we will introduce a "Ways of Engineering Ceremony" to our routine. This ceremony is dedicated to discussing and reviewing our team's engineering practices in a structured yet open forum.
+The goal is to foster continuous dialogue on improvements, innovations, and adjustments needed within our engineering domain.
+This initiative will allow us to collectively assess the effectiveness of our current practices, explore new methodologies, and decide on the adoption of experimental practices on a regular basis. Participation and input from every team member are crucial for making this ceremony a valuable asset in our continuous improvement journey.
 
 ## General
 
@@ -207,6 +204,26 @@ It allows to easily add custom fields and metrics to keep track of project manag
 and create specialised views to optimise our ceremonies.
 
 Our board can be found [here](https://github.com/orgs/ministryofjustice/projects/52)
+
+### **✅ Use Google Meet For Ceremonies**
+
+To ensure we have the stability and functionality required to run ceremonies effectively, we use Google Meets for Ceremonies
+by default. Google Meet is familiar to the team and has been proven to provide most of the functionality required to run
+meetings effectively, such as:
+
+- Sharing individual tabs/apps instead of the entire screen
+- Quick reactions for instant feedback
+- Easy to use hand-up facility for a better flow of conversation of topics
+- Quality video streaming capabilities so team members can have cameras enabled
+
+### **⏸️ Use Slack Huddles For Stand-Up**
+
+To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
+stand-ups in a public space where our conversation can be saved and referenced later.
+
+### **🧪 Use Microsoft Teams for Stand-Up**
+
+Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our Daily Stand-Ups with Microsoft Teams.
 
 ---
 
