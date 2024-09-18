@@ -1,0 +1,42 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Register new service.gov.uk subdomain
+last_reviewed_on: 2024-09-18
+review_in: 3 months
+---
+
+# Register new `service.gov.uk` subdomain
+
+The purpose of this runbook is for the registration of `service.gov.uk` subdomains e.g. `example.service.gov.uk`.
+
+MoJ is unable to regsiter these domains so must register these via CDDO.
+
+## Pre-requisites
+
+Before a Service Team can apply for a service.gov.uk subdomain it must have passed a [Beta Assessment](https://www.gov.uk/service-manual/technology/get-a-domain-name#after-your-beta-assessment).
+
+Evidence of passing the assessment must be provided with the request.
+
+If a service has **not** passed Beta Assessment then a `service.justice.gov.uk` may be appropriate. See Register new justice.gov.uk or service.justice.gov.uk.
+
+## Create NS Records
+
+### DNS to be managed by Operations Engineering
+
+1. [Created a new Hostedzone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.html) in AWS Route53. This is a manual step via the AWS Console. NS records created here will be needed for the registration process in the next steps.
+
+2. Add new Hostedzone to [DNS](https://github.com/ministryofjustice/dns).
+
+### DNS to be delegated to another platform
+
+1. If subdomain is being delegated to another platform ensure that the requester provides NS Record for where DNS will be managed e.g. Cloud Platform NS Records. This will be need for the registration process in the next steps.
+
+## Submit registration request to CDDO
+
+1. E-mail request for registration and delegation to CDDO domains team at [support@domains.gov.uk](mailto:support@domains.gov.uk). Include NS record details, and evidence of service passing Beta Assessment.
+
+2. CDDO will confirm when subdomain is registered and delegated.
+
+3. Confirm to the Requester that the new subdomain has been registered.
+
+After registration is complete any new DNS records for the new subdomain can be added by whoever is manageing that domain in MoJ.
