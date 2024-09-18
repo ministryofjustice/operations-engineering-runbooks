@@ -1,0 +1,64 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Register new gov.uk subdomain
+last_reviewed_on: 2024-09-18
+review_in: 3 months
+---
+
+# Register new `gov.uk` subdomain
+
+The purpose of this runbook is for the registration of top-level `gov.uk` subdomains e.g. `example.gov.uk`.
+
+MoJ is unable to regsiter these domains so uses BT as an intermediary with Nominet who manage top-level delegations on behalf of CDDO.
+
+## Pre-requisites
+
+The requester must [apply for a gov.uk domain name](https://www.gov.uk/apply-for-and-manage-a-gov-uk-domain-name), and have that application approved by the [Naming and Approvals Committee (NAC)](https://www.gov.uk/government/groups/naming-and-approvals-committee-nac).
+
+The application documentation and NAC approval **must** be provided with the request to Operations Engineering to register the domain.
+
+Any requests without supporting documentaion must be rejected and the requester informed to [apply as per gov.uk](https://www.gov.uk/apply-for-and-manage-a-gov-uk-domain-name) process.
+
+## Create NS Records
+
+### DNS to be managed by Operations Engineering
+
+1. [Created a new Hostedzone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.html) in AWS Route53. This is a manual step via the AWS Console. NS records created here will be needed for the registration process in the next steps.
+
+2. Add new Hostedzone to [DNS](https://github.com/ministryofjustice/dns).
+
+### DNS to be delegated to another platform
+
+1. If subdomain is being delegated to another platform ensure that the requester provides NS Record for where DNS will be managed e.g. Cloud Platform NS Records. This will be need for the registration process in the next steps.
+
+## Submit registration request to BT
+
+1. Login to the [BT DNS Portal](https://www.dmc.bt.com/)
+
+2. On the `Your Domains` tab click on the `+ Add a domain` button
+
+3. Add the new domain name and select the `gov.uk` tld
+
+4. Add a `Customer Reference` (there isn't any science to this, and is just something to help us identify the request so can be anything).
+
+5. Under `How would you like to import this domain?` select `I want BT to register it as a new domain`.
+
+6. Under `How would you like to manage DNS for this domain?` select `I want to manage my own DNS `.
+
+7. Add NS Record values (see Create NS Records).
+
+8. Click on the `Add to basket button`.
+
+9. Got to the basket and click on the `Place Order` button.
+
+10. You will receive an order confirmation email.
+
+11. BT will email you to obtain copies of the pre-requiste documenation and may ask some additional questions.
+
+12. After all information is provided BT will confirm that the domain has been registered.
+
+13. Confirm to the Requester that the new domain has been registered.
+
+BT has a 5 day SLA for requests so allow enough time for registartion to take place.
+
+After registration is complete any new DNS records for the new subdomain can be added by whoever is manageing that domain in MoJ.
