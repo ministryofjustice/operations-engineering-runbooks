@@ -1,0 +1,26 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Delegation of an existing `service.gov.uk` subdomain
+last_reviewed_on: 2024-09-19
+review_in: 3 months
+---
+
+# Delegation of an existing `service.gov.uk` subdomain
+
+This runbook covers the process for delegation of an existing `service.gov.uk` subdomain. These domains are typically managed by CDDO so the request must be submitted to them for the delegation.
+
+## Pre-requisites
+
+- Request meets rules around [delegation](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/dns/domain-delegation.html)
+- Domain **is not** managed via the [BT DNS](https://www.dmc.bt.com/) - If that is the case see runbook for delegation of `gov.uk` subdomains.
+- New hosting provider has replicated existing DNS configuration.
+
+## Submit registration request to CDDO
+
+1. E-mail request for delegation to CDDO domains team at [support@domains.gov.uk](mailto:support@domains.gov.uk). Include new NS record details.
+
+2. CDDO will confirm when subdomain is delegated.
+
+3. Confirm to the Requester that the subdomain has been delegated.
+
+After delegation has fully propogated (depending on length of existing NS Record TTL) there may be the need to remove the existing hostedzone from [DNS](https://github.com/ministryofjustice/dns) and [delete the old Hostedzone](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/dns/how-to-delete-a-hostedzone.html).
