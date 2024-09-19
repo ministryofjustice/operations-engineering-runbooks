@@ -1,0 +1,40 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Delegation of an existing `gov.uk` subdomain
+last_reviewed_on: 2024-09-19
+review_in: 3 months
+---
+
+# Delegation of an existing `gov.uk` subdomain
+
+This runbook covers the process for delegation of an existing `gov.uk` subdomain. These domains are typically managed via [BT DNS](https://www.dmc.bt.com/).
+
+## Pre-requisites
+
+- Request meets rules around [delegation](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/dns/domain-delegation.html)
+- New hosting provider has replicated existing DNS configuration.
+- Notify [Security](mailto:justicedigitalsoc@justice.gov.uk) of proposed changes so that they can approve temporery [registry lock](https://www.gov.uk/guidance/keeping-your-domain-name-secure#make-sure-your-domains-are-registry-locked) removal.
+
+## Submit delgation request to BT
+
+1. Login to the [BT DNS Portal](https://www.dmc.bt.com/)
+
+2. Find the domain on the `Your domains` tab.
+
+3. Click on the `Actions` button and select `Edit domain`.
+
+4. Add new NS Record values and save by clicking the `Add to basket` button.
+
+5. Go to the basket and click on the `Place Order` button.
+
+6. You will receive an order confirmation email.
+
+7. Next BT will contact the Registry Lock contact via email (copy will be sent to Domains mailbox) to request approval for temporerily removal of the lock so that ND Records can be changed.
+
+8. BT will confirm when DNS changes have been completed. 
+
+9. Notify Requester that changes have been made, and to allow old NS Record TTL to expire to allow for full propogation.
+
+BT has a 5 day SLA for requests so allow enough time for delegation to take place.
+
+After delegation has fully propogated (depending on length of existing NS Record TTL) there may be the need to remove the existing hostedzone from [DNS](https://github.com/ministryofjustice/dns) and [delete the old Hostedzone](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/dns/how-to-delete-a-hostedzone.html).
