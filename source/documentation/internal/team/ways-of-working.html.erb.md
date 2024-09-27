@@ -225,6 +225,16 @@ stand-ups in a public space where our conversation can be saved and referenced l
 
 Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our Daily Stand-Ups with Microsoft Teams.
 
+### **🧪 Use Microsoft Teams for all Ceremonies**
+
+Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our all our regular ceremonies with Microsoft Teams. These ceremonies include:
+
+- Sprint Planning
+- Milestone Planning
+- Retrospective
+- Ways of Engineering
+- Demos
+
 ---
 
 ## Adding/Adjusting Ways of Working
