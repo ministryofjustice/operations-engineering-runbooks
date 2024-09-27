@@ -235,6 +235,13 @@ Due to the migration to Microsoft 365 - we are experimenting using the tooling b
 - Ways of Engineering
 - Demos
 
+### **🧪 Updating Ticket Information**
+
+To increase team awareness of progress and/or updates on a specific ticket, we are experimenting with updating tickets using the comment section on the issue itself. This applies when:
+
+- New information is discovered that may alter the acceptance criteria or functional requirements of a ticket.
+- A team member has upcoming leave and is still working on a ticket, ensuring that when picked up by someone new a brief overview of the current status is passed on.
+
 ---
 
 ## Adding/Adjusting Ways of Working
