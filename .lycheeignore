@@ -23,3 +23,6 @@ https://github.com/settings/keys
 https://github.com/ministryofjustice/github-collaborators/pulls
 https://github.com/organizations/ministryofjustice/settings/installations/16911235
 https://github.com/ministryofjustice/operations-engineering/actions/workflows/dormant-users-remove-users.yml
+https://github.com/ministryofjustice/yjaf-infra-aws-mgmt/blob/main/env_configs/yjaf-mgmt-users.tfvars
+https://github.com/ministryofjustice/yjaf-infra-aws-mgmt
+https://github.com/ministryofjustice/yjaf-infra-aws-mgmt/blob/main/user-groups/users.tf
