@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Agile Delivery
-last_reviewed_on: 2024-07-08
+last_reviewed_on: 2024-10-08
 review_in: 3 months
 ---
 
