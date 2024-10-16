@@ -108,7 +108,7 @@ reviews ensures that our team is well-equipped to navigate uncertainties and con
 For further details on the ceremony, visit
 the [Risk Review Meeting Process](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/risk-review.html)
 
-### **🧪 Sprint Planning**
+### **✅ Sprint Planning**
 
 Sprint planning will now be conducted in three stages to prepare our tickets for the upcoming sprint better and ensure all tasks are well-defined and aligned with our sprint goals. This structured approach aims to enhance clarity, collaboration, and effective use of time:
 
@@ -216,7 +216,7 @@ meetings effectively, such as:
 - Easy to use hand-up facility for a better flow of conversation of topics
 - Quality video streaming capabilities so team members can have cameras enabled
 
-### **⏸️ Use Slack Huddles For Stand-Up**
+### **🧪 Use Slack Huddles For Stand-Up**
 
 To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
@@ -225,7 +225,7 @@ stand-ups in a public space where our conversation can be saved and referenced l
 
 Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our Daily Stand-Ups with Microsoft Teams.
 
-### **🧪 Use Microsoft Teams for all Ceremonies**
+### **⏸️ Use Microsoft Teams for all Ceremonies**
 
 Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our all our regular ceremonies with Microsoft Teams. These ceremonies include:
 
@@ -235,7 +235,7 @@ Due to the migration to Microsoft 365 - we are experimenting using the tooling b
 - Ways of Engineering
 - Demos
 
-### **🧪 Updating Ticket Information**
+### **✅ Updating Ticket Information**
 
 To increase team awareness of progress and/or updates on a specific ticket, we are experimenting with updating tickets using the comment section on the issue itself. This applies when:
 
