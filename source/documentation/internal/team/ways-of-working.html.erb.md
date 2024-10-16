@@ -108,7 +108,7 @@ reviews ensures that our team is well-equipped to navigate uncertainties and con
 For further details on the ceremony, visit
 the [Risk Review Meeting Process](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/risk-review.html)
 
-### **🧪 Sprint Planning**
+### **✅ Sprint Planning**
 
 Sprint planning will now be conducted in three stages to prepare our tickets for the upcoming sprint better and ensure all tasks are well-defined and aligned with our sprint goals. This structured approach aims to enhance clarity, collaboration, and effective use of time:
 
@@ -124,6 +124,21 @@ Sprint planning will now be conducted in three stages to prepare our tickets for
    In the final session, the team performs a detailed sorting and prioritisation of all items proposed for the sprint. This stage considers constraints such as the number of staff available, the complexity of tasks, and the team’s understanding of each topic. This focused session ensures the sprint plan is realistic, achievable, and tailored to the team's capacity and expertise.
 
 By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
+
+### **🧪 Firebreak Sprint Planning**
+
+When running a sprint planning session during a Firebreak, we aim to structure is as follows:
+
+1. **Initial Sprint Planning Session (~10 minutes):**
+   Much the same as regular planning, the first part of the meeting is a brief session led by the Project Manager. The goal is to provide an overview of the upcoming items in the Firebreak sprint and a rough sorting of the relevant tickets. We should also take some time here to briefly review the current Firebreak milestones to make sure the team is happy with their purpose and currently assigned tickets.
+
+2. **Individual User Presentations (~30 minutes):**
+   This section of the meeting gives each team member an opportunity to present their idea for a Firebreak story to the rest of the team. This will help ensure everyone understands what work is required to complete the story, and gives the team a changes to ask questions and challenge or suggest alternatives for the proposed approach.
+
+   It's important here for the team to agree that the proposed Firebreak story is appropriately sized for the sprint.
+
+3. **Firebreak Epics and Sub Issues (~20 minutes):**
+   This portion of the meeting gives us some time to associate any new Firebreak stories with the appropriate Firebreak milestones. If a ticket is not relevant to a milestone, it can be brought in as a standalone story.
 
 ### **✅ Daily Stand-Up Meetings**
 
@@ -216,16 +231,26 @@ meetings effectively, such as:
 - Easy to use hand-up facility for a better flow of conversation of topics
 - Quality video streaming capabilities so team members can have cameras enabled
 
-### **⏸️ Use Slack Huddles For Stand-Up**
+### **🧪 Use Slack Huddles For Stand-Up**
 
 To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
 
-### **🧪 Use Microsoft Teams for Stand-Up**
+### **🧪 Use Slack Huddles for all Ceremonies**
+
+To trial all available options for our regular meetings, we are experimenting with running our ceremonies in Slack Huddles. These ceremonies include:
+
+- Sprint Planning
+- Milestone Planning
+- Retrospective
+- Ways of Engineering
+- Demos
+
+### **⏸️ Use Microsoft Teams for Stand-Up**
 
 Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our Daily Stand-Ups with Microsoft Teams.
 
-### **🧪 Use Microsoft Teams for all Ceremonies**
+### **⏸️ Use Microsoft Teams for all Ceremonies**
 
 Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our all our regular ceremonies with Microsoft Teams. These ceremonies include:
 
@@ -235,7 +260,7 @@ Due to the migration to Microsoft 365 - we are experimenting using the tooling b
 - Ways of Engineering
 - Demos
 
-### **🧪 Updating Ticket Information**
+### **✅ Updating Ticket Information**
 
 To increase team awareness of progress and/or updates on a specific ticket, we are experimenting with updating tickets using the comment section on the issue itself. This applies when:
 
