@@ -125,6 +125,21 @@ Sprint planning will now be conducted in three stages to prepare our tickets for
 
 By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
 
+### **🧪 Firebreak Sprint Planning**
+
+When running a sprint planning session during a Firebreak, we aim to structure is as follows:
+
+1. **Initial Sprint Planning Session (~10 minutes):**
+   Much the same as regular planning, the first part of the meeting is a brief session led by the Project Manager. The goal is to provide an overview of the upcoming items in the Firebreak sprint and a rough sorting of the relevant tickets. We should also take some time here to briefly review the current Firebreak milestones to make sure the team is happy with their purpose and currently assigned tickets.
+
+2. **Individual User Presentations (~30 minutes):**
+   This section of the meeting gives each team member an opportunity to present their idea for a Firebreak story to the rest of the team. This will help ensure everyone understands what work is required to complete the story, and gives the team a changes to ask questions and challenge or suggest alternatives for the proposed approach.
+
+   It's important here for the team to agree that the proposed Firebreak story is appropriately sized for the sprint.
+
+3. **Firebreak Epics and Sub Issues (~20 minutes):**
+   This portion of the meeting gives us some time to associate any new Firebreak stories with the appropriate Firebreak milestones. If a ticket is not relevant to a milestone, it can be brought in as a standalone story.
+
 ### **✅ Daily Stand-Up Meetings**
 
 Our team holds daily stand-up meetings* in the morning to improve communication and collaboration. This consistent timing
