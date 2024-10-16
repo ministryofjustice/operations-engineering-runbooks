@@ -236,7 +236,17 @@ meetings effectively, such as:
 To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
 
-### **🧪 Use Microsoft Teams for Stand-Up**
+### **🧪 Use Slack Huddles for all Ceremonies**
+
+To trial all available options for our regular meetings, we are experimenting with running our ceremonies in Slack Huddles. These ceremonies include:
+
+- Sprint Planning
+- Milestone Planning
+- Retrospective
+- Ways of Engineering
+- Demos
+
+### **⏸️ Use Microsoft Teams for Stand-Up**
 
 Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our Daily Stand-Ups with Microsoft Teams.
 
