@@ -1,13 +1,52 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Incident Log
-last_reviewed_on: 2024-07-22
+last_reviewed_on: 2024-10-17
 review_in: 3 months
 ---
 
 # Incident Log
 
-This is a log of Operations Engineering managed incidents.
+This is a log of incidents managed by Operations Engineering.
+
+## Q4 2024 (October to December)
+
+- **Mean Time to Repair**: 24h 10m
+
+- **Mean Time to Resolve**: 24h 10m
+
+### Incident on 2024-10-14 - Onboarding Mechanism Release Failure (AP GitHub Organisation)
+
+- **Key events**
+
+  - First detected: 2024-10-14 10:30
+  - Repaired: 2024-10-15 11:29 (Fix forward approach taken)
+  - Resolved: 2024-10-15 11:40 (Communications sent out to user base)
+
+- **Time to repair**: 24h 10m
+- **Time to resolve**: 24h 10m
+
+- **Identified**: The Operations Engineering team identified the issue after users started encountering SSO prompts and re-authentication errors with GitHub CLI and git operations (via ssh).
+- **Impact**: The disruption affected multiple users across the moj-analytical-services GitHub organisation, leading to re-authentication prompts and users seeing a banner for enabling SSO.
+
+- **Context**:
+
+  - 2024-10-14 10:30 Planning began for the SSO rollout.
+  - 2024-10-14 14:00 SSO was enabled for the AP GitHub organisation without anticipating the impact on current users.
+  - 2024-10-14 14:40 Users began experiencing issues with GitHub CLI re-authentication and the SSO banner.
+  - 2024-10-15 09:30 Communications began with Jacob from Analytical Platform who replicated the issue.
+  - 2024-10-15 11:29 The team decided to "fix forward" rather than rolling back.
+  - 2024-10-15 11:40 AP team sent communications to users and the community began offering solutions.
+
+- **Resolution**: The team opted to "fix forward" by addressing the issues without rolling back the changes. Emergency communications were sent to inform users and support the transition.
+
+- **Review Actions**:
+  - Improve risk assessment for changes across all GitHub organisations, including the `moj-analytical-services`.
+  - Implement a 24-hour delay between communication and changes to allow for better stakeholder engagement.
+  - Formalise the testing process and release process to include better review procedures.
+  - Improve stakeholder engagement by creating an incident process runbook.
+
+---
 
 ## Q2 2024 (April to June)
 
@@ -21,7 +60,7 @@ This is a log of Operations Engineering managed incidents.
 
 - **Mean Time to Resolve**: 0h 0m
 
-## Q4 2023 (October to Decmeber)
+## Q4 2023 (October to December)
 
 - **Mean Time to Repair**: 83h 50m
 
