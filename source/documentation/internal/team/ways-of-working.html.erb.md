@@ -267,6 +267,10 @@ To increase team awareness of progress and/or updates on a specific ticket, we a
 - New information is discovered that may alter the acceptance criteria or functional requirements of a ticket.
 - A team member has upcoming leave and is still working on a ticket, ensuring that when picked up by someone new a brief overview of the current status is passed on.
 
+### **💡 Archive POC Repositories Once POCs are Complete**
+
+Once a POC is complete, the associated GitHub repository should be removed from the [GitHub Repository Terraform](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories), this will automatically archive the repository. This ensures that the repository estate is not polluted by lingering POC repositories.
+
 ---
 
 ## Adding/Adjusting Ways of Working
