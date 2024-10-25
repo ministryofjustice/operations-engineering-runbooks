@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2024-09-16
+last_reviewed_on: 2024-10-25
 review_in: 3 months
 ---
 
@@ -36,6 +36,13 @@ items, and the need to include reflective practices such as demos, retrospective
 We embrace Firebreak Sprints as a vital component of our engineering process, dedicating structured breaks from our regular sprint cycles to activities that significantly contribute to our technical health, innovation, and team well-being.
 
 For inspiration and guidance, we look to the GOV.UK team's approach to Firebreak Sprints. Their experiences underscore the value of such initiatives in promoting technical excellence and team well-being. For more information, please see our documentation describing [Firebreak Sprints](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/firebreak-sprints.html).
+
+### **🧪 Sprint backlog contents**
+
+The stories in a sprint backlog will depend on priorities, however we will always include stories from the following catagories:
+- **sprint goal stories** - these will directly relate to roadmap priorities and form the majority of the sprint backlog.
+- **refactor story** - at least one refactor story to ensure that our code is well maintained.
+- **risk story**  - at least one story relating to items from our risk register.
 
 ## **Ceremonies**
 
@@ -124,6 +131,14 @@ Sprint planning will now be conducted in three stages to prepare our tickets for
    In the final session, the team performs a detailed sorting and prioritisation of all items proposed for the sprint. This stage considers constraints such as the number of staff available, the complexity of tasks, and the team’s understanding of each topic. This focused session ensures the sprint plan is realistic, achievable, and tailored to the team's capacity and expertise.
 
 By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
+
+### **🧪 Emergency Sprint Planning**
+
+In the event that we complete our sprint goal, and we have insufficient stories in the sprint backlog during a sprint we can call and emergency sprint planning session.
+
+If an emergency planning session is called we should agree as a team whether to hold the session. We may want to consider risk or other stories from the backlog in the first instance.
+
+The emergency planning will be a scalled down version of sprint planning, but follow the same format.
 
 ### **✅ Firebreak Sprint Planning**
 
