@@ -125,7 +125,7 @@ Sprint planning will now be conducted in three stages to prepare our tickets for
 
 By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
 
-### **🧪 Firebreak Sprint Planning**
+### **✅ Firebreak Sprint Planning**
 
 When running a sprint planning session during a Firebreak, we aim to structure is as follows:
 
@@ -152,7 +152,7 @@ The structure of the daily stand-up is:
 - Discuss work completed
 - Discuss work that is blocked
 - Discuss work in progress
-- 🧪 While discussing work in progress, if the person who is working on the ticket is off for the entire day at stand-up, we move the ticket back in to "To Do"
+- ✅ While discussing work in progress, if the person who is working on the ticket is off for the entire day at stand-up, we move the ticket back in to "To Do"
 - Discuss work happening outside of the normal sprint board view
 
 - *We skip the daily stand-up on the morning of Sprint Planning
@@ -231,28 +231,14 @@ meetings effectively, such as:
 - Easy to use hand-up facility for a better flow of conversation of topics
 - Quality video streaming capabilities so team members can have cameras enabled
 
-### **🧪 Use Slack Huddles For Stand-Up**
+### **✅ Use Slack Huddles For Stand-Up**
 
 To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
 stand-ups in a public space where our conversation can be saved and referenced later.
 
-### **🧪 Use Slack Huddles for all Ceremonies**
+### **✅ Use Slack Huddles for all Ceremonies**
 
 To trial all available options for our regular meetings, we are experimenting with running our ceremonies in Slack Huddles. These ceremonies include:
-
-- Sprint Planning
-- Milestone Planning
-- Retrospective
-- Ways of Engineering
-- Demos
-
-### **⏸️ Use Microsoft Teams for Stand-Up**
-
-Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our Daily Stand-Ups with Microsoft Teams.
-
-### **⏸️ Use Microsoft Teams for all Ceremonies**
-
-Due to the migration to Microsoft 365 - we are experimenting using the tooling by running our all our regular ceremonies with Microsoft Teams. These ceremonies include:
 
 - Sprint Planning
 - Milestone Planning
@@ -267,9 +253,9 @@ To increase team awareness of progress and/or updates on a specific ticket, we a
 - New information is discovered that may alter the acceptance criteria or functional requirements of a ticket.
 - A team member has upcoming leave and is still working on a ticket, ensuring that when picked up by someone new a brief overview of the current status is passed on.
 
-### **💡 Archive POC Repositories Once POCs are Complete**
+### **✅ Archive Repository Once a Proof of Concept is Complete**
 
-Once a POC is complete, the associated GitHub repository should be removed from the [GitHub Repository Terraform](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories), this will automatically archive the repository. This ensures that the repository estate is not polluted by lingering POC repositories.
+Once a Proof of Concept (POC) is complete, the associated GitHub repository should be removed from the [GitHub Repository Terraform](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories), this will automatically archive the repository. This ensures that the repository estate is not polluted by lingering POC repositories.
 
 ---
 
