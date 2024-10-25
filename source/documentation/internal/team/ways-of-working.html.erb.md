@@ -152,7 +152,7 @@ The structure of the daily stand-up is:
 - Discuss work completed
 - Discuss work that is blocked
 - Discuss work in progress
-- ✅ While discussing work in progress, if the person who is working on the ticket is off for the entire day at stand-up, we move the ticket back in to "To Do"
+- While discussing work in progress, if the person who is working on the ticket is off for the entire day at stand-up, we move the ticket back into "To Do"
 - Discuss work happening outside of the normal sprint board view
 
 - *We skip the daily stand-up on the morning of Sprint Planning
