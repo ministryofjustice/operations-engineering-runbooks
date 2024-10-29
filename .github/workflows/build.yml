@@ -3,25 +3,33 @@ name: Build gh-pages
 on:
   workflow_dispatch:
   pull_request:
-    types: [opened, edited, reopened, synchronize]
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     container:
-      image: ministryofjustice/tech-docs-github-pages-publisher:v3
+      image: ghcr.io/ministryofjustice/tech-docs-github-pages-publisher@sha256:35699473dbeefeeb8b597de024125a241277ee03587d5fe8e72545e4b27b33f8 # v5.0.0
+    permissions:
+      contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-      - name: Compile Markdown to HTML and create artifact
+        id: checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Build
+        id: build
         run: |
-          /scripts/deploy.sh
-      - name: Upload artifact to be URL checked
-        uses: actions/upload-artifact@v3
+          /usr/local/bin/package
+
+      - name: Upload Artifact
+        id: upload_artifact
+        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         with:
-          name: github-pages-test
+          name: github-pages
           path: artifact.tar
           retention-days: 1
+          overwrite: true
 
   linkChecker:
     runs-on: ubuntu-latest
