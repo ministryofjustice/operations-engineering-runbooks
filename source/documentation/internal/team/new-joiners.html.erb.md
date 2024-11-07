@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: New Joiners Guide
-last_reviewed_on: 2024-08-07
+last_reviewed_on: 2024-11-07
 review_in: 3 months
 ---
 
