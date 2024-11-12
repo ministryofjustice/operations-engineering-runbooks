@@ -8,31 +8,31 @@ review_in: 6 months
 
 # Testing and Release Process 
 
-This runbook outlines the risk-aware process for testing and releasing changes to third party tools (e.g Github) to ensure reliability of releases and minimise disruptions for users.
+This runbook outlines the risk-aware process for testing and releasing changes to third party tools (e.g Github) to increase reliability and minimise disruptions for users.
 
 ## Step 1: Risk Assessment and Planning 
 
-- **Conduct a Full Risk Assesment:** Ensure a thorough assessment for all affected GitHub organizations (ministryofjustice and moj-analytical-services), treating them as equal stakeholders.
+- **Conduct a Full Risk Assesment:** Ensure a thorough assessment off all affected GitHub organizations (ministryofjustice and moj-analytical-services), treating each as an equal stakeholder.
 - **Include Stakeholders:**  Engage key stakeholders earlier in the release process to discuss the potential impact on users and the functionalities affected by the change. 
 
 ## Step 2: Testing Process 
 
--  **Define Testing Criteria:** Ensure that testing covers all organizations, user types (existing, new) and all users access methods (web UI, CLI)
--  **Create and Document Test Cases:** Create a spreedsheet covering functional and non-functional testing requirements based on the cryteria. 
--  **Conduct Testing:** Use a testing environment that mirrors production as closely as possible. Include different type of users from all affected organizations. 
--  **Document Testing Results:** Record the test results in the test spreadsheet and share them with the team for discussion. 
+-  **Define Testing Criteria:** Ensure that testing covers all organizations, user types (existing, new) and all user access methods (web UI, CLI).
+-  **Create and Document Test Cases:** Create a spreadsheet covering functional and non-functional testing requirements based on the criteria. 
+-  **Conduct Testing:** Use a testing environment that mirrors production as closely as possible. Include different types of users from all affected organizations. 
+-  **Document Testing Results:** Record the test results in the test spreadsheet and share them with the team for review and discussion. 
 
 ## Step 3: Commununication and User Notification 
 
--  **Allow a Minimum 24-hour Delay:** Ensure that there is at least a 24-hour gap between the release of the change and the communication. 
+-  **Allow a Minimum 24-hour Delay:** Ensure there is at least a 24-hour gap between the release of the change and the communication. 
 -  **Inform Users and Stakeholders:** Notify users and support teams about the planned release, including a summary of expected changes, potential impacts, and support contacts.
 
 ## Step 4 Final Approval and Release 
 
-- **Obtain Dual Approval:** Ensure two separate approvals in Slack from the team members before proceeding with the release 
+- **Obtain Dual Approval:** Ensure two separate approvals are received in Slack from the team members before proceeding with the release.
 - **Execute Release:** Implement the change according to the release plan, following the successful completion of all preceding steps.
 - **Post-Release Monitoring:** Monitor affected systems and user feedback channels to quickly address any issues that may arise.
-- **Incident Process for Issues:** If a significant issue occurs, follow the [incident response](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/incident-response.html) runbook to inform the team and begin problem resolution. 
+- **Incident Process for Issues:** If a significant issue occurs, follow the [incident response](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/incident-response.html) runbook to notify the team and begin problem resolution. 
 
 
 
