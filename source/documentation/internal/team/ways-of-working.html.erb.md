@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Working
-last_reviewed_on: 2024-10-25
+last_reviewed_on: 2024-11-15
 review_in: 3 months
 ---
 
@@ -37,7 +37,7 @@ We embrace Firebreak Sprints as a vital component of our engineering process, de
 
 For inspiration and guidance, we look to the GOV.UK team's approach to Firebreak Sprints. Their experiences underscore the value of such initiatives in promoting technical excellence and team well-being. For more information, please see our documentation describing [Firebreak Sprints](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/firebreak-sprints.html).
 
-### **🧪 Sprint backlog contents**
+### **✅ Sprint backlog contents**
 
 The stories in a sprint backlog will depend on priorities, however we will always include stories from the following catagories:
 - **sprint goal stories** - these will directly relate to roadmap priorities and form the majority of the sprint backlog.
@@ -132,7 +132,7 @@ Sprint planning will now be conducted in three stages to prepare our tickets for
 
 By breaking the sprint planning into these three distinct parts, we aim to improve preparation, reduce uncertainty, and optimise the time spent in planning. This approach also ensures that the team is well-prepared to tackle the sprint's tasks with clear expectations and a shared understanding.
 
-### **🧪 Emergency Sprint Planning**
+### **✅ Emergency Sprint Planning**
 
 In the event that we complete our sprint goal, and we have insufficient stories in the sprint backlog during a sprint we can call and emergency sprint planning session.
 
