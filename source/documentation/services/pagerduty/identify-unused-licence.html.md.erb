@@ -1,0 +1,26 @@
+---
+owner_slack: "#operations-engineering-alerts"
+title: Identify Unused Pagerduty Licences
+last_reviewed_on: 2024-12-05
+review_in: 3 months
+---
+
+# Identify Unused Pagerduty Licences
+
+If running low on licences we can remove users who have not accepted an invite. You can use the [PagerDuty Onboarding Report](https://support.pagerduty.com/main/docs/user-onboarding-report) to identify users who have never accpeted an invite.
+
+## Pre-requisites
+
+Before you begin, there are a few pre-requisites:
+
+- PagerDuty Admin access
+
+## User Onboarding Report
+
+1. Navigate to the [User Onboarding Report](https://moj-digital-tools.pagerduty.com/analytics/dashboards/user-onboarding/P5OExfzET_QdUAcL1yI1Ng) (the report can be found under the Analytics tab).
+
+2. Review report and identify users with a `Accepted Invite` value of `No`.
+
+3. You can click on the users name from the report to access the users profile. Click on the **Delete** button to remove the user.
+
+4. Repeat to free up as many licences as you can.
