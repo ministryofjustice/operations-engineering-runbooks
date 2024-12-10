@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Add Docker User (Manual Process)
-last_reviewed_on: 2024-11-05
+last_reviewed_on: 2024-12-10
 review_in: 3 months
 ---
 
@@ -17,29 +17,24 @@ Users on Mac require a license to user Docker due to a change in Dockers model.
 
 ## Pre-requisites
 
-You must have access to a Docker organization admin account either through:
-
-- A personal Docker account
-- The Operations Engineering Docker account (saved in LastPass)
-
-> **Note** - HMPPS also has a Docker for Business subscription. It is possible that a user may want to be added to a repo within that organisation. If that is the case please redirect the user to the #hmpps_dev slack channel.
+You must have Docker organization `Owner` permissions.
 
 ## Adding a User to the MoJ Docker Organization
 
 1. Login into [Docker](https://www.docker.com).
 
-2. Go to "Organizations".
+2. Go to [Admin Console](https://app.docker.com/admin/orgs/ministryofjustice/members)
 
-3. Click on "ministryofjustice"
+3. Click "Invite" button
 
-4. Click "Add Member".
+4. Select "Emails or username"
 
-5. Enter either the users email or Docker ID.
+5. Add users work email address
 
-> e.g. <ben.ashton@digital.justice.gov.uk> / autoben
+6. In the "Select a role" field choose `Member`
 
-6. Select the team the user has requested or "pushers" if none specified
+7. In the @Select a team.." field choose `pushers`
 
-7. Click "Add"
+8. Click "Invite" button to issue the invite and exit
 
-8. Notify the user that an invite has been sent to their email
+9. Notify the user that an invite has been sent to their email
