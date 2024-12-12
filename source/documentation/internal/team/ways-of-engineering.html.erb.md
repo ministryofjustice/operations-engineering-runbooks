@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Engineering
-last_reviewed_on: 2024-09-12
+last_reviewed_on: 2024-11-12
 review_in: 3 months
 ---
 
