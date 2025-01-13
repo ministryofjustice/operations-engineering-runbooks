@@ -40,6 +40,7 @@ For inspiration and guidance, we look to the GOV.UK team's approach to Firebreak
 ### **✅ Sprint backlog contents**
 
 The stories in a sprint backlog will depend on priorities, however we will always include stories from the following catagories:
+
 - **sprint goal stories** - these will directly relate to roadmap priorities and form the majority of the sprint backlog.
 - **refactor story** - at least one refactor story to ensure that our code is well maintained.
 - **risk story**  - at least one story relating to items from our risk register.
@@ -90,8 +91,6 @@ Below is a suggested structure for the milestone planning meetings. This can evo
 
 3. **Milestone Progress Overview (~10 Minutes):**:
    The team performs a final review of the active milestones to ensure we are happy that everything in progress is relevant. This is an opportunity to close off milestones that are complete or are no longer relevant to the team.
-
-   You can read more about the delivery phases [here](https://runbooks.operations-engineering.service.justice.gov.uk/documentation/internal/team/agile-delivery.html#agile-delivery)
 
 ### **✅ Retrospectives**
 

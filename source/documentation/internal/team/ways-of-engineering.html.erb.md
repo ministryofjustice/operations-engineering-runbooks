@@ -15,6 +15,41 @@ This foundational document outlines our collective approach to engineering pract
 - 🧪 Experimenting
 - 💡 New idea (waiting to be discussed by the team)
 
+## Hosting Services and Infrastructure
+
+### ✅ Use Cloud Platform as the Primary Hosting Platform
+
+The Cloud Platform is made for hosting modern, containerised applications and provides easy access to most AWS services for infrastructure requirements.
+
+We should host new applications and infrastructure on the Cloud Platform, unless there are specific reasons not to.
+
+### ✅ Use Modernisation Platform as the Secondary Hosting Platform
+
+The Modernisation Platform is made for hosting applications that are not yet containerised or where a project has complex infrastructure requirements.
+
+We have chosen to only have one environment* in the Modernisation Platform. This environment is called [operations-engineering](https://github.com/ministryofjustice/modernisation-platform/blob/main/environments/operations-engineering.json). AWS Accounts in this environment should be used for all infrastructure deemed suitable to host in the Modernisation Platform.
+
+Any production level services should be deployed into the `operations-engineering-production` AWS Account. This account can only be deployed to via code changes in [modernisation-platform-environments](https://github.com/ministryofjustice/modernisation-platform-environments)
+
+> ***An environment in the Modernisation Platform can mean one of two things:**
+>
+> - **A namespace which encapsulates several AWS accounts i.e. `operations-engineering`**
+> - **A traditional environment for deployment such as `development`, `production` etc. combined with the Namespace definition above, these create the names for the AWS Accounts created i.e `operations-engineering-development`, `operations-engineering-production` etc.**
+>
+> In the descriptions in this section, I have opted to use `environment` to describe the `namespace` and `AWS Account` to describe the `traditional environment` to avoid confusion.
+
+#### Why Are We Only Using One Environment?
+
+While the team gets more familiar with the Modernisation Platform, we have decided to only use one environment. This will help us to keep things simple and avoid confusion.
+
+We will review this decision in the future when there is a need to add more environments.
+
+## ✅ Do Not Use The MoJ Digital Services (DSD Account) to Host Services
+
+The MoJ Digital Services AWS Account is a legacy account that is currently owned by several teams and is not suitable for hosting new services.
+
+Existing services owned by our team hosted in the MoJ Digital Services AWS Account  should be migrated to the Cloud Platform or Modernisation Platform.
+
 ## **Package Management and Environment**
 
 ### ✅ Python as the Primary Programming Language
