@@ -44,7 +44,19 @@ While the team gets more familiar with the Modernisation Platform, we have decid
 
 We will review this decision in the future when there is a need to add more environments.
 
-## ✅ Do Not Use The MoJ Digital Services (DSD Account) to Host Services
+#### Cloud Platform vs Modernisation Platform
+
+
+
+|Cloud Platform|Modernisation Platform|
+|:-----|:-----|
+|Provides a namespace within the CP AWS account to contain your resources|Creates AWS accounts for each environment (dev, test, pre-prod, prod) under your namespace environment|
+|Intended for microservices|Intended for services requiring more complex infrastructure|
+|Access to some AWS resources restricted (eg no AWS Lambda)|Full control and full access to AWS tools|
+|Provides access to Kubernetes compute|Provides Security baselines, Isolated networking, CI/CD for infrastructure|
+|Example: Join GitHub app (🪦); containerised app hosting a website, running small supporting infra|Example: NOMIS; mainaining a huge database, restricting access, integrating with microservices (which may be on CP)|
+
+### ✅ Do Not Use The MoJ Digital Services (DSD Account) to Host Services
 
 The MoJ Digital Services AWS Account is a legacy account that is currently owned by several teams and is not suitable for hosting new services.
 
