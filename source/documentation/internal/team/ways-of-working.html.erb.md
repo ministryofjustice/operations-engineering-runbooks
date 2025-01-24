@@ -23,8 +23,10 @@ It's not just a set of rules; it's a tool for continuous improvement, helping us
 
 ### **✅ We Update Stories With Progress**
 
-To keep everyone in the loop and maintain transparency, updating your assigned stories' status regularly is crucial. Whether it's a small task or a significant milestone, updating the stories with your progress ensures
-everyone knows where we stand and how we're moving forward.
+To increase team awareness of progress and/or updates on a specific ticket, we are experimenting with updating tickets using the comment section on the issue itself. This applies when:
+
+- New information is discovered that may alter the acceptance criteria or functional requirements of a ticket.
+- A team member has upcoming leave and is still working on a ticket, ensuring that when picked up by someone new a brief overview of the current status is passed on.
 
 ### **✅ We Use 2-Week Sprints**
 
@@ -44,6 +46,55 @@ The stories in a sprint backlog will depend on priorities, however we will alway
 - **sprint goal stories** - these will directly relate to roadmap priorities and form the majority of the sprint backlog.
 - **refactor story** - at least one refactor story to ensure that our code is well maintained.
 - **risk story**  - at least one story relating to items from our risk register.
+
+### **✅ Archive Repository Once a Proof of Concept is Complete**
+
+Once a Proof of Concept (POC) is complete, the associated GitHub repository should be removed from the [GitHub Repository Terraform](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories), this will automatically archive the repository. This ensures that the repository estate is not polluted by lingering POC repositories.
+
+### 💡 Set Quarterly Goals
+
+Quarterly goals align our team's efforts with broader objectives and enhance our focus and productivity. These goals will be defined collaboratively with senior stakeholders and discussed with the team, reflecting our shared priorities and aspirations. By establishing clear, measurable targets, we aim to drive our team's progress, foster alignment, and celebrate achievements together.
+
+Quarterly Goals are:
+
+- ✅ SMART (Specific, Measurable, Achievable, Relevant, Time-bound)
+- ✅ A tool to enable effective planning, tracking, and communication of our progress - we are still an agile team and will continue to adapt and respond to change
+- ✅ A concise list of 3 goals that are achievable within the quarter
+- ✅ Aligned with the team's overall objectives and priorities
+- ✅ Regularly reviewed and updated to reflect our evolving needs and progress i.e. if a goal is completed early, we can add a new one or adjust existing goals as we learn more about our work
+
+Quarterly Goals are not:
+
+- ❌ A rigid set of targets that must be met at all costs
+- ❌ A tool for de-prioritising business requirements or other priorities such as day-to-day operational work, addressing technical debt, administrative responsibilities and peoples personal learning and development time
+- ❌ A vague statement of intent or aspiration without clear, measurable outcomes
+- ❌ A static list that remains unchanged throughout the quarter - where we need to adapt our goals, we will do so and reflect on learning and insights gained
+- ❌ An extensive list of goals that dilutes our focus and makes it difficult to track progress
+
+> *Examples:*
+>
+> - A Good Delivery Goal - *"Improve tagging of AWS resources by increasing meaningful coverage by 20% by the end of the quarter"*
+> - A Poor Delivery Goal - *"Improve AWS resource tagging"*
+> - A Good Discovery Goal - *"Understand the top 3 saving oppurtunities within AWS, complete with risk assessments, potential savings oppurtunities and high-level a plan for implementation by end of the quarter"*
+> - A Poor Discovery Goal - *"Understand AWS costs"*
+
+#### Measuring Success
+
+To emphasise the importance of making committed progress towards our goals, we will measure our success by how we manage to commit our time to goal and the progress we made towards it. Again, focus and dedication to the goal is key not the completion of the goal itself.
+
+We will use the following categories to measure our success of our goals:
+
+*🚀 Surpassed Expectations*
+
+Outcome: The team hit/exceeded the intended target, achieving more than expected. This reflects not only focus but exceptional performance or favourable external circumstances. This serves as an opportunity to celebrate and reflect on the factors that contributed to this outcome.
+
+*✅ Achieved Progress*
+
+Outcome: The team met the goal as far as reasonably possible, given the circumstances. This is a normal and positive outcome, emphasizing focus, dedication and progress, despite external challenges.
+
+*🙈 Underprioritised*
+
+Outcome: The team was unable to give sufficient attention to the goal. This serves as an opportunity to analyze and reflect on the barriers that led to this outcome
 
 ## **Ceremonies**
 
@@ -73,7 +124,7 @@ To manage and deliver larger, more complex projects, we dedicate focused plannin
 
 3. Fostering Collaboration and Inclusion: These planning sessions are designed to be inclusive, giving every team member a voice in the process. Engaging all team members early enhances collaboration, gathers diverse insights, and ensures alignment on our shared goals.
 
-### Meeting Structure
+#### Meeting Structure
 
 Below is a suggested structure for the milestone planning meetings. This can evolve over time as we find a system that works best for the team:
 
@@ -163,6 +214,7 @@ Agile process more effective.
 
 The structure of the daily stand-up is:
 
+- 🧪 We use a random name picker to determine who should facilitate the stand-up each day
 - Discuss work completed
 - Discuss work that is blocked
 - Discuss work in progress
@@ -171,17 +223,11 @@ The structure of the daily stand-up is:
 
 - *We skip the daily stand-up on the morning of Sprint Planning
 
-### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
+#### **✅ If Unable to Attend Stand-Up, Post an Update in the Slack Channel**
 
 Post a brief update in the designated Slack channel if you cannot attend stand-up. Sharing your progress, impediments,
 and any help you need keeps the team informed and ensures we can support each other effectively, even when we're not
 physically present.
-
-### **✅ We Walk the Board at Stand-Ups**
-
-At our Stand-Up meetings, it's essential that everyone actively participates. We walk the board together, discussing the
-tasks and their statuses. This shared understanding helps us identify bottlenecks, dependencies, and progress made. By
-default, you should be ready to share your updates and actively engage in the discussion.
 
 ### **✅ Stand-Down Reflections for Continuous Growth**
 
@@ -195,17 +241,9 @@ growth.
 
 Stay constructive and kind.
 
-### **✅ Rotational Stand-Up Meeting Hosts**
-
-We should use a rotational approach to hosting our daily stand-up meetings to enhance engagement and shared responsibility. Each team member will take turns facilitating the stand-up, ensuring diverse perspectives and a deeper sense of involvement. This approach aims to foster a more inclusive and dynamic team environment.
-
-The host will walk the team through the board, ensuring each member has a chance to update on their progress and raise any blockers.
-
-Team members are encouraged to support the host, fostering a collaborative atmosphere.
-
 ### **✅ Ways of Engineering**
 
-As an experimental practice, we will introduce a "Ways of Engineering Ceremony" to our routine. This ceremony is dedicated to discussing and reviewing our team's engineering practices in a structured yet open forum.
+This ceremony is dedicated to discussing and reviewing our team's engineering practices in a structured yet open forum.
 The goal is to foster continuous dialogue on improvements, innovations, and adjustments needed within our engineering domain.
 This initiative will allow us to collectively assess the effectiveness of our current practices, explore new methodologies, and decide on the adoption of experimental practices on a regular basis. Participation and input from every team member are crucial for making this ceremony a valuable asset in our continuous improvement journey.
 
@@ -234,42 +272,15 @@ and create specialised views to optimise our ceremonies.
 
 Our board can be found [here](https://github.com/orgs/ministryofjustice/projects/52)
 
-### **✅ Use Google Meet For Ceremonies**
-
-To ensure we have the stability and functionality required to run ceremonies effectively, we use Google Meets for Ceremonies
-by default. Google Meet is familiar to the team and has been proven to provide most of the functionality required to run
-meetings effectively, such as:
-
-- Sharing individual tabs/apps instead of the entire screen
-- Quick reactions for instant feedback
-- Easy to use hand-up facility for a better flow of conversation of topics
-- Quality video streaming capabilities so team members can have cameras enabled
-
-### **✅ Use Slack Huddles For Stand-Up**
-
-To increase the visibility of our daily updates, we use Slack Huddles to host stand-ups. Slack allows quick and efficient
-stand-ups in a public space where our conversation can be saved and referenced later.
-
 ### **✅ Use Slack Huddles for all Ceremonies**
 
-To trial all available options for our regular meetings, we are experimenting with running our ceremonies in Slack Huddles. These ceremonies include:
+For all team ceremonies, we use Slack Huddles for the following reasons:
 
-- Sprint Planning
-- Milestone Planning
-- Retrospective
-- Ways of Engineering
-- Demos
+- Familiar with the tool as we it for daily communication
+- Google is being decommissioned in the Ministry of Justice, so we want to move away depending on it
+- Slack Huddles contains most features we need to effectively run most ceremonies
 
-### **✅ Updating Ticket Information**
-
-To increase team awareness of progress and/or updates on a specific ticket, we are experimenting with updating tickets using the comment section on the issue itself. This applies when:
-
-- New information is discovered that may alter the acceptance criteria or functional requirements of a ticket.
-- A team member has upcoming leave and is still working on a ticket, ensuring that when picked up by someone new a brief overview of the current status is passed on.
-
-### **✅ Archive Repository Once a Proof of Concept is Complete**
-
-Once a Proof of Concept (POC) is complete, the associated GitHub repository should be removed from the [GitHub Repository Terraform](https://github.com/ministryofjustice/operations-engineering/tree/main/terraform/github/repositories), this will automatically archive the repository. This ensures that the repository estate is not polluted by lingering POC repositories.
+Where Slack Huddles is not suitable for a particular meeting, we can opt to use an alternative tool.
 
 ---
 
