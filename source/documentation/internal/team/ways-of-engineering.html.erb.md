@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Ways of Engineering
-last_reviewed_on: 2024-11-12
+last_reviewed_on: 2025-02-12
 review_in: 3 months
 ---
 
@@ -45,8 +45,6 @@ While the team gets more familiar with the Modernisation Platform, we have decid
 We will review this decision in the future when there is a need to add more environments.
 
 #### Cloud Platform vs Modernisation Platform
-
-
 
 |Cloud Platform|Modernisation Platform|
 |:-----|:-----|
