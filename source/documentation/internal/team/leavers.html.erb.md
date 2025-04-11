@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Leavers Guide
-last_reviewed_on: 2025-01-10
+last_reviewed_on: 2025-04-10
 review_in: 3 months
 ---
 
@@ -33,13 +33,13 @@ This is not just about returning their Mac - it will do the important step of cl
 
 6. Remove them from the following Google Groups:
 
-  - <operations-engineering@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/operations-engineering?hl=en-GB`
+- <operations-engineering@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/operations-engineering?hl=en-GB`
 
-  - <domains@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/domains?hl=en-GB`
+- <domains@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/domains?hl=en-GB`
 
-  - <certificates@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/certificates?hl=en-GB`
+- <certificates@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/certificates?hl=en-GB`
 
-  - <certificate_alerts@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/certificate_alerts?hl=en-GB`
+- <certificate_alerts@digital.justice.gov.uk> `https://groups.google.com/a/digital.justice.gov.uk/g/certificate_alerts?hl=en-GB`
 
 7. Remove them from [Sentry.io](https://sentry.io)
 
