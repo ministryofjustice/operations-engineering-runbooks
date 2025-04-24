@@ -1,7 +1,7 @@
 ---
 owner_slack: "#operations-engineering-alerts"
 title: Working Out of Hours
-last_reviewed_on: 2025-01-24
+last_reviewed_on: 2025-04-24
 review_in: 3 months
 ---
 
@@ -39,7 +39,7 @@ Once per fortnight.
 
 Time in lieu at a rate of 1.5x for agreed time (rounded up), i.e. agreed 1 hour support would reward 1.5 hours in lieu.
 
-Time in lieu at a rate of 2x for time outside of agreed hours (rounded up), i.e. working an additional hour on top of one hour of agreed support, would reward 3.5 hours in lieu (1.5 hrs for an agreed hour  + 2 hrs for the unplanned hour) 
+Time in lieu at a rate of 2x for time outside of agreed hours (rounded up), i.e. working an additional hour on top of one hour of agreed support, would reward 3.5 hours in lieu (1.5 hrs for an agreed hour  + 2 hrs for the unplanned hour)
 
 Unplanned time should include waiting around time.
 
@@ -51,7 +51,7 @@ Time of in lieu = 1.5 x 15 mins = 23 mins
 
 ### Example 2: Additional work outside of agreed schedule
 
-We have a request for support for some DNS OOH work for 30 mins on a Saturday between 12:00 and 12:30. The work takes 15 mins. 
+We have a request for support for some DNS OOH work for 30 mins on a Saturday between 12:00 and 12:30. The work takes 15 mins.
 
 An issue occurs that requires the engineer to attend an unplanned call outside the original change window and roll-back a change that takes 30 mins.
 
@@ -59,7 +59,7 @@ Time of in lieu = 1.5 x 15 mins (agreed time) + 2 x 30 mins (extra time) = 1 hou
 
 ### Example 3: Additional work outside of agreed schedule
 
-We have a request for support for some DNS OOH work for 30 mins on a Saturday. The work takes 15 mins. 
+We have a request for support for some DNS OOH work for 30 mins on a Saturday. The work takes 15 mins.
 
 We are later notified that related work isn’t going well and the Engineer needs to attend unplanned calls outside the original change window. Call takes 15 mins. The plan is that a rollback may be required in the next 2 hours so Engineer needs to be available.
 
